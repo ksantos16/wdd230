@@ -1,0 +1,15 @@
+@media only screen and (min-width: 500px) {
+    .main-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+
+    .section-3{
+        grid-column: span 2;
+        background-color: rgba(220, 211, 211, 0.653);
+        border: 1px solid black;
+        border-radius: 5px;
+
+    }
+}

@@ -11,49 +11,66 @@
         href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@300&family=Roboto:wght@300&family=Zen+Antique&display=swap"
         rel="stylesheet">
     <title>WDD 230 Design Principles - Lesson 2</title>
-    <link rel="stylesheet" href="wdd230/css/normalize.css">
-    <link rel="stylesheet" href="wdd230/css/small.css">
-    <link rel="stylesheet" href="wdd230/css/medium.css">
+    <link rel="stylesheet" href="/wdd230/css/normalize.css">
+    <link rel="stylesheet" href="/wdd230/css/dpsmall.css">
+    <link rel="stylesheet" href="/wdd230/css/dpmed.css">
+    <link rel="stylesheet" href="/wdd230/css/dplrg.css">
+    <script defer src="/wdd230/js/currentdate.js"></script>
 </head>
 
 <body>
-    <header>
 
+    <header>
+        <h1>Design Principles</h1>
     </header>
 
     <main>
-        <section>
-            <h2>Visual Hierarchy</h2>
-            <picture>
-                <img src="" alt="">
-            </picture>
-            <p>
+        <div class="main-grid">
+            <section class="section-1">
+                <h2>Visual Hierarchy</h2>
+                <h3>Verizon</h3>
+                <h3><a href="https://www.verizon.com/">verizon.com</a></h3>
+                <picture>
+                    <img src="/wdd230/images/visualhierarchy.jpg" alt="Example of Visual Hierarchy - Verizon">
+                </picture>
+                <p>
+                    Verizon's webpage is an example of Visual Hierarchy because of the bold typography to direct the eye
+                    on
+                    where it should go to.
+                </p>
+            </section>
 
-            </p>
-        </section>
+            <section class="section-2">
+                <h2>Rule of Three</h2>
+                <h3>Coca-Cola</h3>
+                <h3><a href="https://www.coca-cola.com/">coca-cola.com</a></h3>
+                <picture>
+                    <img src="/wdd230/images/ruleofthree.jpg" alt="Example of Rule of Three - Coca-Cola">
+                </picture>
+                <p>
+                    Coca-Cola's webpage is an example of Rule of Three because it has the navbar acting as the top, the
+                    photo the list of global names for the middle, and the footer with the copyrite as the bottom.
+                </p>
+            </section>
 
-        <section>
-            <h2>Title 2</h2>
-            <picture>
-                <img src="" alt="">
-            </picture>
-            <p>
-
-            </p>
-        </section>
-
-        <section>
-            <h2>Title 3</h2>
-            <picture>
-                <img src="" alt="">
-            </picture>
-            <p>
-
-            </p>
-        </section>
+            <section class="section-3">
+                <h2>Contrast</h2>
+                <h3>Sony</h3>
+                <h3><a href="https://electronics.sony.com/">electronics.sony.com</a></h3>
+                <picture>
+                    <img src="/wdd230/images/contrast.jpg" alt="Example of Contrast - Sony">
+                </picture>
+                <p>
+                    Sony's webpage is an example of Contrast because through out the webpage it has a constant play of
+                    light
+                    and dark from the photos to the lettering, and the background color.
+                </p>
+            </section>
+        </div>
 
         <footer>
-
+            <span id="currentyear"></span>
+            <p><span id="lastmod"></span></p>
         </footer>
     </main>
 
