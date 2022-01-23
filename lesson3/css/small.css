@@ -1,0 +1,139 @@
+:root {
+    --primary-color: #fbffffff;
+    --secondary-color:rgba(25, 25, 25, 0.823);
+    --accent-color: #be1922ff;
+    --heading-text: 'Playfair Display', serif;
+    --body-text: 'Lato', sans-serif;
+}
+img{
+    width: 100%;
+    max-width: 561px;
+}
+
+.targetpic{
+    max-width: 300px;
+}
+
+nav ul{
+    list-style: none;
+    font-size: 1.5rem;
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    min-width: 383px;
+}
+
+a {
+    text-decoration: none;
+    font-family:var(--body-text);
+    color: white;
+  }
+
+  a:hover{
+    background-color: var(--accent-color);
+}
+
+  .main-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1vw;
+    align-self: center;
+    background-color: rgba(255, 255, 255, 0.918);
+    color: black;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 0;
+}
+
+
+h1{
+    font-size: 2rem;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 1rem;
+    text-shadow: 1px 1px 2px rgb(31, 33, 35);
+    min-width: 383px;
+    margin-top: -2rem;
+}
+
+
+
+h2{
+    font-size: 1.55rem;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 1rem;
+    margin-top: 0rem;
+    text-shadow: 1px 1px 2px rgb(31, 33, 35);
+    min-width: 383px;
+}
+
+h3{
+    font-size: 1.35rem;
+    padding: 1vw;
+
+}
+
+
+
+p{
+    color: black;
+    font-weight: bold;
+    padding: 1vw;
+}
+
+
+footer {
+    display: grid;
+    justify-items: center;
+    padding-top: 1vw;
+    background-color:var(--secondary-color); 
+    color: white;
+    border-radius: 5px;
+    min-width: 383px;
+}
+
+table{
+    width: 100%;
+}
+
+#lastmod{
+    color: white;
+}
+
+.sitehead{
+      font-family: var(--heading-text);
+      font-size: 2rem;
+ 
+}
+
+.nav, .foot, .para{
+      font-family: var(--body-text);
+      font-size: 1rem;
+      font-weight: bold;
+}
+
+.h1{
+    font-family: var(--heading-text);
+    font-size: 1.5rem;
+}
+.h2{
+    font-family: var(--heading-text);
+    font-size: 1.35rem;
+}
+.h3{
+    font-family: var(--heading-text);
+    font-size: 1rem;
+}
+
+.sitehead, .h1, .h2, .h3{
+    color: var(--accent-color);
+}
+
+td {
+    border: 1px solid black;
+    padding: 5px 10px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgba(248, 218, 218, 0.85);
+  }
