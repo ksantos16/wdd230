@@ -5,8 +5,10 @@ function toggleMenu() {
 }
 
 const x = document.querySelector("#hamburgerBtn");
-x.oneclick = toggleMenu;
+x.onclick = toggleMenu;
 
+
+// x.addEventListener('click', () => { toggleMenu.classList.toggle("x") }, false);
 
 
 // const options = {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'};
