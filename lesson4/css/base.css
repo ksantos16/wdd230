@@ -6,34 +6,44 @@
     --body-text: 'Lato', sans-serif;
 }
 
-.header-grid{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+.header-container{
+    display: flex;
+    justify-content:space-between;
+    margin: 0 auto;
+    align-items: center;
+    background-color: var(--secondary-color);
 }
 
-.logo {
-    grid-column: 1;
-    grid-row: 1;
+.logo-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-.icon{
-    grid-column: 2;
-    grid-row: 1;
+.logo{
+    align-self: center;
+    width: 100px;
+    margin-top: 1rem;
+    filter: drop-shadow(5px 5px 5px rgba(3, 3, 3, 0.4));
 }
+
+h2{
+    font-family: var(--heading-text);
+    color: white;
+    font-size: 1.5rem;
+}
+
 
 nav button{
     margin: .2rem 2vw;
-    background: transparent;
+    background: rgba(0,0,0,0.5);
     border: none;
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: var(--accent-color);
-    align-content: left;
 }
 
-nav{
-    background-color:var(--secondary-color);
-}
+
 
 nav ul{
     list-style-type: none;
@@ -55,7 +65,7 @@ nav ul li .active a{
 }
 
 nav ul li a:hover{
-    background-color: rgba(0,0,0,0.3);
+    color: white;
 
 }
 
@@ -63,106 +73,101 @@ nav ul {display: none;}
 nav ul.open {display:block;}
 
 #hamburgerBtn span:nth-child(1) {display:block;}
+#hamburgerBtn span:nth-child(2) {display:none;}
 
-#hamburgerBtn span:nth-child(2) {display: none;}
+#hamburgerBtn.open span:nth-child(1) {display:none;}
+#hamburgerBtn.open span:nth-child(2) {display:block;}
 
-#hamburgerBtn span:nth-child(1) {display: none;}
-
-#hamburgerBtn.open span:nth-child(2) {display: block;}
+.social{
+    margin-right: 2rem;
+}
 
 #currentdate{
-    background-color: var(--secondary-color);
+    background-color: rgba(25, 25, 25, 0.938);
     color: white;
-    grid-column: 1;
-}
-
-h1{
-    font-size: 2rem;
-    background-color: var(--accent-color);
-    color: white;
+    display: flex;
     padding: 1rem;
-    text-shadow: 1px 1px 2px rgb(31, 33, 35);
-    min-width: 383px;
-    margin-top: -2rem;
-}
-
-
-
-h2{
-    font-size: 1.55rem;
-    background-color: var(--secondary-color);
-    color: white;
-    padding: 1rem;
-    margin-top: 0rem;
-    text-shadow: 1px 1px 2px rgb(31, 33, 35);
-    min-width: 383px;
-}
-
-h3{
-    font-size: 1.35rem;
-    padding: 1vw;
-
-}
-
-
-
-p{
-    color: black;
+    justify-content: center;
+    font-family: var(--body-text);
     font-weight: bold;
-    padding: 1vw;
 }
 
-
-footer {
+.main-container{
     display: grid;
-    justify-items: center;
-    padding-top: 1vw;
-    background-color:var(--secondary-color); 
-    color: white;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    
 }
 
-table{
+.hero-box{
+    margin-top: 1rem;
+}
+
+.hero-box, .news-box, .event-box, .weather-box, .join-box{
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: left;
+    font-family: var(--body-text);
+    font-weight: bold;
+    height: 200px;
+    padding: 1rem;
+}
+
+.border-spotlight-box{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
     width: 100%;
+    height: 400px;
+    margin-bottom: 1rem;
+    text-align: left;
+    font-family: var(--body-text);
+    align-items: center;
+    justify-content: center;
 }
 
-#lastmod{
+.spotlight-box1, .spotlight-box2{
+   height: 155px;
+   border: 1px solid whitesmoke;
+   font-weight: bold;
+   color: white;
+   width: 90%;
+   padding: 10px;
+}
+
+.spotlight-box3{
+    display: none;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    color: white;
+    font-family: var(--body-text);
+    align-items: center;
+}
+
+.footer-logo{
+    filter: drop-shadow(5px 5px 5px rgba(8, 8, 8, 0.4));
+}
+
+.address{
+    text-align: center;
+}
+
+.email a,.phone a,.location  a{
     color: white;
 }
 
-.sitehead{
-      font-family: var(--heading-text);
-      font-size: 2rem;
- 
-}
-
-.nav, .foot, .para{
-      font-family: var(--body-text);
-      font-size: 1rem;
-      font-weight: bold;
-}
-
-.h1{
-    font-family: var(--heading-text);
-    font-size: 1.5rem;
-}
-.h2{
-    font-family: var(--heading-text);
-    font-size: 1.35rem;
-}
-.h3{
-    font-family: var(--heading-text);
-    font-size: 1rem;
-}
-
-.sitehead, .h1, .h2, .h3{
+.email a:hover,.phone a:hover,.location a:hover{
     color: var(--accent-color);
 }
 
-td {
-    border: 1px solid black;
-    padding: 5px 10px;
+#currentyear{
+    margin-top: 1rem;
 }
 
-tbody tr:nth-child(odd) {
-    background-color: rgba(248, 218, 218, 0.85);
-  }
+#currentyear ,#lastmod{
+    text-align: center;
+}

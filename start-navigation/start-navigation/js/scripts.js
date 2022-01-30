@@ -3,4 +3,4 @@ function toggleMenu() {
 }
 
 const x = document.getElementById("hamburgerBtn")
-x.oneclick = toggleMenu;
+x.onclick = toggleMenu;

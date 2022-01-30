@@ -1,7 +1,7 @@
 
 function toggleMenu() {
-    document.querySelector("#primaryNav").classList.toggle("open");
-    document.querySelector("#hamburgerBtn").classList.toggle("open");
+    document.getElementById("primaryNav").classList.toggle("open");
+    document.getElementById("hamburgerBtn").classList.toggle("open");
 }
 
 const x = document.querySelector("#hamburgerBtn");
@@ -54,3 +54,14 @@ document.getElementById('currentdate').textContent = currentdate;
 // document.querySelector("#currentyear").textContent = year;
 
 
+// function currentyear(x) {
+//     if (x.matches) {
+//         document.querySelector("currentyear") = `&copy ${toadysdate.getFullYear()} Aberdeen Chamber of Commerce
+//     Kira Santos
+//     WDD 230 Project`;
+//     } else { document.querySelector("currentyear") = `&copy ${toadysdate.getFullYear()} Aberdeen Chamber of Commerce | Kira Santos | WDD 230 Project |`; }
+// }
+
+// let(x) = window.matchMedia("(min-width: 400px)")
+// currentyear(x)
+// x.addListener(currentyear)
