@@ -18,12 +18,11 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
 }
 
 .logo{
     align-self: center;
-    width: 100px;
     margin-top: 1rem;
     filter: drop-shadow(5px 5px 5px rgba(3, 3, 3, 0.4));
 }
@@ -118,7 +117,7 @@ nav ul.open {display:block;}
     flex-direction: column;
     background-color: var(--secondary-color);
     width: 100%;
-    height: 400px;
+    height: 300px;
     margin-bottom: 1rem;
     text-align: left;
     font-family: var(--body-text);
@@ -126,10 +125,10 @@ nav ul.open {display:block;}
     justify-content: center;
 }
 
-.spotlight-box1, .spotlight-box2{
-   height: 155px;
+.spotlight-box1, .spotlight-box2, .spotlight-box3{
    border: 1px solid whitesmoke;
    font-weight: bold;
+   height: inherit;
    color: white;
    width: 90%;
    padding: 10px;

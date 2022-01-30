@@ -39,13 +39,11 @@
         display:grid;
         grid-template-columns: 1fr 1fr;
         background-color: var(--secondary-color);
-
-        height: 100%;
         text-align: left;
         font-family: var(--body-text);
         align-items: center;
         justify-content: center;
- 
+        width: auto;
     }
     .join-box{
         grid-row: 4;
@@ -53,9 +51,8 @@
     }
 
     
-    .spotlight-box1, .spotlight-box2{
+    .spotlight-box1, .spotlight-box2, .spotlight-box3{
        flex-direction: column;
-
        border: 1px solid whitesmoke;
        font-weight: bold;
        color: white; 
