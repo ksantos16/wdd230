@@ -1,7 +1,7 @@
 @media only screen and (min-width: 32.5em) {
  
-    .main-container{
-        grid: display;
+    .main-container main{
+       display: grid;
         grid-template-columns: 1fr 260px;
         grid-template-rows: repeat(5,fr);
         grid-gap: 10px;
@@ -19,7 +19,7 @@
         grid-row: 2;
     }
     
-    .hero-box, .news-box, .join-box{
+    .news-box, .join-box{
         background-color: var(--secondary-color);
         color: white;
         text-align: left;

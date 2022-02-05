@@ -6,6 +6,16 @@
     --body-text: 'Lato', sans-serif;
 }
 
+
+.banner {
+    left: 15em;
+    display: flex;
+    justify-content: center;
+    background-color: var(--accent-color);
+    padding: 1em;
+}
+
+
 .header-container{
     display: flex;
     justify-content:space-between;
@@ -35,6 +45,7 @@ h2{
 
 
 nav button{
+    display: flex;
     margin: .2rem 2vw;
     background: rgba(0,0,0,0.5);
     border: none;
@@ -51,7 +62,7 @@ nav ul{
 }
 
 nav ul li a{
-    display: block;
+    display: none;
     padding: .8rem 2vw;
     text-decoration: none;
     color: white;
@@ -64,7 +75,7 @@ nav ul li .active a{
 }
 
 nav ul li a:hover{
-    color: white;
+    color: var(--accent-color);
 
 }
 
@@ -102,7 +113,7 @@ nav ul.open {display:block;}
     margin-top: 1rem;
 }
 
-.hero-box, .news-box, .event-box, .weather-box, .join-box{
+.news-box, .event-box, .weather-box, .join-box{
     background-color: var(--secondary-color);
     color: white;
     text-align: left;
@@ -138,10 +149,6 @@ nav ul.open {display:block;}
     display: none;
 }
 
-.footer-container2{
-    display: none;
-}
-
 .footer-container{
     display: flex;
     flex-direction: column;
@@ -149,24 +156,19 @@ nav ul.open {display:block;}
     color: white;
     font-family: var(--body-text);
     align-items: center;
+    width: 100%;
 }
 
 .footer-logo{
     filter: drop-shadow(5px 5px 5px rgba(8, 8, 8, 0.4));
 }
 
-
 .address{
     text-align: center;
 }
 
-.contact{
-    text-align: center;
-}
-
-.contact a{
-    text-decoration: none;
-    color: var(--primary-color);
+.contact  a{
+    color: white;
 }
 
 .contact a:hover{
@@ -177,6 +179,9 @@ nav ul.open {display:block;}
     margin-top: 1rem;
 }
 
-.copyright{
+#currentyear ,#lastmod{
     text-align: center;
+}
+.footer-container2{
+    display: none;
 }
