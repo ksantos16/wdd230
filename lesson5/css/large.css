@@ -122,6 +122,7 @@
         justify-content: center;
         justify-content: space-between;
         text-align: center;
+        border-top: 1px var(--primary-color) solid;
     }
 
 }
