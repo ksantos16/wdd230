@@ -51,7 +51,8 @@ const toadysdate = new Date();
 const dayName = daynames[toadysdate.getDay()];
 const monthName = months[toadysdate.getMonth()];
 const currentdate = `${dayName}, ${monthName} ${toadysdate.getDate()}, ${toadysdate.getFullYear()}`;
-const currentyear = document.querySelector(".currentyear")
+
+const currentyear = document.querySelector("#currentyear")
 currentyear.innerHTML = toadysdate.getFullYear();
 
 const currentyear2 = document.querySelector("#currentyear2")
