@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <title>WDD230 Aberdeen Chamber of Commerce</title>
     <meta name="author" content="Kira Santos">
-    <meta name="description" content="To organize and develop the project Home Page for WDD 230.">
+    <meta name="description"
+        content="To organize and develop the project Home Page for Aberdeen Chamber of Commerce Homepage.">
     <meta http-equiv=" X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,9 +36,9 @@
     </div>
     <header>
         <nav>
-            <div class="logos-container">
+            <div class="logo-container">
                 <picture>
-                    <img class="logo" src="images/a-removebg-preview.png"
+                    <img class="logo" src="images/aberdeenlogo.webp"
                         alt="picture of red train representing aberdeen chamber of commerce logo" width="100">
             </div>
             <div class="social">
@@ -62,11 +63,17 @@
 
 
     <main class="main-container">
-        <h1 class=" welcome">Welcome to Aberdeen</h1>
-        <picture>
-            <img class="aberdeen" src="images/oldtownaberdeen.jpg" alt="picture of the town of Aberdeen">
-        </picture>
-        <h2 class="calltoaction">Join the Chamber</h2>
+        <section class="hero-container">
+            <h1 class=" welcome">Welcome to Aberdeen</h1>
+
+            <picture>
+                <source media="(min-width: 32.5em) and (max-width:949px)" srcset="images/400.jpg">
+                <source media="(min-width 950px)" srcset="images/600.jpg">
+                <img class="aberdeen" src="images/200.jpg" alt="picture of people talking around a table in a office">
+            </picture>
+
+            <h2 class="calltoaction">Join the Chamber</h2>
+        </section>
         <article class="news-box">
             <h3>New Release</h3>
             <p>
@@ -87,10 +94,10 @@
         </div>
         <div class="weather-box">
             <picture><img class="weather" src="images/weather.png" alt=""></picture>
-            <h2><span id="temp" 50>50</span>°F</h2>
+            <h2><span id="temp">50</span>°F</h2>
             <p>Scattered Showers</p>
             <p>
-                Wind Speed: <span id="windSpeed" 4.8>4.8</span>km/h<br>
+                Wind Speed: <span id="windSpeed">4.9</span>km/h<br>
                 Wind Chill: <span id="windChill"></span>
             </p>
         </div>

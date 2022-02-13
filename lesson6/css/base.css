@@ -36,14 +36,14 @@ nav{
     grid-template-columns: 1fr  1fr 1fr;
 }
 
-.logos.container{
+nav div.logo-container{
     grid-column: 1;
 }
 
 .logo{
     filter: drop-shadow(5px 5px 5px rgba(3, 3, 3, 0.4));
     margin-top: 1rem;
-    width: 180px;
+    width: 100%;
     align-self: center;
 }
 
@@ -65,7 +65,6 @@ nav{
 
 #hamburgerBtn{
     grid-column: 3;
-    /* margin-top: 2rem; */
     justify-content: left;
     margin: 2rem;
     display: block;
@@ -123,7 +122,7 @@ nav ul.open {display:block;}
 #hamburgerBtn.open span:nth-child(1) {display:none;}
 #hamburgerBtn.open span:nth-child(2) {display:block;}
 
-
+/* MAIN */
 
 .main-container{
     display: grid;
@@ -133,12 +132,17 @@ nav ul.open {display:block;}
     text-align: center;
 }
 
-picture img{
-    width: 100%;
+main picture.hero-container{
+    grid-column: 1;
+
 }
 
+main picture.hero-container img{
+    width: 100%;
 
-h1{
+}
+
+.welcome{
     position: absolute;
     top: 1rem;
     left: 1rem;
@@ -149,7 +153,7 @@ h1{
 
 .calltoaction{
         position: absolute;
-        top: 50vw;
+        top: 10vw;
         left: 15px;
         background: var(--accent-color);
         padding: .5rem;
