@@ -1,0 +1,19 @@
+@media only screen and (min-width: 500px) {
+
+body{
+    max-width: 300px;
+
+}
+
+h1{
+    text-align: center;
+}
+
+picture{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    
+}
+
+}
