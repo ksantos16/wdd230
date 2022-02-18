@@ -88,6 +88,18 @@
         margin-bottom: 1rem;
     }
     
+    /* .event-box, .weather-box, .join-box{
+        height: 400px;
+    }
+
+    .spotlight-box1, .spotlight-box2, .spotlight-box3{
+        height: 425px;
+    } */
+
+    .pottery, .coffee, .flowers, .weather{
+        justify-content: center;
+        width: 100%;
+    }
     .event-box{
         grid-column: 1;
         grid-row: 1;
