@@ -8,6 +8,7 @@
 
 img {
     width: 100%;
+    display: inline-block;
 }
 
 h2{
@@ -51,8 +52,6 @@ nav div.logo-container{
 .logo{
     filter: drop-shadow(5px 5px 5px rgba(3, 3, 3, 0.4));
     margin-top: 1rem;
-    width: 100%;
-    align-self: center;
 }
 
 .social {
@@ -185,11 +184,6 @@ nav ul.open {display:block;}
     color: #fff;
     font-weight: bold;
     margin: 0;
-}
-
-.pottery, .coffee, .flowers, .weather{
-    justify-content: center;
-    width: 250px;
 }
 
 .spotlight-box2{
