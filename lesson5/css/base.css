@@ -6,17 +6,25 @@
     --body-text: 'Lato', sans-serif;
 }
 
+img {
+    width: 100%;
+}
+
 h2{
     font-family: var(--heading-text);
     color: white;
     font-size: 1.5rem;
 }
 
-.banner{
+#inactive-banner{
     display: none;
 }
 
-.banner {
+#banner{
+    display: block;
+}
+
+#banner {
     left: 15em;
     display: flex;
     justify-content: center;
@@ -36,14 +44,14 @@ nav{
     grid-template-columns: 1fr  1fr 1fr;
 }
 
-.logos.container{
+nav div.logo-container{
     grid-column: 1;
 }
 
 .logo{
     filter: drop-shadow(5px 5px 5px rgba(3, 3, 3, 0.4));
     margin-top: 1rem;
-    width: 180px;
+    width: 100%;
     align-self: center;
 }
 
@@ -65,7 +73,6 @@ nav{
 
 #hamburgerBtn{
     grid-column: 3;
-    /* margin-top: 2rem; */
     justify-content: left;
     margin: 2rem;
     display: block;
@@ -123,22 +130,17 @@ nav ul.open {display:block;}
 #hamburgerBtn.open span:nth-child(1) {display:none;}
 #hamburgerBtn.open span:nth-child(2) {display:block;}
 
-
+/* MAIN */
 
 .main-container{
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 1rem;
     position: relative;
-    text-align: center;
-}
-
-picture img{
-    width: 100%;
 }
 
 
-h1{
+.welcome{
     position: absolute;
     top: 1rem;
     left: 1rem;
@@ -149,7 +151,7 @@ h1{
 
 .calltoaction{
         position: absolute;
-        top: 50vw;
+        top: 20vw;
         left: 15px;
         background: var(--accent-color);
         padding: .5rem;
@@ -168,6 +170,7 @@ h1{
     padding: 1rem;
     text-align: center;
     box-shadow:1px 1px 5px 3px dimgray;
+    margin: 0;
 }
 
 .spotlight-box1, .spotlight-box2, .spotlight-box3{
@@ -181,11 +184,12 @@ h1{
     text-align: center;
     color: #fff;
     font-weight: bold;
+    margin: 0;
 }
 
-.rhodes, .averys, .weather img{
+.pottery, .coffee, .flowers, .weather{
     justify-content: center;
-    width:fit-content;
+    width: 250px;
 }
 
 .spotlight-box2{

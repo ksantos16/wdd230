@@ -1,10 +1,15 @@
 const bannerDate = new Date()
 const bannerDay = bannerDate.getDay();
-const banner = document.querySelector('.banner');
 
 
-if (bannerDay != 1 || bannerDay != 2) {
-    // return banner
-};
+
+if (bannerDay === 1 || bannerDay === 2) {
+    let banner1 = document.querySelector("#banner");
+    banner1.innerHTML;
+} else {
+    let banner2 = document.querySelector("#inactive-banner")
+    banner2.innerHTML;
+}
+
 
 

@@ -25,18 +25,19 @@
     <link rel="stylesheet" href="css/large.css">
     <script defer src="js/scripts.js"></script>
     <script defer src="js/banner.js"></script>
+    <script defer src="/lesson6/js/windchill.js"></script>
 
 </head>
 
 <body>
-    <div class="banner">
+    <div id="inactive-banner" id="banner">
         <h2>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.!</h2>
     </div>
     <header>
         <nav>
             <div class="logos-container">
                 <picture>
-                    <img class="logo" src="images/a-removebg-preview.png"
+                    <img class="logo" src="images/aberdeenlogo.webp"
                         alt="picture of red train representing aberdeen chamber of commerce logo" width="100">
             </div>
             <div class="social">
@@ -62,10 +63,14 @@
 
     <main class="main-container">
         <h1 class=" welcome">Welcome to Aberdeen</h1>
-        <picture>
-            <img class="aberdeen" src="images/oldtownaberdeen.jpg" alt="picture of the town of Aberdeen">
-        </picture>
-        <h2 class="calltoaction">Join the Chamber</h2>
+        <section class="hero-container">
+            <picture>
+                <source media="(min-width: 32.5em) and (max-width:949px)" srcset="images/aberdeenlrg.jpeg">
+                <source media="(min-width: 950px)" srcset="images/aberdeenport.jpeg">
+                <img class="aberdeen" src="images/aberdeensmall.jpeg" alt="picture of little historic town Aberdeen">
+            </picture>
+            <h2 class="calltoaction">Join the Chamber</h2>
+        </section>
         <article class="news-box">
             <h3>New Release</h3>
             <p>
@@ -85,12 +90,12 @@
             <p>Join us for the grand opening of The Diamond Shack, Thursday at 1:00 p.m. more info...</p>
         </div>
         <div class="weather-box">
-            <picture><img class="weather" src="images/weather.png" alt=""></picture>
-            <h2>50°F</h2>
+            <picture><img class="weather" src="images/weather.png" alt="pictue of a sun and cloud"></picture>
+            <h2><span id="temp">50</span>°F</h2>
             <p>Scattered Showers</p>
             <p>
-                Wind Speed: <span id="windSpeed">4.8</span>km/h
-                Wind Chill:<span id="windChill"></span>
+                Wind Speed: <span id="windSpeed">4.9</span>km/h<br>
+                Wind Chill: <span id="windChill"></span>
             </p>
         </div>
         <div class="join-box">
@@ -100,32 +105,32 @@
 
         <!-- <div class="border-spotlight-box"> -->
         <div class="spotlight-box1">
-            <h3>Rhode's</h3>
+            <h3>Pottery Shop</h3>
             <picture>
-                <img class="rhodes" src="images/logo3.png" alt="">
+                <img class="pottery" src="images/logo3.png" alt="">
             </picture>
-            <h4> A Rock Carving Company</h4>
-            <p>info@rhodesrocks.com<br>
+            <h4>Pottery Shop</h4>
+            <p>info@PotteryShop.com<br>
                 +999-999-9999
             </p>
         </div>
         <div class="spotlight-box2">
-            <h3>Avery's</h3>
+            <h3>Coffee Shop</h3>
             <picture>
-                <img class="averys" src="images/logo2w.png" alt="">
+                <img class="coffee" src="images/logo2.png" alt="">
             </picture>
             <h4>"Only the best grounds!"</h4>
-            <p>contact@averyscoffee.com<br>
+            <p>contact@coffeeshop.com<br>
                 +999-999-9999
             </p>
         </div>
         <div class="spotlight-box3">
-            <h3>A Very Grand Affair</h3>
+            <h3>flovers</h3>
             <picture>
-                <img class="grandAffair" src="images/logo1.png" alt="">
+                <img class="flowers" src="images/logo1.png" alt="">
             </picture>
-            <h4>A formal attire shop</h4>
-            <p>info@grandaffair.com<br>
+            <h4>Flower Shop</h4>
+            <p>info@flovers.com<br>
                 +999-999-9999
             </p>
         </div>
