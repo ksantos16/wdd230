@@ -5,9 +5,24 @@
     --heading-text: 'Playfair Display', serif;
     --body-text: 'Lato', sans-serif;
 }
+
 img{
     width: 100%;
 }
+
+.aberdeen{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-row: 1 / 3;
+}
+
+.pottery, .coffee, .flowers, .weather{
+    justify-content: center;
+    width: 100%;
+    object-fit: cover;
+}
+
 
 h2{
     font-family: var(--heading-text);
@@ -15,11 +30,15 @@ h2{
     font-size: 1.5rem;
 }
 
-.banner{
+.show{
     display: block;
 }
 
-.banner {
+#banner{
+    display: none;
+}
+
+#banner {
     left: 15em;
     display: flex;
     justify-content: center;
@@ -39,21 +58,18 @@ nav{
     grid-template-columns: 1fr  1fr 1fr;
 }
 
-nav div.logo-container{
-    grid-column: 1;
-}
-
 .logo{
     filter: drop-shadow(5px 5px 5px rgba(3, 3, 3, 0.4));
-    margin-top: 1rem;
-    width: 100%;
-    align-self: center;
+    margin-left: 1rem;
+    margin-top: 2rem;
 }
 
 .social {
-    display: flex;
-    align-items: center;
+    grid-column: 2;
     justify-content: right;
+    align-self: center;
+    margin-right: 1rem;
+    display: flex;
 }
     
 .linkedin{
@@ -68,11 +84,12 @@ nav div.logo-container{
 
 #hamburgerBtn{
     grid-column: 3;
-    justify-content: left;
+    justify-content: right;
     margin: 2rem;
+    margin-right: 2rem;
     display: block;
-    width: 10vw;
-    height: 7vh;
+    width: 40px;
+    height: 40px;
     background: rgba(0,0,0,0.5);
     border: none;
     font-size: 1.4rem;
@@ -132,18 +149,8 @@ nav ul.open {display:block;}
     grid-template-columns: 1fr;
     row-gap: 1rem;
     position: relative;
-    text-align: center;
 }
 
-main picture.hero-container{
-    grid-column: 1;
-
-}
-
-main picture.hero-container img{
-    width: 100%;
-
-}
 
 .welcome{
     position: absolute;
@@ -156,7 +163,7 @@ main picture.hero-container img{
 
 .calltoaction{
         position: absolute;
-        top: 10vw;
+        top: 20vw;
         left: 15px;
         background: var(--accent-color);
         padding: .5rem;
@@ -175,7 +182,16 @@ main picture.hero-container img{
     padding: 1rem;
     text-align: center;
     box-shadow:1px 1px 5px 3px dimgray;
+    margin: 0;
 }
+
+.pottery, .flowers, .weather{
+   width: 50%;
+}
+
+.coffee{
+    width: 80%;
+ }
 
 .spotlight-box1, .spotlight-box2, .spotlight-box3{
     background-color: var(--secondary-color);
@@ -188,15 +204,7 @@ main picture.hero-container img{
     text-align: center;
     color: #fff;
     font-weight: bold;
-}
-
-.rhodes, .averys, .weather img{
-    justify-content: center;
-    width:fit-content;
-}
-
-.spotlight-box2{
-    margin-bottom: 1rem;
+    margin: 0;
 }
 
 .spotlight-box3{
@@ -212,6 +220,7 @@ main picture.hero-container img{
     align-items: center;
     width: 100%;
     text-align: center;
+    margin-top: 1rem;
 }
 
 .footer-logo{
@@ -239,4 +248,10 @@ main picture.hero-container img{
 }
 .footer-container2{
     display: none;
+}
+
+/* DISCOVER */
+
+main figure .discover-photo{
+    float: right;
 }

@@ -145,6 +145,9 @@ nav ul.open {display:block;}
     color: white;
     font-family: var(--body-text);
     align-items: center;
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
 }
 
 .footer-logo{
@@ -155,11 +158,11 @@ nav ul.open {display:block;}
     text-align: center;
 }
 
-.email a,.phone a,.location  a{
+.contact  a{
     color: white;
 }
 
-.email a:hover,.phone a:hover,.location a:hover{
+.contact a:hover{
     color: var(--accent-color);
 }
 
@@ -169,4 +172,7 @@ nav ul.open {display:block;}
 
 #currentyear ,#lastmod{
     text-align: center;
+}
+.footer-container2{
+    display: none;
 }

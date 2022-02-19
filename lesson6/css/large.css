@@ -6,15 +6,13 @@
     }
     
     .linkedin{
-        grid-column: 1;
-        width: 20px;
-        padding: .2rem;
+        width: 35px;
+        padding: .3rem;
     } 
     
     .twitter{
-        grid-column: 2;
-        width: 20px;
-        padding: .2rem;
+        width: 35px;
+        padding: .3rem;
     }
         
     .logo-container{
@@ -24,13 +22,14 @@
         
     }
 
-    .logo-container{
+    .logo{
         width: 350px;
     }
 
     .social{
-        grid-column: 4;
-        align-items: left;
+        grid-column: 2;
+        align-items: right;
+        margin-right: 5rem;
     }
     
     nav{
@@ -51,35 +50,30 @@
         display: flex;
     }
 
+    nav ul li{
+        justify-items: stretch;
+    }
+
     nav ul li a{
     border-top: none;
-}
+    }
 
     .main-container{
         display: grid;
         grid-template-columns: repeat(4,1fr);
-        grid-template-rows: repeat(3,1fr);
-        grid-row-gap: 3px;
-        
     }
 
     .hero-container{
-        margin-top: 1rem;
+ 
         grid-column: 2/4;
-        grid-row: 1/3;
-        height: 100%;
-        object-fit: fill;
-    }
+        grid-row: 1 / 3;
 
-    picture .aberdeen img{
-        grid-column: span 2; 
-        grid-row: span 2;
-        object-fit: cover;
     }
+ 
     .calltoaction{
         position: absolute;
-        left: 55rem;
-        top: 5rem;
+        left: 20rem;
+        top: 7rem;
     }
 
     h1{
@@ -92,56 +86,57 @@
         text-shadow: 2px 2px rgb(226, 225, 225);
     }
 
+
     .news-box{
         grid-column: 2/4;
         grid-row: 3;
-        margin-bottom: 1rem;
+        margin-top: -.5rem;
     }
     
     .event-box{
         grid-column: 1;
         grid-row: 1;
-        margin-top: 1rem;
- 
-
     }
 
     .join-box{
         grid-column: 1;
         grid-row: 3;
-        margin-bottom: 1rem;
+
     }
 
     .weather-box{
         grid-column: 1;
         grid-row: 2;
-        margin: 0;
+        margin-top: -1rem;
+        margin-bottom: -1rem;
+        max-width: 100%;
     }
-    .weather img{
-        width: 100px;
+
+    .spotlight-box{
+        grid-column: 4;
+        grid-row: 1/4;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: stretch;
     }
-   
+
 
     .spotlight-box3{
         display: block; 
     }
 
+
     .spotlight-box1{
         grid-column: 4;
- 
-
+        min-width: 350px;
     }
 
     .spotlight-box2{
         grid-column: 4;
-
-    
      }
 
     .spotlight-box3{
        grid-column: 4;
-       margin-top: -.3rem;
-       margin-bottom: 1rem;
 
      }
 

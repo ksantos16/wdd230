@@ -108,59 +108,21 @@
         border: 1px solid white;    
      }
 
-     .footer-container{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        background-color: var(--secondary-color);
-        color: white;
-        font-family: var(--body-text);
+     .author{
+        display: none;
     }
 
-    .footer-logo{
-        margin-left: 1rem;
-        grid-column: 1;
-        grid-row: 1;
-        margin-top: 1rem;
+    .author2{
+        display: block;
     }
 
-    address{
-        float: left;
-        grid-column: 2;
-        grid-row: 1;
-        text-align: left;
-        margin-left: -7rem;
-    }
-    
-    .address{
-        float: left;
-        grid-column: 2;
-        grid-row: 1;
-        text-align: left;
-    }
+    .author2{
+       grid-column: 1/4;
+       grid-row: 2;
+       justify-content: center;
+       justify-content: space-between;
+       text-align: center;
+       border-top: 1px var(--primary-color) solid;
+   }
 
-
-    .email{
-        grid-column: 4;
-        grid-row: 1;
-        margin-top: 1rem;
-    }
-
-    .phone{
-        grid-column: 4;
-        grid-row: 1;
-        margin-top: 1rem;
-    }
-
-    .location{
-            grid-column: 4;
-            grid-row: 1;
-            margin-top: 1rem;
-    }
-
-    #currentyear #lastmod{
-        grid-row: 3;
-        grid-column: 1/4;
-
-    }
 }

@@ -56,35 +56,26 @@
         grid-row: 4;
         grid-column: 1/3;
     }
-    
 
-    .spotlight-box1{
-        grid-column: 1;
-
+    .spotlight-box{
+        grid-column: 1/3;
+        grid-row: 3;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
     }
-
-    .spotlight-box2{
-        grid-column: 2;
-     }
-
+    
     .spotlight-box3{
         display: none;
     }
 
     .event-box{
-        grid-column: 1;
-        grid-row: 5;
-        margin-bottom: 1rem;
+        min-width: 200px;
     }
 
     .weather-box{
-        border: 1px solid whitesmoke;
-        margin-left: 1vw;
-        grid-column: 2;
-        grid-row: 5;
-        margin-bottom: 1rem;
+     max-width: 240px;
     }
-    
+  
     .footer-container{
         display: none;
     }
@@ -101,6 +92,7 @@
         color: white;
         font-family: var(--body-text);
         align-items: center;
+        margin-top: 1rem;
     }
 
     .footer-logo2{
@@ -144,7 +136,40 @@
 
     .author2{
         display: none;
+    
     }
 
+/* DISCOVER */
+
+.discover-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: .5rem;
+    padding: .3rem;
+}
+
+.one {
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: justify;
+    font-size: 1rem;
+}
+
+.two, .four, .six, .eight{
+    grid-column: 1;
+    margin-right: 5px;
+}
+
+.three, .five, .seven, .nine{
+    grid-column: 2;
+}
+
+.dis-photo{
+    background: none;
+    padding: .2px;
+    width: 100%;
+
+}
 
 }

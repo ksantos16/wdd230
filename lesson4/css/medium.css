@@ -62,6 +62,67 @@
     .spotlight-box3{
         display: none;
     }
+    .footer-container{
+        display: none;
+    }
 
+    .footer-container2{
+        display: block;
+    }
+    
+    .footer-container2{
+        display: grid;
+        grid-template-columns: 100px 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        background-color: var(--secondary-color);
+        color: white;
+        font-family: var(--body-text);
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .footer-logo2{
+        grid-column: 1;
+        grid-row: 1;
+        justify-content: center;
+        margin-left: .5rem;
+        margin-top: .5rem;
+    }
+    
+    .address2{
+        grid-column: 2;
+        grid-row: 1;
+        text-align: left;
+    }
+
+
+    .contact2{
+        grid-column: 3;
+        grid-row: 1;
+        text-align: center;
+    }
+
+    .contact2 a{
+        text-decoration: none;
+        color: var(--primary-color);
+    }
+    
+    .contact2 a:hover{
+        color: var(--accent-color);
+    }
+
+    .author{
+        grid-column: 1/4;
+        grid-row: 2;
+        justify-content: center;
+        justify-content: space-between;
+        text-align: center;
+        border-top: 1px var(--primary-color) solid;
+    }
+
+    .author2{
+        display: none;
+    
+    }
 
 }

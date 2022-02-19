@@ -1,14 +1,10 @@
+const primaryNav = document.querySelector("#primaryNav")
+const hamburgerBtn = document.querySelector("#hamburgerBtn")
 
-function toggleMenu() {
-    document.getElementById("primaryNav").classList.toggle("open");
-    document.getElementById("hamburgerBtn").classList.toggle("open");
-}
-
-const x = document.querySelector("#hamburgerBtn");
-x.onclick = toggleMenu;
-
-
-// x.addEventListener('click', () => { toggleMenu.classList.toggle("x") }, false);
+hamburgerBtn.addEventListener("click", () => {
+    document.querySelector("#primaryNav").classList.toggle("open");
+    document.querySelector("#hamburgerBtn").classList.toggle("open");
+});
 
 
 // const options = {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'};
@@ -16,6 +12,13 @@ x.onclick = toggleMenu;
 
 const lastmod = document.querySelector('#lastmod');
 lastmod.innerHTML = `Last Modification: ${document.lastModified}`;
+
+const lastmod2 = document.querySelector('#lastmod2');
+lastmod2.innerHTML = `Last Modification: ${document.lastModified}`;
+
+const lastmod3 = document.querySelector('#lastmod3');
+lastmod3.innerHTML = `Last Modification: ${document.lastModified}`;
+
 
 //long day names array
 const daynames = [
@@ -48,20 +51,14 @@ const toadysdate = new Date();
 const dayName = daynames[toadysdate.getDay()];
 const monthName = months[toadysdate.getMonth()];
 const currentdate = `${dayName}, ${monthName} ${toadysdate.getDate()}, ${toadysdate.getFullYear()}`;
+
 const currentyear = document.querySelector("#currentyear")
-currentyear.innerHTML = `&copy ${toadysdate.getFullYear()} Aberdeen Chamber of Commerce | Kira Santos | WDD 230 Project |`;
+currentyear.innerHTML = toadysdate.getFullYear();
+
+const currentyear2 = document.querySelector("#currentyear2")
+currentyear2.innerHTML = toadysdate.getFullYear();
+
+const currentyear3 = document.querySelector("#currentyear3")
+currentyear3.innerHTML = toadysdate.getFullYear();
+
 document.getElementById('currentdate').textContent = currentdate;
-// document.querySelector("#currentyear").textContent = year;
-
-
-// function currentyear(x) {
-//     if (x.matches) {
-//         document.querySelector("currentyear") = `&copy ${toadysdate.getFullYear()} Aberdeen Chamber of Commerce
-//     Kira Santos
-//     WDD 230 Project`;
-//     } else { document.querySelector("currentyear") = `&copy ${toadysdate.getFullYear()} Aberdeen Chamber of Commerce | Kira Santos | WDD 230 Project |`; }
-// }
-
-// let(x) = window.matchMedia("(min-width: 400px)")
-// currentyear(x)
-// x.addListener(currentyear)

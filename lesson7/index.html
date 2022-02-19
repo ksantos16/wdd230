@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <title>WDD230 Aberdeen Chamber of Commerce</title>
     <meta name="author" content="Kira Santos">
-    <meta name="description"
-        content="To organize and develop the project Home Page for Aberdeen Chamber of Commerce Homepage.">
+    <meta name="description" content="To organize and develop the project Home Page for Aberdeen Chamber of Commerce.">
     <meta http-equiv=" X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,17 +25,17 @@
     <link rel="stylesheet" href="css/large.css">
     <script defer src="js/scripts.js"></script>
     <script defer src="js/banner.js"></script>
-    <script defer src="js/windchill.js"></script>
+    <script defer src="/lesson6/js/windchill.js"></script>
 
 </head>
 
 <body>
-    <div class="banner">
-        🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.!
+    <div id="banner">
+        <h2>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.!</h2>
     </div>
     <header>
         <nav>
-            <div class="logo-container">
+            <div class="logos-container">
                 <picture>
                     <img class="logo" src="images/aberdeenlogo.webp"
                         alt="picture of red train representing aberdeen chamber of commerce logo" width="100">
@@ -55,7 +54,7 @@
                 <li><a href="/chamber/html/discover.html">Discover</a></li>
                 <li><a href="/chamber/html/directory.html">Directory</a></li>
                 <li><a href="/chamber/html/join.html">Join</a></li>
-                <li><a href="/chamber/html/contact.html">Contact</a></li>
+                <li><a href="/lesson7/discover.html">Contact</a></li>
             </ul>
         </nav>
         <p class="date"><span id="currentdate"></span></p>
@@ -63,16 +62,13 @@
 
 
     <main class="main-container">
+        <h1 class=" welcome">Welcome to Aberdeen</h1>
         <section class="hero-container">
-            <h1 class=" welcome">Welcome to Aberdeen</h1>
-
             <picture>
-                <source media="(min-width: 32.5em) and (max-width:949px)" srcset="images/office400.jpg">
-                <source media="(min-width: 950px)" srcset="images/office800.jpg">
-                <img class="aberdeen" src="images/office200.jpg"
-                    alt="picture of people talking around a table in a office">
+                <source media="(min-width: 32.5em) and (max-width:949px)" srcset="images/aberdeenmed.jpg">
+                <source media="(min-width: 950px)" srcset="images/IMG-20220115-WA.jpeg">
+                <img class="aberdeen" src="images/aberdeensmall.jpg" alt="picture of little historic town Aberdeen">
             </picture>
-
             <h2 class="calltoaction">Join the Chamber</h2>
         </section>
         <article class="news-box">
@@ -109,19 +105,19 @@
 
         <div class="spotlight-box">
             <div class="spotlight-box1">
-                <h3>Rhode's</h3>
+                <h3>Pottery Shop</h3>
                 <picture>
                     <img class="pottery" src="images/logo3.png" alt="">
                 </picture>
-                <h4>Rock Carving Shop</h4>
-                <p>info@rhodes.com<br>
+                <h4>Pottery Shop</h4>
+                <p>info@PotteryShop.com<br>
                     +999-999-9999
                 </p>
             </div>
             <div class="spotlight-box2">
                 <h3>Coffee Shop</h3>
                 <picture>
-                    <img class="coffee" src="images/logo2w.png" alt="">
+                    <img class="coffee" src="images/logo2.png" alt="">
                 </picture>
                 <h4>"Only the best grounds!"</h4>
                 <p>contact@coffeeshop.com<br>
@@ -129,12 +125,12 @@
                 </p>
             </div>
             <div class="spotlight-box3">
-                <h3>A Very Grand Affair</h3>
+                <h3>flovers</h3>
                 <picture>
                     <img class="flowers" src="images/logo1.png" alt="">
                 </picture>
-                <h4>Formal Attire</h4>
-                <p>info@grandaffair.com<br>
+                <h4>Flower Shop</h4>
+                <p>info@flovers.com<br>
                     +999-999-9999
                 </p>
             </div>
