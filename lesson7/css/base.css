@@ -233,9 +233,3 @@ nav ul.open {display:block;}
 .footer-container2{
     display: none;
 }
-
-/* DISCOVER */
-
-main figure .discover-photo{
-    float: right;
-}

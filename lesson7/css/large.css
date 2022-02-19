@@ -161,3 +161,56 @@
     }
 
 }
+/* DISCOVER */
+
+img{
+    width: 100%;
+}
+
+.discover-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: .5rem;
+    padding: 1rem;
+}
+
+.one{
+    grid-column: 4/1;
+}
+
+.one figure{
+    float: right;
+}
+
+.two{
+    grid-column: 1;
+}
+
+.three{
+    grid-column: 2;
+}
+
+.four{
+    grid-column: 3;
+}
+
+.five{
+    grid-column: 4;
+}
+
+.six{
+    grid-column: 1;
+}
+
+.seven{
+    grid-column: 2;
+}
+
+.eight{
+    grid-column: 3;
+}
+
+.nine{
+    grid-column: 4;
+}
