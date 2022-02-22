@@ -64,30 +64,24 @@ currentyear3.innerHTML = toadysdate.getFullYear();
 document.getElementById('currentdate').textContent = currentdate;
 
 
-// initialize display elements
-const todayDisplay = document.querySelector(".days");
+function lastVisit() {
 
-// show todays date.
-let newDate = Date.now();
+    let today = new Date();
+    let millisecondsToDays = 86400000;
+    let prior = localStorage.getItem('lastvisit');
+    let obj = new Date(prior);
 
-// store the day value
-localStorage.setItem("days-ls", toadysdate);
+    if (prior > 0) {
+        visit = ((today - obj) / millisecondsToDays).toFixed(0);
+    } else {
+        visit = today +
+            " This is your first visit. Welcome to Aberdeen Chamber of Commerce!"
+    }
 
-// get the stored value in localStorage
-let day = window.localStorage.getItem("days-ls");
-
-// To calculate the time difference of two dates
-let differenceInTime = newDate - day;
-
-// determine if this is the first visit or display the number of visits.
-if (differenceInTime > 0) {
-    todayDisplay.textContent = `Welcome to The Aberdeen Chamber of Commerce Website!`;
-} else {
-    todayDisplay.textContent = differenceInTime;
+    document.getElementById("lastv").innerHTML = visit + " days ago. Welcome Back!";
+    localStorage.setItem('lastvisit', today);
 }
-
-
-
+lastVisit();
 
 
 
