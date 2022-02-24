@@ -1,0 +1,51 @@
+
+table {
+	margin: 10px auto;
+	border: thin solid lightgray;
+	box-shadow: 10px 10px 20px lightslategray;
+	border-collapse: collapse;
+    font-family: Ubuntu, sans-serif;
+}
+
+caption {
+  padding: 10px;
+  caption-side: bottom;
+	color: black;
+	font-size: .85rem;
+    background-color: rgb(100, 198, 237);
+    box-shadow: 10px 10px 20px lightslategray;
+}
+
+thead tr:first-child{
+	background-color:lightblue;
+	color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+thead tr:nth-child(2){
+    background-color: rgb(151, 177, 226);
+    color: whitesmoke;
+}
+
+th, td {
+	padding: 7px 15px;
+	border: 1px solid lightgray;
+}
+
+th {
+	background-color: var(--back2);
+}
+
+td {
+	text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: lightblue;
+}
+
+.cell-highlight {
+    background-color: rgb(151, 177, 226);
+    color: whitesmoke
+}
