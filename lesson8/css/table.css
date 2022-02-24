@@ -49,3 +49,8 @@ tbody tr:nth-child(odd) {
     background-color: rgb(151, 177, 226);
     color: whitesmoke
 }
+
+.blackFriday{
+    font-style: italic;
+    font-weight: lighter;
+}
