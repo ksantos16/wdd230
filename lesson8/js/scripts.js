@@ -64,6 +64,7 @@ currentyear3.innerHTML = toadysdate.getFullYear();
 document.getElementById('currentdate').textContent = currentdate;
 
 
+
 function lastVisit() {
 
     let today = new Date();
@@ -84,6 +85,7 @@ function lastVisit() {
 lastVisit();
 
 
-
+const formDate = document.querySelector('.formDate');
+formDate.innerHTML = document.lastModified;
 
 

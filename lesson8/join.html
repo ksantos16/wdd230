@@ -70,6 +70,8 @@
 
                 <label class="top">First Name* <input type="text" name="fname" required></label>
                 <label class="top">Last Name* <input type="text" name="lname" required></label>
+                <label class="top" for="title">Title <input type="text" name="title" pattern="[a-z,-, ]{7}"
+                        title="at least 7 letters"></label>
                 <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com"
                         required></label>
                 <label class="top">Phone* <input type="tel" name="phone" required></label>
@@ -95,7 +97,7 @@
             </fieldset>
 
             <input class="button" type="submit" value="Submit Application">
-            <label class="top"><input type="hidden" name="completedDate"></label>
+            <label class="formDate"><input type="hidden" name="completedDate"></label>
 
         </form>
 
