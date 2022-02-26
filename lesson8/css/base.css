@@ -5,7 +5,7 @@
     --heading-text: 'Playfair Display', serif;
     --body-text: 'Lato', sans-serif;
 }
-
+ /* ------------- IMAGES ------------------- */
 img{
     width: 100%;
 }
@@ -23,6 +23,15 @@ img{
     object-fit: cover;
 }
 
+.pottery, .flowers, .weather{
+    width: 50%;
+ }
+ 
+ .coffee{
+     width: 80%;
+  }
+
+ /* ---------------HEADLINES----------------- */
 
 h2{
     font-family: var(--heading-text);
@@ -33,6 +42,8 @@ h2{
 .show{
     display: block;
 }
+
+ /* -------------------BANNER----------------  */
 
 #banner{
     display: none;
@@ -48,14 +59,10 @@ h2{
     text-align: center;
 }
 
+ /* -------------- HEADER -------------------  */
 
 header{
     background-color: var(--secondary-color);
-}
-
-nav{
-    display: grid;
-    grid-template-columns: 1fr  1fr 1fr;
 }
 
 .logo{
@@ -96,17 +103,15 @@ nav{
     color: var(--accent-color);
 }
 
-#currentdate{
-    display: grid;
-    grid-area: "MyArea";
-    background-color: rgba(25, 25, 25, 0.938);
-    color: white;
-    padding: 1rem;
-    justify-content: center;
-    font-family: var(--body-text);
-    font-weight: bold;
-}
+#hamburgerBtn.open span:nth-child(1) {display:none;}
+#hamburgerBtn.open span:nth-child(2) {display:block;}
 
+ /*  ---------------NAVIGATION---------------- */
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr  1fr 1fr;
+}
 
 nav ul{
     grid-column: 1/4;
@@ -136,13 +141,23 @@ nav ul li a:hover{
 nav ul {display: none;}
 nav ul.open {display:block;}
 
+#currentdate{
+    display: grid;
+    grid-area: "MyArea";
+    background-color: rgba(25, 25, 25, 0.938);
+    color: white;
+    padding: 1rem;
+    justify-content: center;
+    font-family: var(--body-text);
+    font-weight: bold;
+}
+
 #hamburgerBtn span:nth-child(1) {display:block;}
 #hamburgerBtn span:nth-child(2) {display:none;}
 
-#hamburgerBtn.open span:nth-child(1) {display:none;}
-#hamburgerBtn.open span:nth-child(2) {display:block;}
 
-/* MAIN */
+ /* -------------------- MAIN -------------------- */
+
 
 .main-container{
     display: grid;
@@ -150,7 +165,6 @@ nav ul.open {display:block;}
     row-gap: 1rem;
     position: relative;
 }
-
 
 .welcome{
     position: absolute;
@@ -162,16 +176,16 @@ nav ul.open {display:block;}
 }
 
 .calltoaction{
-        position: absolute;
-        top: 20vw;
-        left: 15px;
-        background: var(--accent-color);
-        padding: .5rem;
-        box-shadow: 0 0 30px #333;
-        opacity: .9;
-        border-radius: 5px;
-        font-size: 1rem;
-    }
+    position: absolute;
+    top: 20vw;
+    left: 15px;
+    background: var(--accent-color);
+    padding: .5rem;
+    box-shadow: 0 0 30px #333;
+    opacity: .9;
+    border-radius: 5px;
+    font-size: 1rem;
+}
 
 .news-box, .event-box, .weather-box, .join-box{
     background-color: var(--secondary-color);
@@ -185,13 +199,6 @@ nav ul.open {display:block;}
     margin: 0;
 }
 
-.pottery, .flowers, .weather{
-   width: 50%;
-}
-
-.coffee{
-    width: 80%;
- }
 
 .spotlight-box1, .spotlight-box2, .spotlight-box3{
     background-color: var(--secondary-color);
@@ -210,6 +217,8 @@ nav ul.open {display:block;}
 .spotlight-box3{
     display: none;
 }
+
+ /*  -------------------- FOOTER --------------------- */
 
 .footer-container{
     display: flex;
@@ -250,14 +259,13 @@ nav ul.open {display:block;}
     display: none;
 }
 
-/* DISCOVER */
+ /* --------------------- DISCOVER --------------------- */
 
 .discover-container{
     display: grid;
     grid-template-columns: 1fr;
     padding: 1rem;
 }
-
 
 .one {
     grid-column: 1/2;
@@ -290,4 +298,129 @@ nav ul.open {display:block;}
     backface-visibility: hidden;
     filter: grayscale(100%);
     display: block;
+}
+
+
+ /* ------------------- JOIN --------------------- */
+
+
+ /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/* ----------- apply a natural box layout model to all elements -------------- */
+ /* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; } */
+
+
+/* ----------- MAIN -------------- */
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+} 
+
+.join-main-container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+ /* -------------- FORM -------------- */
+
+ form fieldset{
+     margin: 1rem;
+     border: 1.5px solid var(--secondary-color);
+     border-radius: 10px;
+     padding: .5rem 2%;
+     /* max-width: 30rem; */
+ }
+
+ form legend{
+     color: 445ba9;
+     margin: 0 1rem;
+     padding: 0 .5rem;
+ }
+
+ form label.top, form div{
+     display: block;
+     padding-top: 1rem;
+     color: #9c2c13;
+     font-size: .8rem;
+ }
+
+ form label.top input, for label.top select{
+    -webkit-appearance: none; 
+    display: block;
+    font-size: 1rem;
+    border: solid 1px var(--secondary-color);
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 90%;
+    background-color: rgba(0,0,0,0.1);
+ }
+
+ form label.sbs{
+     display: block;
+     padding: .75rem;
+     color: #555;
+ }
+
+ form input.submitBtn{
+     border: none;
+     background-color: #9c2c13;
+     color: white;
+     border-radius: 1rem;
+     padding: .75rem 1.5rem;
+     margin: 0 0 2rem 2%;
+     width: 96%;
+ }
+
+ form label.top input:required{
+     border-left: red solid 6px;
+ }
+
+ form label.top input:required:valid{
+     border-left: green solid 6px;
+ }
+
+ .button { 
+    margin-left: 1rem;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* --------------------- TEXT ------------------------ */
+
+.membership-levels{
+    display: block;
+}
+
+h1.join-title{
+    font-size: 2.5rem;
+    text-align: left;
+    margin-left: 1rem;
+}
+
+h2.gold, .silver, .bronze, .np{
+    /* color: var(--heading-text); */
+    margin-left: 1rem;
+    background-color: var(--accent-color);
+    color: white;
+    padding: .3rem;
+}
+
+.membership-levels p{
+    margin-left: 1rem;
+}
+
+legend{
+    font-size: 1.2rem;
+    color: var(--accent-color);
+}
+
+textarea {
+    width: 93%;
 }

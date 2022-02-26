@@ -155,7 +155,7 @@
         border-top: 1px var(--primary-color) solid;
     }
 
-    /* DISCOVER */
+ /* ----------------- DISCOVER ------------------ */
 
 img{
     width: 100%;
@@ -209,5 +209,25 @@ img{
     grid-column: 4;
 }
 
+
+ /* ------------------- JOIN --------------------- */
+
+ .join-main-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+form fieldset{
+    margin-left: 0;
+
+}
+
+.join-title{
+grid-row: 1;
+}
+
+.button { 
+    margin-left: 0;
+}
 
 }

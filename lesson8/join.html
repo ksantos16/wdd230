@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WDD230 Aberdeen Chamber of Commerce</title>
+    <meta name="author" content="Kira Santos">
+    <meta name="description" content="To organize and develop the project Home Page for Aberdeen Chamber of Commerce.">
+    <meta http-equiv=" X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@300&family=Playfair+Display&family=Roboto:wght@300&family=Zen+Antique&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans+Condensed:wght@300&family=Open+Sans:wght@300&family=Playfair+Display&family=Roboto:wght@300&family=Zen+Antique&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon (1).ico">
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script defer src="js/scripts.js"></script>
+    <script defer src="js/banner.js"></script>
+    <script defer src="/lesson6/js/windchill.js"></script>
+
+</head>
+
+<body>
+    <div id="banner">
+        <h2>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.!</h2>
+    </div>
+    <header>
+        <nav>
+            <div class="logos-container">
+                <picture>
+                    <img class="logo" src="images/aberdeenlogo.webp"
+                        alt="picture of red train representing aberdeen chamber of commerce logo" width="100">
+            </div>
+            <div class="social">
+                <div> <a href="https://www.linkedin.com/"><img class="linkedin" src="images/linkedIn.png"
+                            alt="linkedin"></div>
+                </a>
+                <div> <a href="https://twitter.com/"><img class="twitter" src="images/twitterlogo.png" alt="twitter">
+                </div>
+                </a>
+            </div>
+            <button id="hamburgerBtn"><span>&#9776;</span><span> X </span></button>
+            <ul id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/chamber/html/discover.html">Discover</a></li>
+                <li><a href="/chamber/html/directory.html">Directory</a></li>
+                <li><a class="active" href="/chamber/html/join.html">Join</a></li>
+                <li><a href="/lesson7/discover.html">Contact</a></li>
+            </ul>
+        </nav>
+        <p class="date"><span id="currentdate"></span></p>
+    </header>
+
+
+    <main class="join-main-container">
+        <h1 class="join-title">Aberdeen Chamber of Commerce Membership</h1>
+
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+
+                <label class="top">First Name* <input type="text" name="fname" required></label>
+                <label class="top">Last Name* <input type="text" name="lname" required></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com"
+                        required></label>
+                <label class="top">Phone* <input type="tel" name="phone" required></label>
+                <label class="top">Company Name* <input type="text" name="cname" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Membership Levels</legend>
+
+                <div>Membership Selection</div>
+                <label class="sbs"><input type="radio" name="level" value="np">Non-profit
+                    Organization</label>
+                <label class="sbs"><input type="radio" name="level" value="bronze">Bronze Level</label>
+                <label class="sbs"><input type="radio" name="level" value="silver">Silver Level</label>
+                <label class="sbs"><input type="radio" name="level" value="gold">Gold Level</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Company Description</legend>
+
+                <label class="top">Briefly Describe Your Business <textarea rows="4" cols="50" name="comment"
+                        form="usrform">Enter text here...</textarea></label>
+            </fieldset>
+
+            <input class="button" type="submit" value="Submit Application">
+            <label class="top"><input type="hidden" name="completedDate"></label>
+
+        </form>
+
+        <div class="membership-levels">
+            <section>
+                <h2 class="gold">Gold $800 Annually</h2>
+                <p>
+                    For emerging businesses who are wanting to make meaningful connections and achieve sustainable
+                    growth
+                    1 reserved seat at monthly Chamber Luncheons. Learn from Top Business Leaders and Government
+                    Officials
+                    Monthly Foursomes with Carts at Pine Hollow Golf Club! (5 outings pays for the membership, beyond
+                    that is PURE benefit, and you still get all of the other Gold Benefits) - Such an Incredible Value!
+                    Logo displayed on the Chamber website
+                    Includes all Bronze level benefits
+                </p>
+            </section>
+
+            <section>
+                <h2 class="silver">Silver $400 Annually</h2>
+                <p>
+                    For small businesses who are wanting to network more effectively and grow within their community
+                    1 reserved seat at monthly Chamber Luncheons ($240 value). Save $40 annually vs paying for each
+                    individual luncheon
+                    Includes all Bronze level benefits
+                </p>
+            </section>
+
+            <section>
+                <h2 class="bronze">Bronze $200 Annually</h2>
+                <p>
+                    For small businesses who are wanting more exposure
+                    Free Customized Landing Page that points to your website
+                    Excellent SEO (Search Engine Optimization) - Extremely Important and Valuable. This is how
+                    potential customers find you online!
+                    Directory listing on Chamber website - Become publicly visible in the community
+                    Attend monthly Chamber luncheons and learn from top business and government officials ($20 cost to
+                    cover catering)
+                    Chamber Membership plaque that can be displayed prominently in your place of business
+                    Grand Opening and Ribbon Cutting Ceremony - We always invite the Mayor!
+                    Special member pricing/discounts for Chamber events and advertising in the Chamber magazine
+                    Opportunity to participate on Chamber committees
+                    Attend Effective monthly networking luncheons - Form those Critical Business Relationships
+                    Business listing in the annual Chamber magazine - Mailed to every home and business in Lehi &
+                    Saratoga Springs Cities
+                    Opportunity to participate in the annual Passport to Adventure community program. Literally hundreds
+                    of kids with mom & dad will visit your place of business during the summer months! (greatly
+                    discounted rate vs non-members)
+                    Participate in the "Welcome to the Neighborhood" marketing program
+                    Attend quarterly business alliance meetings where best practices are taught & discussed
+                    Attend the Annual Utah County Business Summit - Multiple Chambers Participate
+                </p>
+            </section>
+
+            <section>
+                <h2 class="np">Non-Profit FREE</h2>
+                <p>
+                    The Business Builder membership is reserved for businesses that are non-profit
+                    Free Customized Landing Page that points to your website
+                    Excellent SEO (Search Engine Optimization) - Extremely Important and Valuable. This is how potential
+                    customers find you online!
+                    Directory listing on the Chamber website- Become publicly visible in the community
+                    Attend valuable monthly networking luncheons (order from the menu) - Make Critical Business
+                    Connections
+                    Attend monthly chamber luncheons and learn from top business and government officials ($20 cost to
+                    cover catering)
+                    Attend quarterly business alliance meetings where best practices are taught & discussed
+                    Attend the Annual Utah County Business Summit - Multiple Chambers Attend
+                </p>
+            </section>
+
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo"><img src="images/trainlogo.png" alt="aberdeen chamber icon" width="80">
+            </div>
+            <div class="address">Aberdeen Chamber of Commerce<br>
+                115 North Poplar Street<br>
+                Aberdeen NC 28315<br>
+            </div>
+            <br>
+            <div class="contact">
+                <a href="#">info@aberdeenchamber.org</a><br>
+                <a href="#">+1 (910) 944-1115</a><br>
+                <a
+                    href="https://www.google.com/maps/place/115+N+Poplar+St,+Aberdeen,+NC+28315/@35.1334288,-79.4277957,17z/data=!4m5!3m4!1s0x8854b5a7ac1c1df1:0x5923f47001d08b1f!8m2!3d35.1334288!4d-79.4277957">📌Map
+                    Location</a><br>
+            </div>
+            <div class="copyright">
+                <p>&copy;<span id="currentyear"></span> Aberdeen Chamber of Commerce<br>
+                    Kira Santos<br>
+                    WDD 230 Project<br>
+                    <span id="lastmod"></span>
+                </p>
+            </div>
+        </div>
+        <div class="footer-container2">
+            <div class="footer-logo2"><img src="images/trainlogo.png" alt="aberdeen chamber icon" width="80">
+            </div>
+            <div class="address2">Aberdeen Chamber of Commerce<br>
+                115 North Poplar Street<br>
+                Aberdeen NC 28315<br>
+            </div>
+            <div class="contact2">
+                <a href="#">info@aberdeenchamber.org</a><br>
+                <a href="#">+1 (910) 944-1115</a><br>
+                <a
+                    href="https://www.google.com/maps/place/115+N+Poplar+St,+Aberdeen,+NC+28315/@35.1334288,-79.4277957,17z/data=!4m5!3m4!1s0x8854b5a7ac1c1df1:0x5923f47001d08b1f!8m2!3d35.1334288!4d-79.4277957">📌Map
+                    Location</a><br>
+            </div>
+
+            <div class="author">
+                <p>&copy<span id="currentyear2"></span> Aberdeen Chamber of Commerce |
+                    <strong>Kira
+                        Santos</strong> | WDD 230 Project |<br>
+                    <span id="lastmod2"></span>
+                </p>
+                <p><span>Number of Day Last Visited: </span><span id="lastv"></span></p>
+            </div>
+
+            <div class="author2">
+                <p>&copy<span id="currentyear3"></span> Aberdeen Chamber of Commerce |
+                    <strong>Kira
+                        Santos</strong> | WDD 230 Project | <span id="lastmod3"></span>
+                </p>
+                <p><span>Number of Day Last Visited: </span><span id="lastv"></span></p>
+            </div>
+        </div>
+
+
+    </footer>
+
+</body>
+
+</html>

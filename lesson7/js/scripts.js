@@ -70,15 +70,19 @@ function lastVisit() {
     let millisecondsToDays = 86400000;
     let prior = localStorage.getItem('lastvisit');
     let obj = new Date(prior);
+    console.log(obj);
 
-    if (prior > 0) {
-        visit = ((today - obj) / millisecondsToDays).toFixed(0);
+    if (!prior) {
+        localStorage.setItem('lastvisit', today);
+        let visit = " This is your first visit. Welcome to Aberdeen Chamber of Commerce!"
+        document.getElementById("lastv").innerHTML = visit;
+
     } else {
-        visit = today +
-            " This is your first visit. Welcome to Aberdeen Chamber of Commerce!"
+        let visit = ((today - obj) / millisecondsToDays).toFixed(0) + " days ago. Welcome Back!";
+        document.getElementById("lastv").innerHTML = visit;
     }
 
-    document.getElementById("lastv").innerHTML = visit + " days ago. Welcome Back!";
+
     localStorage.setItem('lastvisit', today);
 }
 lastVisit();
