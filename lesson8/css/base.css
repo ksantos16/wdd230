@@ -424,3 +424,16 @@ legend{
 textarea {
     width: 93%;
 }
+
+.thanks-main{
+    background-color: #fff;
+}
+
+.thanks-title{
+    color: black;
+    margin-top: 1rem;
+}
+
+.thanks-text{
+    font-size: 1.2rem;
+}
