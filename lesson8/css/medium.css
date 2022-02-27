@@ -16,19 +16,16 @@
     grid-column: 1/3;
 }
 
-.calltoaction{
-    position: absolute;
-    top: 20vw;
-    left: 15px;
+h1.welcome{
+    top: 2rem;
+    left: 5rem;
+    font-size: 2rem;
 }
 
-h1{
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    font-size: 2.3rem;
-    color: rgba(25, 25, 25, 0.911);
-    text-shadow: 2px 2px rgb(226, 225, 225);
+h2.calltoaction{
+    top: 5rem;
+    left: 5rem;
+    font-size: 1rem;
 }
 
  /* -------------- MAIN CONTENT ------------ */

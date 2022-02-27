@@ -1,9 +1,6 @@
 @media only screen and (min-width: 950px) {
  
-    nav{
-        display: grid;
-        grid-template-columns: 1fr  1fr;
-    }
+    /* ------------- NAVIGATION ---------------  */
     
     .linkedin{
         width: 35px;
@@ -31,17 +28,18 @@
         align-items: right;
         margin-right: 5rem;
     }
-    
-    nav{
-    
-        font-size: 1.5rem;
-        justify-content: center;    
-    }
 
     #hamburgerBtn{
         display: none;
     }
 
+    nav{
+        display: grid;
+        grid-template-columns: 1fr  1fr;
+        font-size: 1.5rem;
+        justify-content: center;  
+    }
+    
     nav ul{
         display: block;
     }
@@ -58,6 +56,8 @@
     border-top: none;
     }
 
+ /*  -------------- CONTENT ----------------- */
+
     .main-container{
         display: grid;
         grid-template-columns: repeat(4,1fr);
@@ -70,20 +70,16 @@
 
     }
  
-    .calltoaction{
-        position: absolute;
-        left: 20rem;
-        top: 7rem;
+    h1.welcome{
+        top: 2rem;
+        left: 22rem;
+        font-size: 2rem;
     }
-
-    h1{
-        grid-column: 2/4;
-        position: absolute;
-        left: 30rem;
-        top: 10rem;
-        font-size: 5rem;
-        color: rgba(25, 25, 25, 0.911);
-        text-shadow: 2px 2px rgb(226, 225, 225);
+    
+    h2.calltoaction{
+        top: 5rem;
+        left: 22rem;
+        font-size: 1rem;
     }
 
 
@@ -137,7 +133,7 @@
        grid-column: 4;
 
      }
-
+ /* -------------- FOOTER ------------------- */
      .author{
          display: none;
      }
@@ -223,7 +219,13 @@ form fieldset{
 }
 
 .join-title{
-grid-row: 1;
+    grid-column: 2;
+}
+
+.membership-levels{
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 7rem;
 }
 
 .button { 
