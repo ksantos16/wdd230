@@ -5,84 +5,84 @@
             "address": "910 N Sandhills Blvd, Aberdeen, NC 28315",
             "phone": "(910) 944-9555",
             "website": "https://www.webbandmorton.com/",
-            "imageurl": "https://github.com/ksantos16/wdd230/9771c46486f8ee0b81a93bb30259f2d825252a5a/lesson9/image/law.png"
+            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/law.png"
         },
         {
             "company": "Bed Bath & Beyond",
             "address": "11088 North U.S. 15-501, Aberdeen, North Carolina 28315",
             "phone": "(910) 695-1010",
             "website": "https://www.bedbathandbeyond.com/locations/Aberdeen-NC-28315-1011?MCID=YT_YEXT",
-            "imageurl": "https://github.com/ksantos16/wdd230/9771c46486f8ee0b81a93bb30259f2d825252a5a/lesson9/image/bedbath.png"
+            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/bedbath.png"
         },
         {
             "company": " Builders FirstSource ",
             "address": " 3189 NC Highway 5, Aberdeen, North Carolina 28315 ",
             "phone": "(910) 944-2516 ",
             "website": "https://www.builders1stsource.com/",
-            "imageurl": "https://github.com/ksantos16/wdd230/blob/9771c46486f8ee0b81a93bb30259f2d825252a5a/lesson9/image/buildersfirstsource.png"
+            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/buildersfirstsource.png"
         },
         {
             "company": " Mac's Breakfast Anytime",
             "address": " 1904 N Sandhills Blvd, Aberdeen, NC 28315",
             "phone": " (910) 692-9806",
             "website": "https://www.macsbreakfast.com/",
-            "imageurl": ""
+            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/macs.png"
         },
         {
             "company": " Security Management Inc",
             "address": " 2239 Pinehurst Plz, Aberdeen, NC 28315",
             "phone": " (910) 215-0616",
             "website": "https://www.securitymanagement.com/",
-            "imageurl": ""
+            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/security.png"
         },
         {
             "company": " Aldi",
             "address": " 1500 N Sandhills Blvd, Aberdeen, NC 28315",
             "phone": " (855) 955-2534",
             "website": "https://www.aldi.com/",
-            "imageurl": ""
+            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/aldi.png"
         },
         {
             "company": "Royal Threads",
             "address": "3250 Nc 5 Hwy, Aberdeen, NC 28315",
             "phone": "(910) 944-0932",
             "website": "https://www.royalthreads.com/",
-            "imageurl": ""
+            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/royalthreads.png"
         },
         {
             "company": " T J Maxx",
             "address": "125 Aberdeen Pines St, Aberdeen, NC 28315",
             "phone": "(910) 246-5325",
             "website": "https://www.tjmaxx.com/",
-            "imageurl": ""
+            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/tjmaxx.png"
         },
         {
             "company": " Nail City",
             "address": " 1680 NC Highway 5 Ste 145 Aberdeen, NC 28315",
             "phone": " (910) 215-8193",
             "website": "https://www.nailcity.com/",
-            "imageurl": ""
+            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/nail.png"
         },
         {
             "company": " Next Level Salon and Barber",
             "address": " 101 W South St Aberdeen, NC 28315",
             "phone": " (910) 944-4756",
             "website": " https://www.nextlevelsalon.com/",
-            "imageurl": ""
+            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/salon.png"
         },
         {
             "company": " Aberdeen & Rockfish Railroad",
             "address": " 101 E. Main St.  Aberdeen NC 28315",
             "phone": " 910-944-2341",
             "website": " https://www.aberdeen-rockfish.com/",
-            "imageurl": ""
+            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/rockfish.png"
         },
         {
             "company": " Artist League of the Sandhills",
             "address": " 129 Exchange St., Aberdeen  Aberdeen NC 28315",
             "phone": " 910-944-3979",
             "website": " http://www.artistleague.org",
-            "imageurl": ""
+            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/artist.png"
         }
     ]
 }

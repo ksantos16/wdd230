@@ -1,4 +1,4 @@
-const requestURL = 'https://github.com/ksantos16/wdd230/lesson9/json/directory.json';
+const requestURL = 'https://ksantos16.github.io/wdd230/lesson9/json/directory.json';
 const cards = document.querySelector('.cards');
 
 fetch(requestURL)
