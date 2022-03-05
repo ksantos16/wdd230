@@ -441,26 +441,20 @@ textarea {
 
 /* ---------------- DIRECTORY ------------------- */
 
-h2.cards {
-    text-decoration: underline;
-    margin: 0;
-    margin-bottom: 5px;
+img.gridBtn{
+    width: 20px;;
+}
+
+img.listBtn{
+    width: 20px;
+}
+  
+p.para {
+    font-family: var(--body-text);
+    font-size: 14px;
   }
   
-h3.cards {
-    margin: 0;
-  }
-  
-h4.cards {
-    margin: 7px 0 5px 0;
-  }
-  
-p.cards {
-    margin: 0;
-    margin-bottom: 7px;
-  }
-  
-.cards {
+.directory-main-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(301px,1fr));
       text-align: center;
@@ -476,11 +470,10 @@ section.cards {
   }
   
   
-img.cards {
-    width: 194px;
+img.directoryLogo {
+    width: 250px;
     max-width: 325px;
     box-shadow: 0 0 10px #777;
-    height: 250px;
     border: 1px solid #333;
     border-radius: 3px;
   }

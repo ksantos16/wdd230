@@ -16,10 +16,17 @@ fetch(requestURL)
 function displayDirectory(directory) {
     // Create elements to add to the document
     let card = document.createElement('section');
+    let h2 = document.createElement('h2');
     let p1 = document.createElement('p');
     let p2 = document.createElement('p');
     let p3 = document.createElement('p');
     let logo = document.createElement('img');
+
+    h2.className = "company";
+    p1.className = "para";
+    p2.className = "para";
+    p3.className = "para";
+    logo.className = "directoryLogo";
     // let order = ``;
 
 
@@ -34,6 +41,7 @@ function displayDirectory(directory) {
     // }
 
     // Change the textContent property of the h2 element to contain the prophet's full name
+    h2.textContent = `${directory.company}`;
     p1.textContent = `${directory.address}`;
     p2.textContent = `${directory.phone}`;
     p3.textContent = `${directory.website}`;
@@ -44,10 +52,11 @@ function displayDirectory(directory) {
     logo.setAttribute('loading', 'lazy');
 
     // Add/append the section(card) with the h2 element
+    card.appendChild(logo);
     card.appendChild(h2);
     card.appendChild(p1);
     card.appendChild(p2);
-    card.appendChild(logo);
+    card.appendChild(p3);
 
     // Add/append the existing HTML div with the cards class with the section(card)
     cards.appendChild(card);
