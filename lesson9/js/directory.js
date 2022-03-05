@@ -63,26 +63,32 @@ function displayDirectory(directory) {
     cards.appendChild(card);
 }
 
-const gridBtn = document.querySelector(".gridBtn")
-const card = document.querySelector(".card")
-
-gridBtn.addEventListener("click", () => {
-    document.querySelector(".gridBtn").classList.toggle("display1");
-    document.querySelector(".card").classList.toggle("display1");
-});
-
-const listbtn = document.querySelector(".listBtn")
+const gridBtn = document.querySelector(".gridBtn");
+const card = document.querySelector(".card");
+const listbtn = document.querySelector(".listBtn");
 const table1 = document.querySelector(".table1");
-
-listbtn.addEventListener("click", () => {
-    document.querySelector(".listBtn").classList.toggle("display2");
-    document.querySelector(".table1").classList.toggle("display2");
-});
-
-const listBtn = document.querySelector(".listBtn")
+const listBtn = document.querySelector(".listBtn");
 const table2 = document.querySelector(".table2");
 
-listBtn.addEventListener("click", () => {
-    document.querySelector(".listBtn").classList.toggle("display3");
+if (gridBtn.addEventListener("click", () => {
+    document.querySelector(".gridBtn");
+    document.querySelector(".card").classList.toggle("display1");
     document.querySelector(".table2").classList.toggle("display3");
+    console.log(gridBtn);
+}));
+
+
+
+if (listbtn.addEventListener("click", () => {
+    document.querySelector(".listBtn");
+    document.querySelector(".table2").classList.toggle("display3");
+    document.querySelector(".card").classList.toggle("display1");
+    console.log(listbtn);
+}));
+
+
+
+listBtn.addEventListener("click", () => {
+    document.querySelector(".listBtn").classList.toggle("display2");
+    document.querySelector(".table2").classList.toggle("display2");
 });

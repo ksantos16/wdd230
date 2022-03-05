@@ -480,11 +480,11 @@ textarea {
       text-align: center;
 }
 
-.display1{
-    display: block;
+
+.card.display1{
+    display: none;
 }
 
-  
 .card {
     margin: 0.25rem;
     padding: 0.35rem;
