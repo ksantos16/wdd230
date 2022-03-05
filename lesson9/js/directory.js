@@ -65,30 +65,23 @@ function displayDirectory(directory) {
 
 const gridBtn = document.querySelector(".gridBtn");
 const card = document.querySelector(".card");
-const listbtn = document.querySelector(".listBtn");
 const table1 = document.querySelector(".table1");
 const listBtn = document.querySelector(".listBtn");
 const table2 = document.querySelector(".table2");
 
-if (gridBtn.addEventListener("click", () => {
-    document.querySelector(".gridBtn");
+gridBtn.addEventListener("click", () => {
+    document.querySelectorAll(".gridBtn");
     document.querySelector(".card").classList.toggle("display1");
+    document.querySelector(".table1").classList.toggle("display2");
     document.querySelector(".table2").classList.toggle("display3");
     console.log(gridBtn);
-}));
-
-
-
-if (listbtn.addEventListener("click", () => {
-    document.querySelector(".listBtn");
-    document.querySelector(".table2").classList.toggle("display3");
-    document.querySelector(".card").classList.toggle("display1");
-    console.log(listbtn);
-}));
-
+});
 
 
 listBtn.addEventListener("click", () => {
-    document.querySelector(".listBtn").classList.toggle("display2");
-    document.querySelector(".table2").classList.toggle("display2");
+    document.querySelector(".listBtn");
+    document.querySelector(".table1").classList.toggle("display2");
+    document.querySelector(".table2").classList.toggle("display3");
+    document.querySelector(".card").classList.toggle("display1");
+    console.log(listBtn);
 });

@@ -230,11 +230,16 @@ grid-row: 1;
     width: 70%;
 }
   
-.table1{
+.table1.display2{
+    display: block;
+}
+
+.table2.display3{
     display: none;
 }
 
 .table1 {
+    display: none;
 	margin: 10px auto;
 	border: thin solid lightgray;
 	box-shadow: 10px 10px 20px lightslategray;
@@ -243,10 +248,6 @@ grid-row: 1;
     text-align: left;
     font-weight: bold;
     justify-content: center;
-}
-
-.table2{
-    display: none;
 }
 
 
