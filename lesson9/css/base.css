@@ -45,6 +45,10 @@ h2{
 
  /* -------------------BANNER----------------  */
 
+ .show{
+    display: block;
+}
+
 #banner{
     display: none;
 }
@@ -441,39 +445,95 @@ textarea {
 
 /* ---------------- DIRECTORY ------------------- */
 
-img.gridBtn{
-    width: 20px;;
+.display{
+    display: none;
 }
 
-img.listBtn{
-    width: 20px;
+.btns{
+    display: flex;
+    justify-content: center;
 }
-  
-p.para {
+
+.gridBtn{
+    width: 30px;;
+    margin-right: 1rem;
+}
+
+.listBtn{
+    width: 30px;
+}
+
+.company{
+    font-family: var(--heading-text);
+    font-size: 1.5rem;
+    color: var(--accent-color);
+}
+
+.para {
     font-family: var(--body-text);
     font-size: 14px;
-  }
+}
   
 .directory-main-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(301px,1fr));
       text-align: center;
-  }
+}
+
+.display1{
+    display: block;
+}
+
   
-section.cards {
+.card {
     margin: 0.25rem;
     padding: 0.35rem;
     box-shadow: 0 0 7px #777;
     border-radius: 7px;
-    padding-bottom: 2rem;
-    padding-top: 10px;
-  }
-  
-  
-img.directoryLogo {
+    padding-top: 1.5rem;
+    border-top: var(--secondary-color) 3px solid;
+    border-right: var(--secondary-color) 5px solid;
+    border-bottom: var(--secondary-color) 2px solid;
+}
+    
+.directoryLogo {
     width: 250px;
-    max-width: 325px;
     box-shadow: 0 0 10px #777;
     border: 1px solid #333;
     border-radius: 3px;
-  }
+}
+
+.table1{
+    display: none
+}
+
+
+.table2.display3{
+    display: block;
+}
+
+
+.table2 {
+    display: none;
+	margin: 0;
+	border: thin solid lightgray;
+	box-shadow: 10px 10px 20px lightslategray;
+	border-collapse: collapse;
+    font-family: var(--body-text);
+    text-align: left;
+    font-weight: bold;
+}
+
+th{
+    border: 1px solid var(--secondary-color);
+    padding: 1rem;
+}
+
+td {
+	border: 1px solid var(--secondary-color);
+    width: 10rem;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: rgb(201, 201, 201);
+}
