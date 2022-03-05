@@ -180,4 +180,77 @@ h2.calltoaction{
 grid-row: 1;
 }
 
+
+/* ---------------- DIRECTORY ------------------- */
+
+.display{
+    display: none;
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
+}
+
+.gridBtn{
+    display: block;
+    width: 40px;;
+    background: none;
+    border: none;
+}
+
+.listBtn{
+    display: block;
+    width: 40px;
+    background: none;
+    border: none;
+}
+
+.company{
+    font-family: var(--heading-text);
+    font-size: 1.5rem;
+    color: var(--accent-color);
+}
+
+.para {
+    font-family: var(--body-text);
+    font-size: 14px;
+}
+  
+.directory-main-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+/* .card {
+
+} */
+
+.directoryLogo {
+    width: 70%;
+}
+  
+.table1{
+    display: none;
+}
+
+.table1 {
+	margin: 10px auto;
+	border: thin solid lightgray;
+	box-shadow: 10px 10px 20px lightslategray;
+	border-collapse: collapse;
+    font-family: var(--body-text);
+    text-align: left;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.table2{
+    display: none;
+}
+
+
+
+
+
 }

@@ -22,6 +22,7 @@ function displayDirectory(directory) {
     let p3 = document.createElement('p');
     let logo = document.createElement('img');
 
+    card.className = "card"
     h2.className = "company";
     p1.className = "para";
     p2.className = "para";
@@ -61,3 +62,27 @@ function displayDirectory(directory) {
     // Add/append the existing HTML div with the cards class with the section(card)
     cards.appendChild(card);
 }
+
+const gridBtn = document.querySelector(".gridBtn")
+const card = document.querySelector(".card")
+
+gridBtn.addEventListener("click", () => {
+    document.querySelector(".gridBtn").classList.toggle("display1");
+    document.querySelector(".card").classList.toggle("display1");
+});
+
+const listbtn = document.querySelector(".listBtn")
+const table1 = document.querySelector(".table1");
+
+listbtn.addEventListener("click", () => {
+    document.querySelector(".listBtn").classList.toggle("display2");
+    document.querySelector(".table1").classList.toggle("display2");
+});
+
+const listBtn = document.querySelector(".listBtn")
+const table2 = document.querySelector(".table2");
+
+listBtn.addEventListener("click", () => {
+    document.querySelector(".listBtn").classList.toggle("display3");
+    document.querySelector(".table2").classList.toggle("display3");
+});
