@@ -232,4 +232,33 @@ form fieldset{
     margin-left: 0;
 }
 
+
+
+/* ---------------- DIRECTORY ------------------- */
+
+.gridBtn{
+    width: 50px;;
+    margin-right: 3rem;
 }
+
+.listBtn{
+    width: 50px;
+}
+
+
+.cards {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.display1{
+    display: none;
+}
+
+.classlist{
+    margin-left: 9rem;
+}
+
+
+}
+
+

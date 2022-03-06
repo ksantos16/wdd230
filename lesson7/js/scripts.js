@@ -79,7 +79,7 @@ function lastVisit() {
 
     } else {
         let visit = ((today - obj) / millisecondsToDays).toFixed(0) + " days ago. Welcome Back!";
-        document.getElementById("lastv").innerHTML = visit;
+        document.getElementsByClassName("lastv").innerHTML = visit;
     }
 
 

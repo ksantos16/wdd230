@@ -79,13 +79,13 @@ function lastVisit() {
             " This is your first visit. Welcome to Aberdeen Chamber of Commerce!"
     }
 
-    document.getElementById("lastv").innerHTML = visit + " days ago. Welcome Back!";
+    document.getElementsByClassName("lastv").innerHTML = visit + " days ago. Welcome Back!";
     localStorage.setItem('lastvisit', today);
 }
 lastVisit();
 
 
-const formDate = document.querySelector('.formDate');
-formDate.innerHTML = document.lastModified;
+// const formDate = document.querySelector('.formDate');
+// formDate.innerHTML = document.lastModified;
 
 

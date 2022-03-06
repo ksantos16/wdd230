@@ -183,45 +183,18 @@ grid-row: 1;
 
 /* ---------------- DIRECTORY ------------------- */
 
-.display{
+.display1{
     display: none;
 }
 
-.btns{
-    display: flex;
-    justify-content: center;
+.classlist{
+    margin-left: 0;
 }
 
-.gridBtn{
-    display: block;
-    width: 40px;;
-    background: none;
-    border: none;
-}
-
-.listBtn{
-    display: block;
-    width: 40px;
-    background: none;
-    border: none;
-}
-
-.company{
-    font-family: var(--heading-text);
-    font-size: 1.5rem;
-    color: var(--accent-color);
-}
-
-.para {
-    font-family: var(--body-text);
-    font-size: 14px;
+.cards {
+    grid-template-columns: 1fr 1fr;
 }
   
-.directory-main-container {
-    display: flex;
-    flex-direction: column;
-}
-
 /* .card {
 
 } */
@@ -229,27 +202,6 @@ grid-row: 1;
 .directoryLogo {
     width: 70%;
 }
-  
-.display2{
-    display: none;
-}
-
-.display3{
-    display: none;
-}
-
-.table1 {
-    display: block;
-	margin: 10px auto;
-	border: thin solid lightgray;
-	box-shadow: 10px 10px 20px lightslategray;
-	border-collapse: collapse;
-    font-family: var(--body-text);
-    text-align: left;
-    font-weight: bold;
-    justify-content: center;
-}
-
 
 
 

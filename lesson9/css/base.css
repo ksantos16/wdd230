@@ -445,9 +445,6 @@ textarea {
 
 /* ---------------- DIRECTORY ------------------- */
 
-.display{
-    display: none;
-}
 
 .btns{
     display: flex;
@@ -463,20 +460,28 @@ textarea {
     width: 30px;
 }
 
+.gridBtn img:hover{
+    border: var(--accent-color) solid 3px;
+}
+
+.listBtn img:hover{
+    border: var(--accent-color) solid 3px;
+}
+
 .company{
     font-family: var(--heading-text);
     font-size: 1.5rem;
     color: var(--accent-color);
 }
 
-.para {
+.para{
     font-family: var(--body-text);
     font-size: 14px;
 }
   
-.directory-main-container {
+.cards {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(301px,1fr));
+      grid-template-columns: 1fr;
       text-align: center;
 }
 
@@ -493,7 +498,7 @@ textarea {
     padding-top: 1.5rem;
     border-top: var(--secondary-color) 3px solid;
     border-right: var(--secondary-color) 5px solid;
-    border-bottom: var(--secondary-color) 2px solid;
+    border-bottom: var(--secondary-color) 2px solid;    
 }
     
 .directoryLogo {
@@ -503,42 +508,36 @@ textarea {
     border-radius: 3px;
 }
 
-.table1{
-    display: none
+/*  ----------------------- TABLE ---------------------- */
+
+.classlist{
+    width: 100%;
+    margin-left: .5rem;
 }
 
-
-.display3{
-    display: none;
+.companyname{
+    font-family: var(--heading-text);
+    font-size: 1rem;
+    color: var(--accent-color);
 }
 
-
-.table2 {
-    display: block;
-	margin: 0;
-	border: thin solid lightgray;
-	box-shadow: 10px 10px 20px lightslategray;
-	border-collapse: collapse;
+.cell {
     font-family: var(--body-text);
-    text-align: left;
-    font-weight: bold;
+    font-size: 14px;
 }
 
 th{
     border: 1px solid var(--secondary-color);
-    padding: 1rem;
+    padding: .5rem;
 }
 
 td {
 	border: 1px solid var(--secondary-color);
-    width: 10rem;
-    white-space: nowrap;
+    text-align: center;
+    /* white-space: nowrap; */
 }
 
-tr{
-    white-space: nowrap;
-}
 
-tbody tr:nth-child(odd) {
-	background-color: rgb(201, 201, 201);
+tr:nth-child(odd) {
+	background-color: rgb(238, 231, 231);
 }
