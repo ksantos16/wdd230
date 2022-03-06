@@ -481,7 +481,7 @@ textarea {
 }
 
 
-.card.display1{
+.display1{
     display: none;
 }
 
@@ -508,13 +508,13 @@ textarea {
 }
 
 
-.table2.display3{
-    display: block;
+.display3{
+    display: none;
 }
 
 
 .table2 {
-    display: none;
+    display: block;
 	margin: 0;
 	border: thin solid lightgray;
 	box-shadow: 10px 10px 20px lightslategray;
@@ -532,6 +532,11 @@ th{
 td {
 	border: 1px solid var(--secondary-color);
     width: 10rem;
+    white-space: nowrap;
+}
+
+tr{
+    white-space: nowrap;
 }
 
 tbody tr:nth-child(odd) {
