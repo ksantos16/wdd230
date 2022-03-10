@@ -134,15 +134,8 @@
 
      }
  /* -------------- FOOTER ------------------- */
+
      .author{
-         display: none;
-     }
-
-     .author2{
-         display: block;
-     }
-
-     .author2{
         grid-column: 1/4;
         grid-row: 2;
         justify-content: center;

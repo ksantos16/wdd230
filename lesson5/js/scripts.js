@@ -16,8 +16,6 @@ lastmod.innerHTML = `Last Modification: ${document.lastModified}`;
 const lastmod2 = document.querySelector('#lastmod2');
 lastmod2.innerHTML = `Last Modification: ${document.lastModified}`;
 
-const lastmod3 = document.querySelector('#lastmod3');
-lastmod3.innerHTML = `Last Modification: ${document.lastModified}`;
 
 
 //long day names array
@@ -58,8 +56,30 @@ currentyear.innerHTML = toadysdate.getFullYear();
 const currentyear2 = document.querySelector("#currentyear2")
 currentyear2.innerHTML = toadysdate.getFullYear();
 
-const currentyear3 = document.querySelector("#currentyear3")
-currentyear3.innerHTML = toadysdate.getFullYear();
-
 document.getElementById('currentdate').textContent = currentdate;
+
+function lastVisit() {
+
+    let today = new Date();
+    let millisecondsToDays = 86400000;
+    let prior = localStorage.getItem('lastvisit');
+    let obj = new Date(prior);
+    console.log(obj);
+
+    if (!prior) {
+        localStorage.setItem('lastvisit', today);
+        let visit = " This is your first visit. Welcome to Aberdeen Chamber of Commerce!"
+        document.querySelector(".lastv").innerHTML = visit;
+        console.log(visit);
+
+    } else {
+        let visit = ((today - obj) / millisecondsToDays).toFixed(0) + " days ago. Welcome Back!";
+        document.querySelector(".lastv").innerHTML = visit;
+        console.log(visit);
+    }
+
+
+    localStorage.setItem('lastvisit', today);
+}
+lastVisit();
 
