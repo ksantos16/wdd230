@@ -84,8 +84,8 @@ function lastVisit() {
 }
 lastVisit();
 
-
+td = new Date();
 const formDate = document.querySelector('.formDate');
-formDate.innerHTML = document.lastModified;
+formDate.value = td;
 
 

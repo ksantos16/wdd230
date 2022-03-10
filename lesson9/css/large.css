@@ -246,7 +246,7 @@ form fieldset{
 }
 
 
-.cards {
+.grid_layout {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
