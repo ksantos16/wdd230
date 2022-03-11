@@ -1,30 +1,42 @@
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?q=Fairbanks,us&units=imperial&APPID=c0b762abe477dc3799ef6dd1a6e3151f";
+const requestURL = 'https://ksantos16.github.io/wdd230/lesson10/json/weather-icons.json';
+fetch(requestURL)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (object) {
+        // console.log(jsonObject); // temporary checking for valid response and data parsing
+        const icon = object['myweather'];
+        console.log(icon);
+        icon.filter(myWeatherIcon);
+
+    });
+
+
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?q=Aberdeen,NC,us&units=imperial&APPID=c0b762abe477dc3799ef6dd1a6e3151f";
+let windChill = document.querySelector("#windChill");
+let temperature = document.querySelector("#temp");
+let windSpeed = document.querySelector("#windSpeed");
+
 fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
         console.log(jsObject);
 
+        temperature.textContent = jsObject.main.temp.toFixed(0);
+        console.log(temperature);
+        windSpeed.textContent = jsObject.wind.speed;
+        console.log(windSpeed);
 
-
-        const currentTemp = document.querySelector('#current-temp')
-
-        currentTemp.textContent = jsObject.main.temp.toFixed(0);
-
-        const iconsrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
+        const iconsrc = jsObject.weather[0].icon;
+        console.log(iconsrc);
         const desc = jsObject.weather[0].description;
 
-        document.querySelector('#icon-src').textContent = iconsrc;
+        // document.querySelector('#icon-src').textContent = iconsrc;
         document.querySelector('#weathericon').setAttribute('src', iconsrc);
         document.querySelector('#weathericon').setAttribute('alt', desc);
         document.querySelector('figcaption').textContent = desc;
+
     });
-
-
-
-
-let temperature = document.querySelector("#temp").innerHTML;
-let windSpeed = document.querySelector("#windSpeed").innerHTML;
-let windChill = document.querySelector("#windChill");
 
 function buildWC(temperature, windSpeed) {
 
@@ -42,3 +54,20 @@ if (temperature <= 50 && windSpeed >= 4.8) {
     windChill.innerHTML = "N/A";
 }
 
+console.log(windChill);
+
+function myWeatherIcon(icon) {
+    if (icon === iconsrc);
+    let myicon = object.myweather.imageurl;
+    document.querySelector('#icon-src').textContent = myicon;
+}
+
+
+
+
+const ages = [32, 33, 16, 40];
+const result = ages.filter(checkAdult);
+
+function checkAdult(age) {
+    return age >= 18;
+}
