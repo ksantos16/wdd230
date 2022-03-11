@@ -1,0 +1,76 @@
+{
+    "weather": [
+        {
+            "icon": "01d",
+            "imageurl": ""
+        },
+        {
+            "id": "01n",
+            "imageurl": ""
+        },
+        {
+            "id": "02d",
+            "imageurl": ""
+        },
+        {
+            "id": "02n",
+            "imageurl": ""
+        },
+        {
+            "id": "03d",
+            "imageurl": ""
+        },
+        {
+            "id": "03n",
+            "imageurl": ""
+        },
+        {
+            "id": "04d",
+            "imageurl": ""
+        },
+        {
+            "id": "04n",
+            "imageurl": ""
+        },
+        {
+            "id": "09d",
+            "imageurl": ""
+        },
+        {
+            "id": "09n",
+            "imageurl": ""
+        },
+        {
+            "id": "010d",
+            "imageurl": ""
+        },
+        {
+            "id": "010n",
+            "imageurl": ""
+        },
+        {
+            "id": "11d",
+            "imageurl": ""
+        },
+        {
+            "id": "11n",
+            "imageurl": ""
+        },
+        {
+            "id": "13d",
+            "imageurl": ""
+        },
+        {
+            "id": "13n",
+            "imageurl": ""
+        },
+        {
+            "id": "50d",
+            "imageurl": ""
+        },
+        {
+            "id": "50n",
+            "imageurl": ""
+        }
+    ]
+}

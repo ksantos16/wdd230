@@ -1,6 +1,5 @@
 const requestURL = 'https://ksantos16.github.io/wdd230/lesson9/json/directory.json';
 const cards = document.querySelector('.cards');
-// const classlist = document.querySelector('.classlist');
 
 fetch(requestURL)
     .then(function (response) {
@@ -10,32 +9,17 @@ fetch(requestURL)
         // console.log(jsonObject); // temporary checking for valid response and data parsing
         const directory = jsonObject['directory'];
         directory.forEach(displayGridDirectory);
-        // Buttons
 
+        // Buttons from DOM
         const gridBtn = document.querySelector(".gridBtn");
-        // const card = document.querySelector(".card");
-        // const table1 = document.querySelector(".table1");
         const listBtn = document.querySelector(".listBtn");
-        // const table2 = document.querySelector(".table2");
+
 
         gridBtn.addEventListener("click", () => {
 
             //This is the cards div, referenced at top
             cards.innerHTML = ''; //This will clear anything inside, preparing for new layout
-
-
             directory.forEach(displayGridDirectory);
-            // document.querySelector(".gridBtn");
-
-            // We don't need the class change bc we remove anything before layout change in the function
-
-            // document.querySelector(".classlist").classList.add("display1");
-            // document.querySelector(".cards").classList.remove("display1");
-
-
-            // document.querySelector(".table1").classList.toggle("display2");
-            // document.querySelector(".table2").classList.toggle("display3");
-            // console.log(gridBtn);
         });
 
 
@@ -43,19 +27,7 @@ fetch(requestURL)
 
             //This is the cards div, referenced at top
             cards.innerHTML = ''; //This will clear anything inside, preparing for new layout
-
-
             directory.forEach(displayListDirectory);
-            // document.querySelector(".listBtn");
-            // document.querySelector(".table1").classList.toggle("display2");
-            // document.querySelector(".table2").classList.toggle("display3");
-
-            // We don't need the class change bc we remove anything before layout change in the function
-
-            // document.querySelector(".cards").classList.add("display1");
-            // document.querySelector(".classlist").classList.remove("display1");
-
-            // console.log(listBtn);
         });
         // To solve the mid resizing issue with responsive class on
         window.onresize = () => {
