@@ -2,75 +2,75 @@
     "weather": [
         {
             "icon": "01d",
-            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/weather/01d.png"
+            "imageurl": "https://ksantos16.github.io/wdd230/lesson10/images/weather/01d.png"
         },
         {
             "id": "01n",
-            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/weather/01n.png"
+            "imageurl": "https://ksantos16.github.io/wdd230/lesson10/images/weather/01n.png"
         },
         {
             "id": "02d",
-            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/weather/02d.png"
+            "imageurl": "https://ksantos16.github.io/wdd230/lesson10/images/weather/02d.png"
         },
         {
             "id": "02n",
-            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/weather/02n.png"
+            "imageurl": "https://ksantos16.github.io/wdd230/lesson10/images/weather/02n.png"
         },
         {
             "id": "03d",
-            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/weather/03d.png"
+            "imageurl": "https://ksantos16.github.io/wdd230/lesson10/images/weather/03d.png"
         },
         {
             "id": "03n",
-            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/weather/03n.png"
+            "imageurl": "https://ksantos16.github.io/wdd230/lesson10/images/weather/03n.png"
         },
         {
             "id": "04d",
-            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/weather/04d.png"
+            "imageurl": "https://ksantos16.github.io/wdd230/lesson10/images/weather/04d.png"
         },
         {
             "id": "04n",
-            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/weather/04n.png"
+            "imageurl": "https://ksantos16.github.io/wdd230/lesson10/images/weather/04n.png"
         },
         {
             "id": "09d",
-            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/weather/09d.png"
+            "imageurl": "https://ksantos16.github.io/wdd230/lesson10/images/weather/09d.png"
         },
         {
             "id": "09n",
-            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/weather/09n.png"
+            "imageurl": "https://ksantos16.github.io/wdd230/lesson10/images/weather/09n.png"
         },
         {
             "id": "010d",
-            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/weather/10d.png"
+            "imageurl": "https://ksantos16.github.io/wdd230/lesson10/images/weather/10d.png"
         },
         {
             "id": "010n",
-            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/weather/10n.png"
+            "imageurl": "https://ksantos16.github.io/wdd230/lesson10/images/weather/10n.png"
         },
         {
             "id": "11d",
-            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/weather/11d.png"
+            "imageurl": "https://ksantos16.github.io/wdd230/lesson10/images/weather/11d.png"
         },
         {
             "id": "11n",
-            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/weather/11n.png"
+            "imageurl": "https://ksantos16.github.io/wdd230/lesson10/images/weather/11n.png"
         },
         {
             "id": "13d",
-            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/weather/13d.png"
+            "imageurl": "https://ksantos16.github.io/wdd230/lesson10/images/weather/13d.png"
         },
         {
             "id": "13n",
-            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/weather/13n.png"
+            "imageurl": "https://ksantos16.github.io/wdd230/lesson10/images/weather/13n.png"
         },
         {
             "id": "50d",
-            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/weather/50d.png"
+            "imageurl": "https://ksantos16.github.io/wdd230/lesson10/images/weather/50d.png"
         },
         {
             "id": "50n",
-            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/weather/50n.png"
+            "imageurl": "https://ksantos16.github.io/wdd230/lesson10/images/weather/50n.png"
         }
     ]
 }
