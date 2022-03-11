@@ -1,5 +1,5 @@
 {
-    "weather": [
+    "myweather": [
         {
             "icon": "01d",
             "imageurl": "https://ksantos16.github.io/wdd230/lesson10/images/weather/01d.png"
