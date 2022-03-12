@@ -1,15 +1,10 @@
-const requestURL = 'https://ksantos16.github.io/wdd230/lesson10/json/weather-icons.json';
-fetch(requestURL)
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (object) {
-        // console.log(jsonObject); // temporary checking for valid response and data parsing
-        const icon = object['myweather'];
-        console.log(icon);
-        icon.filter(myWeatherIcon);
 
-    });
+
+
+let javascript_freelancers = freelancers.filter(function (freelancer) {
+    return freelancer.skill == "JavaScript";
+});
+
 
 
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?q=Aberdeen,NC,us&units=imperial&APPID=c0b762abe477dc3799ef6dd1a6e3151f";
@@ -56,18 +51,24 @@ if (temperature <= 50 && windSpeed >= 4.8) {
 
 console.log(windChill);
 
-function myWeatherIcon(icon) {
+
+const requestURL = 'https://ksantos16.github.io/wdd230/lesson10/json/weather-icons.json';
+fetch(requestURL)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (object) {
+        // console.log(jsonObject); // temporary checking for valid response and data parsing
+        const icon = object['myweather'];
+        console.log(icon);
+        icon.filter(function (iconsrc) { return icon.icon });
+
+    });
+
+function myWeatherIcon() {
     if (icon === iconsrc);
-    let myicon = object.myweather.imageurl;
+    let myicon = getItem(object.myweather.imageurl);
     document.querySelector('#icon-src').textContent = myicon;
-}
 
-
-
-
-const ages = [32, 33, 16, 40];
-const result = ages.filter(checkAdult);
-
-function checkAdult(age) {
-    return age >= 18;
+    console.log(myicon);
 }
