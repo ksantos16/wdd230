@@ -39,7 +39,7 @@ fetch(requestURL)
         // console.log(jsonObject); // temporary checking for valid response and data parsing
         const icon = object['myweather'];
         console.log(icon);
-        icon.filter(myWeatherIcon);
+        icon.forEach(myWeatherIcon);
 
     });
 
@@ -63,8 +63,11 @@ console.log(windChill);
 
 function myWeatherIcon(icon) {
     if (icon === weathericon);
-    return myWeatherIcon
+
+    let myicon = icon.myweather.imageurl;
+
+    weathericon.textContent = myicon;
 
 
 }
-console.log(myWeatherIcon);
+console.log(myicon);
