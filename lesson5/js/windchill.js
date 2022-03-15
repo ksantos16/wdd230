@@ -1,16 +1,4 @@
-const requestURL = 'https://ksantos16.github.io/wdd230/lesson10/json/weather-icons.json';
 
-fetch(requestURL)
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (object) {
-        // console.log(jsonObject); // temporary checking for valid response and data parsing
-        const icon = object['myweather'];
-        console.log(icon);
-        icon.filter(myWeatherIcon);
-
-    });
 
 
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?q=Aberdeen,NC,us&units=imperial&APPID=c0b762abe477dc3799ef6dd1a6e3151f";
@@ -41,6 +29,20 @@ fetch(apiURL)
 
     });
 
+const requestURL = 'https://ksantos16.github.io/wdd230/lesson10/json/weather-icons.json';
+
+fetch(requestURL)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (object) {
+        // console.log(jsonObject); // temporary checking for valid response and data parsing
+        const icon = object['myweather'];
+        console.log(icon);
+        icon.filter(myWeatherIcon);
+
+    });
+
 function buildWC(temperature, windSpeed) {
 
     let wc = 35.74 + 0.6215 * temperature - 35.75 * (windSpeed ** 0.16) + 0.4275 * temperature * (windSpeed ** 0.16);
@@ -61,7 +63,8 @@ console.log(windChill);
 
 function myWeatherIcon(icon) {
     if (icon === weathericon);
-    let myicon = object.myweather.imageurl;
-    weathericon.textContent = myicon;
-}
+    return myWeatherIcon
 
+
+}
+console.log(myWeatherIcon);
