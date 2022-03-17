@@ -35,7 +35,9 @@ fetch(apiURL)
                     if (image.id === weatherimg) {
                         let myicon = image.imageurl;
                         document.querySelector('#weathericon').setAttribute('src', myicon);
+                        console.log(myicon);
                     }
+
                 })
             });
 
