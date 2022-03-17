@@ -17,20 +17,16 @@ img{
     grid-row: 1 / 3;
 }
 
-.pottery, .coffee, .flowers{
+.spotlightlogoimg{
     justify-content: center;
     width: 100%;
     object-fit: cover;
 }
 
-.pottery, .flowers{
-    width: 50%;
- }
+.spotlightlogoimg{
+    width: 50%; 
+}
  
-.coffee{
-     width: 80%;
-  }
-
 .weather img{
     width: 80%;
     text-align: center;
