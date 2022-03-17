@@ -2,6 +2,7 @@
     "directory": [
         {
             "company": "Webb and Morton, PLLC",
+            "slogan": "No case too big, no case too small",
             "address": "910 N Sandhills Blvd, Aberdeen, NC 28315",
             "phone": "(910) 944-9555",
             "level": "Gold",
@@ -10,6 +11,7 @@
         },
         {
             "company": "Bed Bath & Beyond",
+            "slogan": "Beyond Any Store Of Its Kind",
             "address": "11088 North U.S. 15-501, Aberdeen, North Carolina 28315",
             "level": "Gold",
             "phone": "(910) 695-1010",
@@ -25,6 +27,7 @@
         },
         {
             "company": " Mac's Breakfast Anytime",
+            "slogan": "Just Like Grandma's Home Cookin",
             "address": " 1904 N Sandhills Blvd, Aberdeen, NC 28315",
             "level": "Gold",
             "phone": " (910) 692-9806",
@@ -40,6 +43,7 @@
         },
         {
             "company": " Aldi",
+            "slogan": "Spend a little, live a lot",
             "address": " 1500 N Sandhills Blvd, Aberdeen, NC 28315",
             "phone": " (855) 955-2534",
             "level": "Gold",
@@ -76,6 +80,7 @@
         },
         {
             "company": " Aberdeen & Rockfish Railroad",
+            "slogan": "Road Of Personal Service",
             "address": " 101 E. Main St.  Aberdeen NC 28315",
             "phone": " 910-944-2341",
             "level": "Gold",
