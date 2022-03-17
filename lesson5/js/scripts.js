@@ -105,6 +105,9 @@ fetch(requestURL)
 function displaySpotlight(spolight) {
     // Create elements to add to the document
     let business = document.createElement('section');
+    let business1 = document.createElement('section');
+    let business2 = document.createElement('section');
+    let business3 = document.createElement('section');
     let h3 = document.createElement('h3');
     let logo = document.createElement('img');
     let h4 = document.createElement('h4');
@@ -124,19 +127,34 @@ function displaySpotlight(spolight) {
     }
 
     //setting classes names to the element created
-    business.className = "spotlight-box1";
-    business.className = "spotlight-box2";
-    business.className = "spotlight-box3";
+    business1.className = "spotlight-box1";
+    business2.className = "spotlight-box2";
+    business3.className = "spotlight-box3";
     logo.className = "spotlightlogoimg";
 
 
 
-    // Add/append the section(card) with the h2 element
-    business.appendChild(logo);
-    business.appendChild(h3);
-    business.appendChild(h4);
-    business.appendChild(p);
+    // Add/append the section(spotlight-box1)
+    business1.appendChild(logo);
+    business1.appendChild(h3);
+    business1.appendChild(h4);
+    business1.appendChild(p);
+
+    // Add/append the section(spotlight-box2)
+    business2.appendChild(logo);
+    business2.appendChild(h3);
+    business2.appendChild(h4);
+    business2.appendChild(p);
+
+    // Add/append the section(spotlight-box3)
+    business3.appendChild(logo);
+    business3.appendChild(h3);
+    business3.appendChild(h4);
+    business3.appendChild(p);
 
     // Add/append the existing HTML div with the cards class with the section(business)
     spotlights.append(business);
+    spotlights.append(business1);
+    spotlights.append(business2);
+    spotlights.append(business3);
 }
