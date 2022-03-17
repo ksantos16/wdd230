@@ -7,7 +7,8 @@
             "phone": "(910) 944-9555",
             "level": "Gold",
             "website": "https://www.webbandmorton.com/",
-            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/law.png"
+            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/law.png",
+            "alt": "Webb and Morton, PLLC Logo"
         },
         {
             "company": "Bed Bath & Beyond",
@@ -16,30 +17,34 @@
             "level": "Gold",
             "phone": "(910) 695-1010",
             "website": "https://www.bedbathandbeyond.com/",
-            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/bedbath.png"
+            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/bedbath.png",
+            "alt": "Bed Bath & Beyond Logo"
         },
         {
-            "company": " Builders FirstSource ",
+            "company": "Builders FirstSource ",
             "address": " 3189 NC Highway 5, Aberdeen, North Carolina 28315 ",
             "phone": "(910) 944-2516 ",
             "website": "https://www.builders1stsource.com/",
-            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/buildersfirstsource.png"
+            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/buildersfirstsource.png",
+            "alt": "Builders FirstSource Logo"
         },
         {
-            "company": " Mac's Breakfast Anytime",
+            "company": "Mac's Breakfast Anytime ",
             "slogan": "Just Like Grandma's Home Cookin",
             "address": " 1904 N Sandhills Blvd, Aberdeen, NC 28315",
             "level": "Gold",
             "phone": " (910) 692-9806",
             "website": "https://www.macsbreakfast.com/",
-            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/macs.png"
+            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/macs.png",
+            "alt": "Mac's Breakfast Anytime Logo"
         },
         {
-            "company": " Security Management Inc",
+            "company": "Security Management Inc",
             "address": " 2239 Pinehurst Plz, Aberdeen, NC 28315",
             "phone": " (910) 215-0616",
             "website": "https://www.securitymanagement.com/",
-            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/security.png"
+            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/security.png",
+            "alt": "Security Management Inc Logo"
         },
         {
             "company": " Aldi",
@@ -48,35 +53,40 @@
             "phone": " (855) 955-2534",
             "level": "Gold",
             "website": "https://www.aldi.com/",
-            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/aldi.png"
+            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/aldi.png",
+            "alt": "Aldi Logo"
         },
         {
             "company": "Royal Threads",
             "address": "3250 Nc 5 Hwy, Aberdeen, NC 28315",
             "phone": "(910) 944-0932",
             "website": "https://www.royalthreads.com/",
-            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/royalthreads.png"
+            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/royalthreads.png",
+            "alt": "Royal Threads Logo"
         },
         {
             "company": " T J Maxx",
             "address": "125 Aberdeen Pines St, Aberdeen, NC 28315",
             "phone": "(910) 246-5325",
             "website": "https://www.tjmaxx.com/",
-            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/tjmaxx.png"
+            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/tjmaxx.png",
+            "alt": "T J Maxx Logo"
         },
         {
             "company": " Nail City",
             "address": " 1680 NC Highway 5 Ste 145 Aberdeen, NC 28315",
             "phone": " (910) 215-8193",
             "website": "https://www.nailcity.com/",
-            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/nail.png"
+            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/nail.png",
+            "alt": "Nail City Logo"
         },
         {
             "company": " Next Level Salon and Barber",
             "address": " 101 W South St Aberdeen, NC 28315",
             "phone": " (910) 944-4756",
             "website": " https://www.nextlevelsalon.com/",
-            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/salon.png"
+            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/salon.png",
+            "alt": "Next Level Salon and Barber Logo"
         },
         {
             "company": " Aberdeen & Rockfish Railroad",
@@ -85,14 +95,16 @@
             "phone": " 910-944-2341",
             "level": "Gold",
             "website": " https://www.aberdeen-rockfish.com/",
-            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/rockfish.png"
+            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/rockfish.png",
+            "alt": "Aberdeen & Rockfish Railroad Logo"
         },
         {
             "company": " Artist League of the Sandhills",
             "address": " 129 Exchange St., Aberdeen  Aberdeen NC 28315",
             "phone": " 910-944-3979",
             "website": " http://www.artistleague.org",
-            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/artist.png"
+            "imageurl": "https://ksantos16.github.io/wdd230/lesson9/images/artist.png",
+            "alt": "Artist League of the Sandhills Logo"
         }
     ]
 }
