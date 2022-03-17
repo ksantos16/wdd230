@@ -6,6 +6,7 @@ let windChill = document.querySelector("#windChill");
 let temperature = document.querySelector("#temp");
 let windSpeed = document.querySelector("#windSpeed");
 let weathericon = document.querySelector('#icon-src');
+let icon1 = ""
 
 
 fetch(apiURL)
@@ -22,7 +23,7 @@ fetch(apiURL)
         console.log(iconsrc);
         const desc = jsObject.weather[0].description;
 
-        weathericon = iconsrc;
+        icon1 = iconsrc;
         document.querySelector('#weathericon').setAttribute('src', iconsrc);
         document.querySelector('#weathericon').setAttribute('alt', desc);
         document.querySelector('figcaption').textContent = desc;
@@ -37,9 +38,19 @@ fetch(requestURL)
     })
     .then(function (object) {
         // console.log(jsonObject); // temporary checking for valid response and data parsing
-        const icon = object['myweather'];
-        console.log(icon);
-        icon.forEach(myWeatherIcon);
+        const icons = object['myweather'];
+        console.log(icons);
+
+        function choseIcon(icon) {
+            return icon.icon == icon1;
+        }
+
+        function extractValues(icon) {
+            return icon.imageurl;
+        }
+
+        // Map is used in this example. Look at the Map page to learn about the map function.
+        weathericon = icons.filter((icon) => choseIcon(icon)).map((icon) => extractValues(icon));
 
     });
 
@@ -61,13 +72,13 @@ if (temperature <= 50 && windSpeed >= 4.8) {
 
 console.log(windChill);
 
-function myWeatherIcon(icon) {
-    if (icon === weathericon);
+// function myWeatherIcon(icon) {
+//     if (icon === weathericon);
 
-    let myicon = icon.myweather.imageurl;
+//     let myicon = icon.myweather.imageurl;
 
-    weathericon.textContent = myicon;
+//     weathericon.textContent = myicon;
 
 
-}
-console.log(myicon);
+// }
+// console.log(myicon);
