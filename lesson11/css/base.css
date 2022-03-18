@@ -550,7 +550,7 @@ tr:nth-child(odd) {
     font-size: 2rem;
 }
 
-h3{
+.contactheadline{
     font-family: var(--heading-text);
     color: var(--accent-color);
 }
@@ -590,8 +590,16 @@ p{
     margin-left: 1rem;
 }
 
-.contactform form fieldset{
-    padding: 2rem;
+.contactform{
+    padding: 1rem;
+    padding-bottom: 4rem;
+}
+
+.contactbutton{
+    background-color: var(--accent-color);
+    color: white;
+    border-radius: 3px;
+    border: none;
 }
 
 .googlemap iframe{

@@ -75,23 +75,23 @@
             </div>
         </div>
         <div class="contactinfo">
-            <h3>General Inquiries</h3>
+            <h3 class="contactheadline">General Inquiries</h3>
             <p>We are always happy to answer general inquiries or route you to the right person to address your
                 questions! Give us a call or fill out the form below.
                 <br>
                 +1 (910) 944-1115
             </p>
 
-            <h3>Membership</h3>
+            <h3 class="contactheadline">Membership</h3>
             <p>For questions about joining the Chamber or accessing existing member benefits, including the community
                 calendar and member news portal, contact:
                 members@aberdeenchamber.org</p>
 
-            <h3>Sponsorship opportunities</h3>
+            <h3 class="contactheadline">Sponsorship opportunities</h3>
             <p>sponsor@aberdeenchamber.org</p>
 
 
-            <h3>Media inquiries</h3>
+            <h3 class="contactheadline">Media inquiries</h3>
             <p>media@aberdeenchamber.org</p>
         </div>
 
@@ -99,22 +99,22 @@
             <fieldset class="contactform">
                 <legend>Contact US</legend>
 
-                <label class="top">Name* <input type="text" name="name" required></label>
+                <label class="top">Name* <input type="text" name="name" placeholder="Full Name" required></label>
                 <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com"
                         required></label>
-                <label class="top">Company Name *<input type="text" name="cname" required></label>
+                <label class="top">Company Name *<input type="text" name="cname" placeholder="Company Name"
+                        required></label>
                 <div>Are you a Chamber Member</div>
                 <label class="sbs"><input type="radio" name="response" value="yes">Yes</label>
                 <label class="sbs"><input type="radio" name="response" value="no">No</label>
                 <label class="sbs"><input type="radio" name="response" value="not sure">Not Sure</label>
 
-                <legend>Question/Concern</legend>
-
+                <h3 class="contactheadline">Question/Concern</h3>
                 <label class="top">Enter text here...<textarea rows="4" cols="50" name="comment"
                         form="usrform"></textarea></label>
             </fieldset>
 
-            <input class="button" type="submit" value="Send My Question/Concern">
+            <input class="contactbutton" type="submit" value="Send My Question/Concern">
             <input class="formDate" type="hidden" name="completedDate">
 
         </form>

@@ -134,10 +134,11 @@ function displaySpotlight(spolight) {
         logo.setAttribute('src', spolight.imageurl);
         logo.setAttribute('alt', spolight.alt);
         logo.setAttribute('loading', 'lazy');
+    } else if (spolight.company === "Aberdeen & Rockfish Railroad" && window.innerWidth <= 949) {
+        business.style.display = "none";
     } else {
         business.style.display = "none";
     }
-
     //setting classes names to the element created
     business.className = "spotlight-box1";
     // business2.className = "spotlight-box2";
