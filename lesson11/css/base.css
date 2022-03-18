@@ -27,9 +27,9 @@ img{
     width: 50%; 
 }
  
-.weather img{
+figure.weather{
     width: 80%;
-    text-align: center;
+    justify-content: center;
 }
 
  /* ---------------HEADLINES----------------- */
