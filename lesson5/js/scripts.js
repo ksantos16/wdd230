@@ -1,3 +1,6 @@
+// -----------------------------  HAMBURGER BUTTON ------------------------------------- //
+
+
 const primaryNav = document.querySelector("#primaryNav")
 const hamburgerBtn = document.querySelector("#hamburgerBtn")
 
@@ -5,6 +8,9 @@ hamburgerBtn.addEventListener("click", () => {
     document.querySelector("#primaryNav").classList.toggle("open");
     document.querySelector("#hamburgerBtn").classList.toggle("open");
 });
+
+
+// -----------------------------  DATE DISPLAY IN NAV & FOOTER ------------------------------------- //
 
 
 // const options = {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'};
@@ -58,6 +64,10 @@ currentyear2.innerHTML = toadysdate.getFullYear();
 
 document.getElementById('currentdate').textContent = currentdate;
 
+
+// -----------------------------  LAST VISIT ------------------------------------- //
+
+
 function lastVisit() {
 
     let today = new Date();
@@ -84,6 +94,8 @@ function lastVisit() {
 lastVisit();
 
 
+
+// -----------------------------  SPOTLIGHT ------------------------------------- //
 
 const requestURL = 'https://ksantos16.github.io/wdd230/lesson9/json/directory.json';
 const spotlights = document.querySelector('.spotlight-box');
