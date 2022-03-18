@@ -202,8 +202,24 @@
    .directoryLogo {
        width: 70%;
    }
-   
-   
-   
-   
+
+/* --------------------- CONTACT US ---------------------- */
+
+.contact-main-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.infoblock{
+    grid-column: 1/3;
+}
+
+fieldset.contactform{
+    grid-column: 1;
+}
+
+.contactinfo{
+    grid-column: 2;
+}
+
 }

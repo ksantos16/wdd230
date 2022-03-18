@@ -74,12 +74,37 @@
                 <p>+1 (910) 944-1115</p>
             </div>
         </div>
+
+        <form method="get" action="contactthanks.html">
+            <fieldset class="contactform">
+                <legend class="contactheadline">Contact US</legend>
+
+                <label class="top">Name* <input type="text" name="name" placeholder="Full Name" required></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com"
+                        required></label>
+                <label class="top">Company Name *<input type="text" name="cname" placeholder="Company Name"
+                        required></label>
+                <div>Are you a Chamber Member</div>
+                <label class="sbs"><input type="radio" name="response" value="yes">Yes</label>
+                <label class="sbs"><input type="radio" name="response" value="no">No</label>
+                <label class="sbs"><input type="radio" name="response" value="not sure">Not Sure</label>
+
+                <h3 class="contactheadline">Question/Concern</h3>
+                <label class="message">Enter text here...<textarea rows="4" cols="50" name="comment"
+                        form="usrform"></textarea></label>
+            </fieldset>
+
+            <input class="contactbutton" type="submit" value="Send My Question/Concern">
+            <input class="formDate" type="hidden" name="completedDate">
+
+        </form>
+
         <div class="contactinfo">
             <h3 class="contactheadline">General Inquiries</h3>
             <p>We are always happy to answer general inquiries or route you to the right person to address your
                 questions! Give us a call or fill out the form below.
                 <br>
-                +1 (910) 944-1115
+                <strong>+1 (910) 944-1115</strong>
             </p>
 
             <h3 class="contactheadline">Membership</h3>
@@ -95,37 +120,12 @@
             <p>media@aberdeenchamber.org</p>
         </div>
 
-        <form method="get" action="contactthanks.html">
-            <fieldset class="contactform">
-                <legend>Contact US</legend>
-
-                <label class="top">Name* <input type="text" name="name" placeholder="Full Name" required></label>
-                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com"
-                        required></label>
-                <label class="top">Company Name *<input type="text" name="cname" placeholder="Company Name"
-                        required></label>
-                <div>Are you a Chamber Member</div>
-                <label class="sbs"><input type="radio" name="response" value="yes">Yes</label>
-                <label class="sbs"><input type="radio" name="response" value="no">No</label>
-                <label class="sbs"><input type="radio" name="response" value="not sure">Not Sure</label>
-
-                <h3 class="contactheadline">Question/Concern</h3>
-                <label class="top">Enter text here...<textarea rows="4" cols="50" name="comment"
-                        form="usrform"></textarea></label>
-            </fieldset>
-
-            <input class="contactbutton" type="submit" value="Send My Question/Concern">
-            <input class="formDate" type="hidden" name="completedDate">
-
-        </form>
-
         <div class="googlemap">
             <iframe
                 src=https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3262.92948631597!2d-79.42998438552893!3d35.13343316742801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8854b5a7ac1c1df1%3A0x5923f47001d08b1f!2s115%20N%20Poplar%20St%2C%20Aberdeen%2C%20NC%2028315!5e0!3m2!1sen!2sus!4v1647396207919!5m2!1sen!2sus"
                 style="border:0;" allowfullscreen="" loading="lazy">
             </iframe>
         </div>
-
 
     </main>
     <footer>

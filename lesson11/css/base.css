@@ -590,9 +590,20 @@ p{
     margin-left: 1rem;
 }
 
+img.contact-picture{
+display: none;
+}
+
 .contactform{
+    font-family: var(--body-text);
     padding: 1rem;
     padding-bottom: 4rem;
+}
+
+.message{
+    margin-top: -1rem;
+    font-family: var(--body-text);
+    color: var(--accent-color);
 }
 
 .contactbutton{
@@ -600,9 +611,14 @@ p{
     color: white;
     border-radius: 3px;
     border: none;
+    padding: .3rem;
+    position: absolute;
+    margin-top: -3.7rem;
+    margin-left: 2rem;
 }
 
 .googlemap iframe{
     width: 95%;
-    margin-left: 1rem;
+    margin-left: 1.15rem;
+    margin-top: -.5rem;
 }
