@@ -265,6 +265,16 @@ nav ul.open {display:block;}
     flex-direction: column-reverse;
     font-size: 1rem;
     font-family: var(--heading-text);
+    background-color: var(--secondary-color);
+    color: white;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+}
+
+p.oneparagraph{
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
 }
 
 .two, .three, .four, .five, .six, .seven, .eight, .nine{
