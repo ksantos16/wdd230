@@ -154,6 +154,9 @@ nav ul.open {display:block;}
 
  /* -------------------- MAIN -------------------- */
 
+main{
+    position: relative;
+}
 
 .main-container{
     display: grid;

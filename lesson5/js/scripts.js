@@ -107,15 +107,25 @@ fetch(requestURL)
     .then(function (jsonObject) {
         // console.log(jsonObject); // temporary checking for valid response and data parsing
         let businesses = jsonObject['directory'];
+        const originalarray = jsonObject['directory'];
+        businesses.forEach(displaySpotlight);
 
+        window.onresize = () => {
+            if (window.innerWidth < 949) {
+                spotlights.innerHTML = "";
+                businesses = businesses.filter(business => (business.company != "Aberdeen & Rockfish Railroad"))
+                businesses.forEach(displaySpotlight);
+                console.log(businesses);
 
-        if (window.innerWidth <= 949) {
-            businesses = businesses.filter(business => (business.company != "Aberdeen & Rockfish Railroad"))
-            console.log(businesses);
-        } else {
-            console.log(businesses);
-            businesses.forEach(displaySpotlight);
-        }
+            } else if (window.innerWidth <= 949) {
+                spotlights.innerHTML = "";
+                businesses.forEach(displaySpotlight);
+            } else if (window.innerWidth > 949) {
+                window.innerWidth > 949
+                spotlights.innerHTML = "";
+                originalarray.forEach(displaySpotlight);
+            }
+        };
     })
 
 
