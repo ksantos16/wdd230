@@ -106,20 +106,24 @@ fetch(requestURL)
     })
     .then(function (jsonObject) {
         // console.log(jsonObject); // temporary checking for valid response and data parsing
-        const businesses = jsonObject['directory'];
-        businesses.forEach(displaySpotlight);
-
-    });
+        let businesses = jsonObject['directory'];
 
 
+        if (window.innerWidth <= 949) {
+            businesses = businesses.filter(business => (business.company != "Aberdeen & Rockfish Railroad"))
+            console.log(businesses);
+        } else {
+            console.log(businesses);
+            businesses.forEach(displaySpotlight);
+        }
+    })
 
 
 function displaySpotlight(spolight) {
+
+    console.log(spolight.company);
     // Create elements to add to the document
     let business = document.createElement('section');
-    // let business1 = document.createElement('section');
-    // let business2 = document.createElement('section');
-    // let business3 = document.createElement('section');
     let h3 = document.createElement('h3');
     let logo = document.createElement('img');
     let h4 = document.createElement('h4');
@@ -134,14 +138,11 @@ function displaySpotlight(spolight) {
         logo.setAttribute('src', spolight.imageurl);
         logo.setAttribute('alt', spolight.alt);
         logo.setAttribute('loading', 'lazy');
-    } else if (spolight.company === "Aberdeen & Rockfish Railroad" && window.innerWidth <= 949) {
-        business.style.display = "none";
     } else {
         business.style.display = "none";
     }
     //setting classes names to the element created
     business.className = "spotlight-box1";
-    // business2.className = "spotlight-box2";
     // business3.className = "spotlight-box3";
     logo.className = "spotlightlogoimg";
 
@@ -152,29 +153,7 @@ function displaySpotlight(spolight) {
     business.appendChild(h4);
     business.appendChild(p);
 
-
-
-    // Add/append the section(spotlight-box1)
-    // business1.appendChild(logo);
-    // business1.appendChild(h3);
-    // business1.appendChild(h4);
-    // business1.appendChild(p);
-
-    // Add/append the section(spotlight-box2)
-    // business2.appendChild(logo);
-    // business2.appendChild(h3);
-    // business2.appendChild(h4);
-    // business2.appendChild(p);
-
-    // Add/append the section(spotlight-box3)
-    // business3.appendChild(logo);
-    // business3.appendChild(h3);
-    // business3.appendChild(h4);
-    // business3.appendChild(p);
-
     // Add/append the existing HTML div with the cards class with the section(business)
     spotlights.append(business);
-    // spotlights.append(business1);
-    // spotlights.append(business2);
-    // spotlights.append(business3);
+
 }
