@@ -163,7 +163,7 @@ nav ul.open {display:block;}
 }
 
 h1.welcome{
-    position: relative;
+    position: absolute;
     top: 1rem;
     left: 2rem;
     font-size: 1.5rem;
