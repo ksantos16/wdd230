@@ -3,10 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Aberdeen Chamber of Commerce Membership Levels and Application</title>
+    <title>Aberdeen Chamber of Commerce</title>
     <meta name="author" content="Kira Santos">
-    <meta name="description" content="Aberdeen Chamber of Commerce Directory.">
-    <meta http-equiv=" X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Home Page for Aberdeen Chamber of Commerce.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,14 +17,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans+Condensed:wght@300&family=Open+Sans:wght@300&family=Playfair+Display&family=Roboto:wght@300&family=Zen+Antique&display=swap"
         rel="stylesheet">
-    <link rel="shortcut icon" href="images/favicon (1).ico">
+    <link rel="icon" type="image/x-icon" href="images/favicon1.ico">
     <link rel="stylesheet" href="../normalize.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <script defer src="js/scripts.js"></script>
     <script defer src="js/banner.js"></script>
-    <script defer src="js/directory.js"></script>
+    <script defer src="js/windchill.js"></script>
 
 </head>
 
@@ -33,21 +32,22 @@
     <div id="banner">
         <h2>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.!</h2>
     </div>
-    <div id="inactive-banner"></div>
     <header>
         <nav>
             <div class="logos-container">
                 <picture>
                     <img class="logo" src="images/aberdeenlogo.webp"
                         alt="picture of red train representing aberdeen chamber of commerce logo" width="100">
+                </picture>
             </div>
             <div class="social">
                 <div> <a href="https://www.linkedin.com/"><img class="linkedin" src="images/linkedIn.png"
-                            alt="linkedin"></div>
-                </a>
-                <div> <a href="https://twitter.com/"><img class="twitter" src="images/twitterlogo.png" alt="twitter">
+                            alt="linkedin"></a>
                 </div>
-                </a>
+                <div> <a href="https://twitter.com/"><img class="twitter" src="images/twitterlogo.png"
+                            alt="twitter"></a>
+                </div>
+
             </div>
             <button id="hamburgerBtn"><span>&#9776;</span><span> X </span></button>
             <ul id="primaryNav">
@@ -168,17 +168,15 @@
             </div>
 
             <div class="author">
-                <p>&copy<span id="currentyear2"></span> Aberdeen Chamber of Commerce |
+                <p>&copy;<span id="currentyear2"></span> Aberdeen Chamber of Commerce |
                     <strong>Kira
                         Santos</strong> | WDD 230 Project |<br>
                     <span id="lastmod2"></span>
                 </p>
                 <p><span>Number of Day Last Visited: </span><span class="lastv"></span></p>
+                <p>Weather provided from OpenWeatherMap</p>
             </div>
-
         </div>
-
-
     </footer>
 
 </body>
