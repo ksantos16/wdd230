@@ -144,7 +144,6 @@ nav ul.open {display:block;}
 
 #currentdate{
     display: grid;
-    grid-area: "MyArea";
     background-color: rgba(25, 25, 25, 0.938);
     color: white;
     padding: 1rem;
@@ -334,7 +333,7 @@ main {
  }
 
  form legend{
-     color: 445ba9;
+     color: #445ba9;
      margin: 0 1rem;
      padding: 0 .5rem;
  }
