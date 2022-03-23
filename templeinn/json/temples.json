@@ -1,0 +1,60 @@
+{
+    "directory": [
+        {
+            "name": "Manila Philippines Temple",
+            "address": "13 Temple Drive corner Whiteplains Avenue, Greenmeadows Subdivision, UGONG NORTE, Quezon City, 1110 Metro Manila, Philippines",
+            "phone": "(63) 2-8635-9111",
+            "email": "",
+            "services": "Clothing rental available, No cafeteria available, No patron housing available, Distribution center nearby",
+            "history": "Announced: 1 April 1981 Groundbreaking: 25 August 1982 Dedicated: 25 September 1984",
+            "ordinance schedule": "",
+            "session schedule": "",
+            "temple closure schedule": "Saturday, 9 April 2022, Monday, 1 August 2022 - Monday, 15 August 2022, Saturday, 8 October 2022, Saturday, 24 December 2022, Saturday, 31 December 2022",
+            "image": "https://ksantos16.github.io/wdd230/templeinn/images/temples/manila-philippines-temple.jpg",
+            "like": "",
+            "alt": "Behind palm tree a Large White Building with a 5 spires, know as a temple. On the top on the middle largest spire is angel Moroni blowing a trumpet."
+        },
+        {
+            "name": "Orlando Florida Temple",
+            "address": "9000 Windy Ridge Rd, Windermere, FL 34786-8347, United States",
+            "phone": "(1) 407-876-0022",
+            "email": "",
+            "services": "Clothing rental available, No cafeteria available, No patron housing available, Distribution center nearby",
+            "history": "Announced: 6 April 1991 Groundbreaking: 20 June 1992 Dedicated: 9 October 1994",
+            "ordinance schedule": "",
+            "session schedule": "",
+            "temple closure schedule": "Saturday, 2 April 2022 Monday, 15 August 2022 - Monday, 12 December 2022 Saturday, 24 December 2022 Saturday, 31 December 2022",
+            "image": "https://ksantos16.github.io/wdd230/templeinn/images/temples/orlando-temple.jpg",
+            "like": "",
+            "alt": "Orlando Florida Temple, The Church of Jesus Christ of Latter Day Saints sign in front of a Large White Building with a spire, know as a temple. On the top on the spire is angel Moroni blowing a trumpet."
+        },
+        {
+            "name": "Raleigh North Carolina Temple",
+            "address": "574 Bryan Dr, Apex NC 27502-4127, United States",
+            "phone": "(1) 919-362-4135",
+            "email": "",
+            "services": "No clothing rental available, No cafeteria available, No patron housing available, No distribution center nearby",
+            "history": "Announced: 3 September 1998, Groundbreaking: 6 February 1999, Dedicated: 18 December 1999, Rededicated: 13 October 2019",
+            "ordinance schedule": "",
+            "session schedule": "",
+            "temple closure schedule": "Saturday, 2 April 2022 - Sunday, 3 April 2022, Monday, 9 May 2022 - Monday, 23 May 2022, Saturday, 1 October 2022 - Sunday, 2 October 2022, Monday, 31 October 2022 - Monday, 14 November 2022, Wednesday, 23 November 2022 - Thursday, 24 November 2022, Saturday, 24 December 2022, Saturday, 31 December 2022 (Limited Operations)",
+            "image": "https://ksantos16.github.io/wdd230/templeinn/images/temples/releigh-temple.jpg",
+            "like": "",
+            "alt": "Behind a black fence is Large White Building with a spire, know as a temple. On the top on the spire is angel Moroni blowing a trumpet."
+        },
+        {
+            "name": "Bern Switzerland Temple",
+            "address": "Tempelstrasse 2, CH-3052 Zollikofen, Switzerland",
+            "phone": "(41) 31-915-5252",
+            "email": "",
+            "services": "Clothing rental available, No cafeteria available, Patron housing available, Distribution center nearby",
+            "history": "Announced: 1 July 1952, Groundbreaking: 5 August 1953, Dedicated: 11 September 1955, Rededicated: 23 October 1992",
+            "ordinance schedule": "",
+            "session schedule": "",
+            "temple closure schedule": "Monday, 13 June 2022 - Monday, 27 June 2022, Saturday, 24 December 2022, Saturday, 31 December 2022",
+            "image": "https://ksantos16.github.io/wdd230/templeinn/images/temples/bern-switzerland-temple",
+            "like": "",
+            "alt": "Evergreen tree next to a Large White Building with a spire, know as a temple. On the top on the spire is angel Moroni blowing a trumpet."
+        }
+    ]
+}
