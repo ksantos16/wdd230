@@ -1,0 +1,144 @@
+:root {
+    --primary-color: #fbffffff;
+    --secondary-color:rgba(25, 25, 25, 0.823);
+    --accent-color: #be1922ff;
+    --font: 'PT Serif', serif;
+    --menu-icon-width: 3em;
+    --menu-icon-height: $menu-icon-width * 0.75;
+    --menu-icon-color: #363636;
+    --menu-icon-color--active: #D00251;
+}
+ /* ------------------ HOMEPAGE ------------------- */
+ .menuBtn{
+     width: 70px;
+     height: 70px;
+     background: aquamarine;
+     box-shadow: 0 10px 20px rgb(0,0,0,0.08);
+     border-radius: 10px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     cursor: pointer;
+     overflow: hidden;
+ }
+
+ .menuBtn span{
+     position: absolute;
+     width: 40px;
+     height: 4px;
+     background: var(--menu-icon-color);
+     border-radius: 4px;
+    transition: 0.5s;
+ }
+
+ .menuBtn span:nth-child(1){
+    transform: translateY(-15px);
+    width: 25px;
+    left: 15px;
+
+}
+
+.menuBtn.active span:nth-child(1){
+    width: 40px;
+    transform: translateY(0px) rotate(45deg);
+    transition-delay: 0.125s;
+}
+
+.menuBtn span:nth-child(2){
+    transform: translateY(15px);
+    width: 15px;
+    left: 15px;   
+}
+
+.menuBtn.active span:nth-child(2){
+    width: 40px;
+    transform: translateY(0px) rotate(315deg);
+    transition-delay: 0.25s;
+}
+
+.menuBtn.active span:nth-child(3){
+    transform: translateX(60px);
+    width: 15px;
+    left: 15px;   
+}
+
+/* -------------------- CAROUSEL ---------------------- */
+
+.carousel{
+    position: relative;
+    height: 600px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.carousel-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-track-container{
+    background-color: lightgreen;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-track{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+}
+
+.carousel-silde{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel-button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.carousel-button-left{
+    left: -40px;
+}
+
+.carousel-button-right{
+    right: -40px;
+}
+
+.carousel-button img{
+    width: 20px;
+}
+
+.carousel-nav{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.carousel-indicator{
+    border: 0;
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    background:rgb(0,0,0,.3);
+    margin: 0 12px;
+    cursor: pointer;
+}
+
+.carousel-indicator.current-slide{
+    background-color: rgba(0,0,0,0.75);
+}
+
+.is-hidden {display: none;}
