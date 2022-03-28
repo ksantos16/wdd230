@@ -7,26 +7,29 @@ menuBtn.addEventListener("click", () => {
 });
 
 // WEATHER ALERT
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?q=Aberdeen,NC,us&units=imperial&APPID=c0b762abe477dc3799ef6dd1a6e3151f";
-let alert = document.querySelector(".weather-alert");
+const apiURL = "https://api.openweathermap.org/data/2.5/onecall?lat=38.980&lon=-77.1003&exclude=minutely&appid=c0b762abe477dc3799ef6dd1a6e3151f";
+
+const closeBtn = document.querySelector(".closeBtn")
 
 fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
 
-        temperature.textContent = jsObject.main.temp.toFixed(0);
-        windSpeed.textContent = jsObject.wind.speed;
+        if (jsObject === "alerts") {
 
-        let iconsrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
-        let weatherimg = jsObject.weather[0].icon;
-        const desc = jsObject.weather[0].description;
+            let weatherMessage = jsObject.alerts.description;
+            document.querySelector(".weather-alert").innerHTML = weatherMessage;
+            console.log(weatherMessage);
 
-        alert.addEventListener("click", () => {
-            alert.classList.toggle("close");
+        } else {
+            document.querySelector(".weather-alert").classList.toggle("close");
+        };
+
+        closeBtn.addEventListener("click", () => {
+            document.querySelector(".weather-alert").classList.toggle("close");
+            document.querySelector(".closeBtn").classList.toggle("close");
         });
 
     });
-
-
 
 // 

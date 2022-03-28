@@ -1,30 +1,31 @@
-
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?q=Bethesda,MD,us&units=imperial&APPID=c0b762abe477dc3799ef6dd1a6e3151f";
+const weatherApi = "https://api.openweathermap.org/data/2.5/onecall?lat=38.980&lon=-77.1003&exclude=minutely&units=imperial&APPID=c0b762abe477dc3799ef6dd1a6e3151f";
+let forecast = document.querySelector(".weather-forcast");
 let temperature = document.querySelector(".temperature");
 let condition = document.querySelector(".condition");
 let humidity = document.querySelector(".humidity");
 
-fetch(apiURL)
+fetch(weatherApi)
     .then((response) => response.json())
     .then((jsObject) => {
+        console.log(jsObject);
 
-        const desc = jsObject.weather[0].description;
+        const desc = jsObject.current.weather[0].description;
 
-        temperature.textContent = jsObject.main.temp.toFixed(0);
+        temperature.textContent = `${jsObject.hourly[0].temp.toFixed(0)}° F`;
         condition.textContent = desc;
-        humidity.textContent = jsObject.main.humidity.toFixed(0);
+        humidity.textContent = `Humidity: ${jsObject.hourly[0].humidity.toFixed(0)}`;
 
-        let iconsrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
-        let weatherimg = jsObject.weather[0].icon;
+        let iconsrc = `https://openweathermap.org/img/w/${jsObject.current.weather[0].icon}.png`;
+        let weatherimg = jsObject.current.weather[0].icon;
 
 
         icon1 = iconsrc;
         document.querySelector('.weather-icon-img').setAttribute('src', iconsrc);
         document.querySelector('.weather-icon-img').setAttribute('alt', desc);
 
-        const requestURL = 'https://ksantos16.github.io/wdd230/templeinn/json/weather-icons.json';
+        const request = 'https://ksantos16.github.io/wdd230/templeinn/json/weather-icons.json';
 
-        fetch(requestURL)
+        fetch(request)
             .then(function (response) {
                 return response.json();
             })
@@ -36,7 +37,7 @@ fetch(apiURL)
                 icons.forEach(image => {
                     if (image.id === weatherimg) {
                         let myicon = image.imageurl;
-                        document.querySelector('#weathericon').setAttribute('src', myicon);
+                        document.querySelector('.weather-icon-img').setAttribute('src', myicon);
                         console.log(myicon);
                     }
 

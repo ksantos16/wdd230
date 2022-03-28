@@ -9,6 +9,27 @@
     --menu-icon-color--active: #D00251;
 }
  /* ------------------ HOMEPAGE ------------------- */
+
+ /* ---------------- WEATHER ALERT ---------------- */
+
+ .weather-alert{
+     display: block;
+     background-color: #D00251;
+     color: white;
+     font-size: 14px;
+ }
+
+ .closeBtn{
+     color: white;
+     background: transparent;
+     border: none;
+     font-weight: bolder;
+     font-size: 1rem;
+     cursor: pointer;
+ }
+
+
+ /* ---------------- MENU BUTTON ------------------ */
  .menuBtn{
      width: 70px;
      height: 70px;
