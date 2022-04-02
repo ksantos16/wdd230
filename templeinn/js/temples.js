@@ -19,7 +19,8 @@ function displayTemples(temple) {
     // Create elements to add to the document
     let card = document.createElement('section');
     let image = document.createElement('img')
-    let templeName = document.createElement('h3');
+    let templeNames = document.createElement('h3');
+    let headings = document.createElement('h4')
     let information = document.createElement('p');
     let p2 = document.createElement('p');
     let p3 = document.createElement('p');
