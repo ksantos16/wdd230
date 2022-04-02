@@ -46,8 +46,9 @@
         },
         {
             "name": "Raleigh North Carolina Temple",
-            "pinimg": "https://ksantos16.github.io/wdd230/templeinn/images/icons/pin.svg",
+            "image": "https://ksantos16.github.io/wdd230/templeinn/images/temples/releigh-temple.jpg",
             "alt": "Behind a black fence is Large White Building with a spire, know as a temple. On the top on the spire is angel Moroni blowing a trumpet.",
+            "pinimg": "https://ksantos16.github.io/wdd230/templeinn/images/icons/pin.svg",
             "address": "574 Bryan Dr, Apex NC 27502-4127, United States",
             "phone": "(1) 919-362-4135",
             "email": "RALEI-OFF@ChurchofJesusChrist.org",
@@ -62,13 +63,13 @@
             "templeclosureschedule": "Saturday, 2 April 2022 - Sunday, 3 April 2022, Monday, 9 May 2022 - Monday, 23 May 2022, Saturday, 1 October 2022 - Sunday, 2 October 2022, Monday, 31 October 2022 - Monday, 14 November 2022, Wednesday, 23 November 2022 - Thursday, 24 November 2022, Saturday, 24 December 2022, Saturday, 31 December 2022 (Limited Operations)",
             "historytitle": "Milestones",
             "history": "Announced: 3 September 1998, Groundbreaking: 6 February 1999, Dedicated: 18 December 1999, Rededicated: 13 October 2019",
-            "image": "https://ksantos16.github.io/wdd230/templeinn/images/temples/releigh-temple.jpg",
             "like": ""
         },
         {
             "name": "Bern Switzerland Temple",
-            "pinimg": "https://ksantos16.github.io/wdd230/templeinn/images/icons/pin.svg",
+            "image": "https://ksantos16.github.io/wdd230/templeinn/images/temples/bern-switzerland-temple",
             "alt": "Evergreen tree next to a Large White Building with a spire, know as a temple. On the top on the spire is angel Moroni blowing a trumpet.",
+            "pinimg": "https://ksantos16.github.io/wdd230/templeinn/images/icons/pin.svg",
             "address": "Tempelstrasse 2, CH-3052 Zollikofen, Switzerland",
             "phone": "(41) 31-915-5252",
             "email": "SWISS-OFF@ChurchofJesusChrist.org",
@@ -83,7 +84,6 @@
             "templeclosureschedule": "Monday, 13 June 2022 - Monday, 27 June 2022, Saturday, 24 December 2022, Saturday, 31 December 2022",
             "historytitle": "Milestones",
             "history": "Announced: 1 July 1952, Groundbreaking: 5 August 1953, Dedicated: 11 September 1955, Rededicated: 23 October 1992",
-            "image": "https://ksantos16.github.io/wdd230/templeinn/images/temples/bern-switzerland-temple",
             "like": ""
         }
     ]

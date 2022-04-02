@@ -23,7 +23,7 @@ function displayTemples(temple) {
     let headings = document.createElement('h4')
     let information = document.createElement('p');
     let phone = document.createElement('p');
-    let adress = document.createElement('p');
+    let address = document.createElement('p');
     let email = document.createElement('p');
     let likeBtn = document.createElement('img');
 
@@ -32,23 +32,42 @@ function displayTemples(temple) {
     templeNames.className = "temple-name";
     information.className = "para";
     phone.className = "icon";
-    adress.className = "icon";
+    address.className = "icon";
     email.className = "";
     likeBtn.className = "likeBtn icon";
 
     // Change the textContent property of the h2 element to contain the prophet's full name
-    templeNames.textContent = `${directory.name}`;
-    headings.textContent = `${directory.schedule title
-} `;
-    information.textContent = `${ directory.phone } `;
-    phone.textContent = `${ directory.website } `;
-    adress.textContent = `${ directory.website } `;
-    email.textContent = `${ directory.website } `;
+    templeNames.textContent = `${temple.name}`;
 
-    // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
-    logo.setAttribute('src', business.imageurl);
-    logo.setAttribute('alt', `${ business.company } logo`);
-    logo.setAttribute('loading', 'lazy');
+    headings.textContent = `${temple.scheduletitle}`;
+    information.textContent = `${temple.phase}`;
+    information.textContent = `${temple.ordinanceschedule}`;
+    information.textContent = `${temple.sessionschedule}`;
+
+    // Service Info
+    headings.textContent = `${temple.servicetitle}`;
+    information.textContent = `${temple.services}`;
+
+    // Closure Info
+    headings.textContent = `${temple.closuretitle}`;
+    headings.textContent = `${temple.year}`;
+    information.textContent = `${temple.templeclosureschedule}`;
+
+    // History Info
+    headings.textContent = `${temple.historytitle}`;
+    information.textContent = `${temple.history}`;
+
+    // Contact Info
+    phone.textContent = `${temple.phone}`;
+    address.textContent = `${temple.address}`;
+    email.textContent = `${temple.email}`;
+
+    // Temple Image
+
+
+    templeImg.setAttribute('src', temple.image);
+    templeImg.setAttribute('alt', `${temple.alt}`);
+    templeImg.setAttribute('loading', 'lazy');
 
     // Add/append the section(card) with the h2 element
     card.appendChild(logo);
@@ -58,5 +77,5 @@ function displayTemples(temple) {
     card.appendChild(p3);
 
     // Add/append the existing HTML div with the cards class with the section(card)
-    cards.append(card);
+    temples.append(card);
 }
