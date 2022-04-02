@@ -53,6 +53,9 @@ function displayTemples(temple) {
     let emailIcon = document.createElement('img');
     let email = document.createElement('p');
 
+    // Like Button
+    let likeBtn = document.createElement('div');
+
     // Assigning classes for CSS design ------------------------------------------------------------------
 
     // card.className = "card";
@@ -128,8 +131,7 @@ function displayTemples(temple) {
 
     // Like Button ---------------------------------------------------------------------
     likeBtn.innerHTML = `<div class="likeBtn">${temple.like}</div>
-                            <span><img class="like" src="https://ksantos16.github.io/wdd230/templeinn/images/icons/emptyheart.png"
-                            alt="click heart if you want to save temple"></span>`;
+                            <span></span>`;
 
 
     // Add/append the section(card)
