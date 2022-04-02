@@ -130,7 +130,8 @@ function displayTemples(temple) {
     email.textContent = `${temple.email}`;
 
     // Like Button ---------------------------------------------------------------------
-    likeBtn.innerHTML = `<div class="likeBtn">${temple.like}</div>
+    likeBtn.innerHTML = `<div class="likeBtn"><img class="contact-icon" src= ${temple.like}
+    alt="click the heart to save the temple of your choice"></div>
                             <span></span>`;
 
 
