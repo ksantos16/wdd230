@@ -1,26 +1,38 @@
 :root {
-    --primary-color: #fbffffff;
-    --secondary-color:rgba(25, 25, 25, 0.823);
-    --accent-color: #be1922ff;
+    --primary-color: #fffdf8;
+    --secondary-color: #e9edc9;
+    --third-color: #fefae0;
+    --accent-color1: #ccd5ae;
+    --accent-color2: #faedcd;
+    --accent-color3: #d4a373;
     --font: 'PT Serif', serif;
-    --menu-icon-width: 3em;
-    --menu-icon-height: $menu-icon-width * 0.75;
-    --menu-icon-color: #363636;
-    --menu-icon-color--active: #D00251;
 }
- /* ------------------ HOMEPAGE ------------------- */
 
- /* ---------------- WEATHER ALERT ---------------- */
+  /* ------------------ HOMEPAGE --------------------- */
+
+  /* -------- APPLY TO THE ENTIRE HOMEPAGE ----------- */
+
+  body{
+      font-family: 'PT Serif', 'serif';
+      background-color: var(--primary-color);
+  }
+
+  a{
+      text-decoration: none;
+      color: black;
+  }
+
+ /* ---------------- WEATHER ALERT ------------------- */
 
  .weather-alert{
      display: block;
-     background-color: #D00251;
-     color: white;
-     font-size: 14px;
+     background-color: var(--accent-color1);
+     color: black;
+     font-size: 12px;
  }
 
  .closeBtn{
-     color: white;
+     color: black;
      background: transparent;
      border: none;
      font-weight: bolder;
@@ -28,138 +40,399 @@
      cursor: pointer;
  }
 
-
- /* ---------------- MENU BUTTON ------------------ */
- .menuBtn{
-     width: 70px;
-     height: 70px;
-     background: aquamarine;
-     box-shadow: 0 10px 20px rgb(0,0,0,0.08);
-     border-radius: 10px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     cursor: pointer;
-     overflow: hidden;
+ .close{
+     display: none;
  }
 
- .menuBtn span{
-     position: absolute;
-     width: 40px;
-     height: 4px;
-     background: var(--menu-icon-color);
-     border-radius: 4px;
-    transition: 0.5s;
- }
+ /*  ----------------- IMAGES ---------------------- */
 
- .menuBtn span:nth-child(1){
-    transform: translateY(-15px);
-    width: 25px;
-    left: 15px;
 
-}
-
-.menuBtn.active span:nth-child(1){
-    width: 40px;
-    transform: translateY(0px) rotate(45deg);
-    transition-delay: 0.125s;
-}
-
-.menuBtn span:nth-child(2){
-    transform: translateY(15px);
-    width: 15px;
-    left: 15px;   
-}
-
-.menuBtn.active span:nth-child(2){
-    width: 40px;
-    transform: translateY(0px) rotate(315deg);
-    transition-delay: 0.25s;
-}
-
-.menuBtn.active span:nth-child(3){
-    transform: translateX(60px);
-    width: 15px;
-    left: 15px;   
-}
-
-/* -------------------- CAROUSEL ---------------------- */
-
-.carousel{
-    position: relative;
-    height: 600px;
-    width: 80%;
-    margin: 0 auto;
-}
-
-.carousel-image{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.carousel-track-container{
-    background-color: lightgreen;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-}
-
-.carousel-track{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    position: relative;
-    height: 100%;
-    transition: transform 250ms ease-in;
-}
-
-.carousel-silde{
-    position: absolute;
-    top: 0;
-    bottom: 0;
+img{
     width: 100%;
 }
 
-.carousel-button{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: transparent;
-    border: 0;
-    cursor: pointer;
-}
-
-.carousel-button-left{
-    left: -40px;
-}
-
-.carousel-button-right{
-    right: -40px;
-}
-
-.carousel-button img{
+img.contact-icon{
     width: 20px;
 }
 
-.carousel-nav{
-    display: flex;
+img.icon{
+    width: 30px;
+}
+
+.brkfst img{
+    width: 40px;
+}
+
+div.logo picture img{
+    width: 75%;
+}
+
+.logo2{
+    display: none;
+}
+
+.carousel{
+    display: none;
+}
+
+div.sm-view-hero-image{
     justify-content: center;
-    padding: 10px 0;
 }
 
-.carousel-indicator{
-    border: 0;
-    border-radius: 50%;
-    width: 13px;
-    height: 13px;
-    background:rgb(0,0,0,.3);
-    margin: 0 12px;
-    cursor: pointer;
+img.weather-icon-img{
+    width: 50%;
+    grid-column: 1;
+    margin-left: 3rem;
 }
 
-.carousel-indicator.current-slide{
-    background-color: rgba(0,0,0,0.75);
+/* ---------------------- HEADER ----------------------------- */
+header{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+    /* ---------------- MENU BUTTON ------------------ */
+    .menuBtn{
+        position: absolute;
+        width: 2rem;
+        height: 2rem;
+        background: transparent;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        overflow: hidden;
+        top: 1%;
+        right: 8%;
+    }
+
+    .menuBtn span{
+        position: absolute;
+        width: 1.95rem;
+        height: 2px;
+        background: black;
+        border-radius: 4px;
+        transition: 0.5s;
+    }
+
+    .menuBtn span:nth-child(1){
+        transform: translateY(-.9rem);
+        width: 1.9rem;
+        left: 0;
+        margin-top: .7rem;
+
+    }
+
+    .menuBtn.active span:nth-child(1){
+        width: 2rem;
+        transform: translateY(0px) rotate(45deg);
+        transition-delay: 0.125s;
+        margin-top: 0;
+    }
+
+    .menuBtn span:nth-child(2){
+        transform: translateY(.9rem);
+        width: 1.9rem;
+        left: 0;   
+        margin-bottom: .7rem;
+    }
+
+    .menuBtn.active span:nth-child(2){
+        width: 2rem;
+        transform: translateY(0px) rotate(-45deg);
+        transition-delay: 0.25s;
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+
+    .menuBtn.active span:nth-child(3){
+        transform: translateX(60px);
+        width: 1.5rem;
+        left: 1rem;
+        background: none;   
+    }
+
+    /* ----------------- NAVIGATION ------------------- */
+
+    ul.nav  {display: none;}
+    ul.nav.active {display:block;}
+
+    ul.nav li{
+        list-style-type: none;
+
+    }
+
+    ul.nav li a{
+        display: block;
+        text-decoration: none;
+    }
+
+    ul.nav.active{
+        color: var(--accent-color3);
+        padding: 0;
+    }
+
+    ul.nav.active li{
+        text-decoration: none;
+        border-bottom: 1px solid rgba(0,0,0,0.5);
+        align-items: center;
+        padding: .8rem .3rem;
+        color: var(--accent-color3);
+    }
+
+
+    ul.nav, .active a{
+        color: var(--accent-color3);
+    }
+
+    ul.nav.active li a:hover{
+        border-bottom: 2px solid rgba(0,0,0,0.5);
+        cursor: pointer;
+    }
+
+    ul.nav li a.active-page{
+       font-weight: bold;
+       border-bottom: 2px solid var(--accent-color1);
+       cursor: pointer;
+
+    }
+
+    .header-address2{
+        display: none;
+    }
+
+    .nav-company-name{display: none;}
+
+    .nav-contact-icons{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-left: -.3rem;
+    }
+
+    .header-phone{
+        display: flex;
+        align-items: center;
+    }
+
+    .header-map{
+        display: flex;
+        align-items: center;
+    }
+
+    .book-button{
+        background-color: var(--accent-color3);
+        width: 95%;
+        padding: .3rem;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+/* ------------------- BODY ------------------------- */
+
+.hotel-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
 }
 
-.is-hidden {display: none;}
+    /*  ------------------ OVERLAY --------------------- */
+
+    .overlay{
+        position: absolute;
+        top: 4%;
+        height: 3rem;
+        margin-top: 1rem;
+        border-left: 5.5px solid var(--accent-color3);
+        border-radius: 5px;
+        padding-left: .3rem;
+        margin-left: .5rem;
+        text-shadow: 1px 1px rgb(56, 56, 56);
+    }
+
+    .overlay h1{
+        background-color: #ccd5ae98;
+        color: var(--primary-color);
+        padding: 1rem 0;
+        border-radius: 5px;
+        margin-top: 0;
+        font-size: 1rem;
+        border: 1px 0 1px 1px solid rgba(83, 82, 82, 0.527);
+        box-shadow: 2px 2px rgba(51, 51, 51, 0.527);
+    }
+
+
+/* ----------------- CONTENT ---------------------- */
+
+    /* ---------------- ROME ITALY ---------------- */
+
+    .my-choice-temple-img2{
+        display:none;
+    }
+
+    .rome{
+        font-size: medium;
+    }
+
+    .info{
+        font-size: smaller;
+    }
+
+    .my-choice-temple-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: var(--third-color);
+        padding: 0 2rem 0 2rem;
+        border-top: 1px solid rgba(0,0,0,0.5);
+        border-bottom: 1px solid rgba(0,0,0,0.5);
+        margin-top: -3.1px;
+        grid-column-gap: .5rem;
+    }
+
+    .list{
+        list-style-type: none;
+        padding-left: 0;
+
+    }
+
+    .my-choice-temple-contact{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-top: 2px solid rgba(0,0,0,0.5);
+    }
+
+    .my-choice-temple-phone{
+        grid-column: 1;
+        display: flex;
+        font-size: .6rem;
+        margin-left: .9rem;
+        align-items: center;
+    }
+
+    .my-choice-temple-address{
+        grid-column: 2;
+        display: flex;
+        font-size: .6rem;
+        align-items: center;
+    }
+
+    /* -------------- FREE AMENITES --------------- */
+
+    .amenites-title{
+        text-align: center;
+    }
+
+    .home-free-amenites{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        text-align: center;
+        font-size: 9px;
+        margin: 0 auto;
+       text-align: center;
+    }
+
+    .row1{
+        grid-row: 1;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+    }
+
+    .row2{
+        grid-row: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row3{
+        grid-row: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row4{
+        grid-row: 4;
+        display: flex;
+        justify-content: center;
+ 
+    }
+
+    /*---------------- WEATHER CARDS -------  */
+    div.weather-forcast{
+        background-color: var(--third-color);
+        border-top: 1px solid rgba(0,0,0,0.5);
+        border-bottom: 1px solid rgba(0,0,0,0.5);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
+
+    .weather-conditions{
+        display: flex;
+        flex-direction: column;
+        grid-column: 2;
+        justify-content: center;
+    }
+    /* --------------- FOOTER -------------- */
+    .footer{
+        display: grid;
+        /* grid-template-rows: .2fr 1fr 1fr 1fr; */
+        text-align: center;
+    }
+
+    .contact-title{
+        grid-row: 1;
+    }
+
+    .contact-us-footer{
+        grid-row: 2;
+        display: flex;
+        flex-direction: column;
+        font-size: 9px;
+    }
+
+        .footer-phone{
+            margin-left: -38px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer-map{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+        }
+
+        .footer-email{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 15px;
+        }
+
+    .social-media-icons{
+        grid-row: 3;
+    }
+
+    .message-us-container{
+        grid-row: 4;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    div.message-button{
+        grid-column: 1/2;
+        background-color: var(--accent-color3);
+        width: 40%;
+        padding: .3rem;
+        border-radius: 5px;
+        
+    }
+
+    .message-form{
+        display: none;
+    }

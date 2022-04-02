@@ -19,211 +19,262 @@
     <script defer src="../templeinn/js/carousel.js"></script>
     <script defer src="../templeinn/js/weather.js"></script>
 </head>
+<header>
 
-<body>
-    <header>
-
-        <div class="weather-alert">
-            <button class="closeBtn"><span> X </span></button>
-        </div>
-        <div class="logo">
-            <picture>
-                <img src="../templeinn/images/templeinn-logo.webp" alt="text that says The Temple Inn & Suites">
-            </picture>
-        </div>
-        <h1 class="nav-company-name"></h1>
-        <div class="nav-contact-icons">
-            <picture>
-                <div class="nav-phone icon"><img src="../templeinn/images/icons/phone.svg"
-                        alt="phone icon to call Temple Inn and Suites">+1 800-123-4567</div>
-            </picture>
-            <div class="nav-pin icon"><a href="https://goo.gl/maps/GW4r8T3i78VaGh1cA"><img
-                        src="../templeinn/images/icons/pin.svg"
-                        alt="pin icon to navigate to Temple Inn and Suites headquaters"></a>
-                Headquarters:4800 Montgomery Ln #300, Bethesda, MD 20814</div>
-        </div>
-        <div class="book-button">BOOK MY STAY</div>
+    <div class="weather-alert">
+        <button class="closeBtn"><span> X </span></button>
+    </div>
+    <div class="logo">
+        <picture>
+            <img src="../templeinn/images/templeinn-logo.webp" alt="text that says The Temple Inn & Suites">
+        </picture>
+    </div>
+    <div class="logo2">
+        <picture>
+            <img src="../templeinn/images/templeinn-icon.webp" alt="icon for The Temple Inn & Suites">
+        </picture>
+    </div>
+    <nav class="navigation">
         <div class="menuBtn">
             <span></span>
             <span></span>
             <span></span>
         </div>
-        <nav class="navigation">
-            <ul>
-                <li><a href="index.html">HOTEL</a></li>
-                <li><a href="../templeinn/temple.html">TEMPLE</a></li>
-                <li><a href="../templeinn/reservation.html">RESERVATION</a></li>
-                <li><a href="../templeinn/services.html">SERVICES</a></li>
-            </ul>
-        </nav>
+        <ul class="nav">
+            <li><a class="active-page" href="index.html">HOTEL</a></li>
+            <li><a href="../templeinn/temple.html">TEMPLE</a></li>
+            <li><a href="../templeinn/reservation.html">RESERVATION</a></li>
+            <li><a href="../templeinn/services.html">SERVICES</a></li>
+        </ul>
+    </nav>
+    <h2 class="nav-company-name">TEMPLE INN & SUITES</h2>
+    <div class="nav-contact-icons">
+        <div class="header-phone">
+            <picture><img class="contact-icon" src="../templeinn/images/icons/phone.svg"
+                    alt="phone icon to call Temple Inn and Suites">
+            </picture>
+            <p>+1 800-123-4567</p>
+        </div>
+        <div class="header-map">
+            <a href="https://goo.gl/maps/GW4r8T3i78VaGh1cA"><img class="contact-icon"
+                    src="../templeinn/images/icons/pin.svg"
+                    alt="pin icon to navigate to Temple Inn and Suites headquaters"></a>
+            <div class="header-address1"><a href="https://goo.gl/maps/GW4r8T3i78VaGh1cA">Map</a></div>
+            <div class="header-address2"><a href="https://goo.gl/maps/GW4r8T3i78VaGh1cA">Headquarters:4800 Montgomery Ln
+                    #300, Bethesda, MD 20814</a></div>
+        </div>
+    </div>
+    <div class="book-button"><a href="../templeinn/rooms.html">BOOK MY STAY</a></div>
+</header>
 
-    </header>
+<body>
+    <main class="hotel-grid">
+        <div class="sm-view-hero-image">
+            <picture><img class="hero-img" src="images/temples/orlando-temple.jpg" alt=""></picture>
+        </div>
 
-    <body>
-        <main class="hotel-grid">
-            <div class="carousel">
-                <button class="carousel-button carousel-button-left is-hidden">
-                    <img src="images/icons/left-arrow.svg" alt="" srcset="">
-                </button>
-                <div class="carousel-track-container">
-                    <ul class="carousel-track">
-                        <li class="carousel-silde current-slide">
-                            <img class="carousel-image" src="images/temples/orlando-temple.jpg" alt="">
-                        </li>
-                        <li class="carousel-silde">
-                            <img class="carousel-image" src="images/temples/rome-recommend-desk.jpg" alt="">
-                        </li>
-                        <li class="carousel-silde">
-                            <img class="carousel-image" src="images/temples/rome-baptismal-font.jpg" alt="">
-                        </li>
-                        <li class="carousel-silde">
-                            <img class="carousel-image" src="images/temples/rome-endowment-room.jpg" alt="">
-                        </li>
-                        <li class="carousel-silde">
-                            <img class="carousel-image" src="images/temples/rome-celestial-room.jpg" alt="">
-                        </li>
-                        <li class="carousel-silde">
-                            <img class="carousel-image" src="images/temples/rome-sealing-room.jpg" alt="">
-                        </li>
-                    </ul>
-                </div>
-                <button class="carousel-button carousel-button-right">
-                    <img src="images/icons/right-arrow.svg" alt="">
-                </button>
-                <div class="carousel-nav">
-                    <button class="carousel-indicator current-slide"></button>
-                    <button class="carousel-indicator"></button>
-                    <button class="carousel-indicator"></button>
-                    <button class="carousel-indicator"></button>
-                    <button class="carousel-indicator"></button>
-                    <button class="carousel-indicator"></button>
-                </div>
+        <div class="carousel">
+            <button class="carousel-button carousel-button-left is-hidden">
+                <img src="images/icons/left-arrow.svg" alt="left arrow">
+            </button>
+            <div class="carousel-track-container">
+                <ul class="carousel-track">
+                    <li class="carousel-silde current-slide">
+                        <img class="carousel-image" src="images/temples/orlando-temple.jpg" alt="orlando temple">
+                    </li>
+                    <li class="carousel-silde">
+                        <img class="carousel-image" src="images/temples/rome-recommend-desk.jpg"
+                            alt="rome-recommend-desk">
+                    </li>
+                    <li class="carousel-silde">
+                        <img class="carousel-image" src="images/temples/rome-baptismal-font.jpg"
+                            alt="rome-baptismal-font">
+                    </li>
+                    <li class="carousel-silde">
+                        <img class="carousel-image" src="images/temples/rome-endowment-room.jpg"
+                            alt="rome-endowment-room">
+                    </li>
+                    <li class="carousel-silde">
+                        <img class="carousel-image" src="images/temples/rome-celestial-room.jpg"
+                            alt="rome-celestial-room">
+                    </li>
+                    <li class="carousel-silde">
+                        <img class="carousel-image" src="images/temples/rome-sealing-room.jpg" alt="rome-sealing-room">
+                    </li>
+                </ul>
+            </div>
+            <button class="carousel-button carousel-button-right">
+                <img src="images/icons/right-arrow.svg" alt="right arrow">
+            </button>
+            <div class="carousel-nav">
+                <button class="carousel-indicator current-slide"></button>
+                <button class="carousel-indicator"></button>
+                <button class="carousel-indicator"></button>
+                <button class="carousel-indicator"></button>
+                <button class="carousel-indicator"></button>
+                <button class="carousel-indicator"></button>
+            </div>
+        </div>
+
+        <div class="overlay">
+            <h1>WELCOME TO TEMPLE INN & SUITES</h1>
+        </div>
+
+        <picture class="my-choice-temple-img1"><img src="images/temples/rome-italy-temple.jpg"
+                alt="large white building with a spire. fountain infront of building surounded by trees, atop the spire is angel moroni">
+        </picture>
+        <div class="my-choice-temple-container">
+            <picture class="my-choice-temple-img2"><img src="images/temples/rome-italy-temple.jpg"
+                    alt="large white building with a spire. fountain infront of building surounded by trees, atop the spire is angel moroni">
+            </picture>
+            <div class="my-choice-temple">
+                <h2 class="rome">ROME ITALY TEMPLE</h2>
+                <h3 class="info">Temple Schedules</h3>
+                <ul class="list info">
+                    <li>PHASE 3: ALL LIVING ORDINANCES AND LIMITED PROXY ORDINANCES. Based on First Presidency
+                        direction, this temple has resumed limited operations.</li>
+                    <li>Ordinance Schedule: Available by appointment only</li>
+                    <li>Session Schedule: Available by appointment only</li>
+                </ul>
             </div>
 
-            <h1>WELCOME TO TEMPLE INN & SUITES</h1>
-            <div class="my-choice-temple-container">
-                <picture class="my-choice-temple-img"><img src="images/temples/rome-italy-temple.jpg"
-                        alt="large white building with a spire. fountain infront of building surounded by trees, atop the spire is angel moroni">
-                </picture>
-                <div class="my-choice-temple-info">
-                    <h2>ROME ITALY TEMPLE</h2>
-                    <h3>Temple Schedules</h3>
-                    <ul>
-                        <li>PHASE 3: ALL LIVING ORDINANCES AND LIMITED PROXY ORDINANCES. Based on First Presidency
-                            direction, this temple has resumed limited operations.</li>
-                        <li>Ordinance Schedule: Available by appointment only</li>
-                        <li>Session Schedule: Available by appointment only</li>
-                    </ul>
-                    <h3>Services</h3>
-                    <ul>
-                        <li>Clothing rental available</li>
-                        <li>No cafeteria available</li>
-                        <li>Patron housing available</li>
-                        <li>Distribution center nearby</li>
-                    </ul>
-                    <h3>Temple Closures</h3>
-                    <h3>2022</h3>
-                    <ul>
-                        <li>Monday, 28 February 2022 - Monday, 9 May 2022</li>
-                        <li>Wednesday, 29 June 2022</li>
-                        <li>Monday, 19 September 2022 - Monday, 3 October 2022</li>
-                        <li>Saturday, 24 December 2022 - Monday, 26 December 2022</li>
-                        <li>Saturday, 31 December 2022 - Sunday, 1 January 2023</li>
-                    </ul>
-                    <h3>Milestones</h3>
-                    <ul>
-                        <li>Announced: 4 October 2008</li>
-                        <li>Groundbreaking: 23 October 2010</li>
-                        <li>Dedicated: 10 March 2019</li>
-                    </ul>
-                </div>
+            <div class="my-choice-temple">
+                <h3 class="info">Services</h3>
+                <ul class="list info">
+                    <li>Clothing rental available</li>
+                    <li>No cafeteria available</li>
+                    <li>Patron housing available</li>
+                    <li>Distribution center nearby</li>
+                </ul>
+            </div>
+
+            <div class="my-choice-temple">
+                <h3 class="info">Temple Closures</h3>
+                <h3 class="info">2022</h3>
+                <ul class="list info">
+                    <li>Monday, 28 February 2022 - Monday, 9 May 2022</li>
+                    <li>Wednesday, 29 June 2022</li>
+                    <li>Monday, 19 September 2022 - Monday, 3 October 2022</li>
+                    <li>Saturday, 24 December 2022 - Monday, 26 December 2022</li>
+                    <li>Saturday, 31 December 2022 - Sunday, 1 January 2023</li>
+                </ul>
+            </div>
+
+            <div class="my-choice-temple">
+                <h3 class="info">Milestones</h3>
+                <ul class="list info">
+                    <li>Announced: 4 October 2008</li>
+                    <li>Groundbreaking: 23 October 2010</li>
+                    <li>Dedicated: 10 March 2019</li>
+                </ul>
+            </div>
+
+            <div class="my-choice-temple-contact">
                 <div class="my-choice-temple-phone">
-                    <picture class="icon"><img src="images/icons/phone.svg" alt="phone icon"></picture>
+                    <picture><img class="contact-icon" src="images/icons/phone.svg" alt="phone icon"></picture>
                     <p>(39) 06-9480-5050</p>
                 </div>
-                <div>
-                    <picture class="icon"><img src="images/icons/pin.svg" alt="address pin icon"></picture>
+                <div class="my-choice-temple-address">
+                    <picture><img class="contact-icon" src="images/icons/pin.svg" alt="address pin icon"></picture>
                     <p>Via di Settebagni 376<br>
                         Rome RM<br>
                         Italy
                     </p>
                 </div>
-                <h1>FREE AMENITES</h1>
-                <div class="home-free-amenites">
-                    <figure class="icon row1"><img src="images/icons/breakfast.svg" alt="free breakfast icon"></figure>
-                    <figcaption>Complementary Breakfast</figcaption>
-                    <figure class="icon row1"><img src="images/icons/fitness.svg" alt="fitness center icon"></figure>
-                    <figcaption>Fitness Center</figcaption>
-                    <figure class="icon row1"><img src="images/icons/pool.svg" alt="indoor pool icon"></figure>
-                    <figcaption>Indoor Pool</figcaption>
-                    <figure class="icon row1"><img src="images/icons/wifi.svg" alt="free wifi icon"></figure>
-                    <figcaption>Free Wifi</figcaption>
-                    <figure class="icon row2"><img src="images/icons/smarttv.svg" alt="smart tv icon"></figure>
-                    <figcaption>Smart TVs</figcaption>
-                    <figure class="icon row2"><img src="images/icons/parking.svg" alt="free parking"></figure>
-                    <figcaption>Free Parking</figcaption>
-                    <figure class="icon row2"><img src="images/icons/shuttle.svg" alt="shuttle service icon"></figure>
-                    <figcaption>Shuttle Services</figcaption>
-                    <figure class="icon row2"><img src="images/icons/familyhistory.svg" alt="family history icon">
-                    </figure>
-                    <figcaption>Family History Services</figcaption>
-                </div>
             </div>
-            <div class="weather-forcast">
-                <picture><img src="" alt="" class="weather-icon-img"></picture>
-                <span class="temperature"></span>
-                <span class="condition"></span>
-                <span class="humidity"></span>
+        </div>
+        <h2 class="amenites-title">FREE AMENITES</h2>
+        <div class="home-free-amenites">
+            <div class="row1">
+                <figure><img class="icon brkfst" src="images/icons/breakfast.svg" alt="free breakfast icon">
+                    <p>Complementary <br> Breakfast</p>
+                </figure>
+                <figure><img class="icon" src="images/icons/fitness.svg" alt="fitness center icon">
+                    <p>Fitness Center</p>
+                </figure>
             </div>
-        </main>
-        <footer class="footer">
-            <div class="contact-us-footer">
-                <h3>CONTACT US:</h3>
-                <picture class="icon"><img src="images/icons/phone.svg" alt="phone icon"></picture>
+            <div class="row2">
+                <figure><img class="icon" src="images/icons/pool.svg" alt="indoor pool icon">
+                    <p>Indoor Pool</p>
+                </figure>
+                <figure><img class="icon" src="images/icons/wifi.svg" alt="free wifi icon">
+                    <p>Free Wifi</p>
+                </figure>
+            </div>
+            <div class="row3">
+                <figure><img class="icon" src="images/icons/smarttv.svg" alt="smart tv icon">
+                    <p>Smart TVs</p>
+                </figure>
+                <figure><img class="icon" src="images/icons/parking.svg" alt="free parking">
+                    <p>Free Parking</p>
+                </figure>
+            </div>
+            <div class="row4">
+                <figure><img class="icon" src="images/icons/shuttle.svg" alt="shuttle service icon">
+                    <p>Shuttle Services</p>
+                </figure>
+                <figure><img class="icon" src="images/icons/familyhistory.svg" alt="family history icon">
+                    <p>Family History Services</p>
+                </figure>
+            </div>
+        </div>
+        <div class="weather-forcast">
+            <picture><img src="" alt="" class="weather-icon-img"></picture>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <h3 class="contact-title">CONTACT US:</h3>
+        <div class="contact-us-footer">
+            <div class="footer-phone">
+                <picture><img class="contact-icon" src="images/icons/phone.svg" alt="phone icon"></picture>
                 <p>+1 800-123-4567</p>
-                <picture class="icon"><img src="images/icons/pin.svg" alt="headquaters address pin icon"></picture>
-                <p>Headquarters:<br>
-                    4800 Montgomery Ln #300<br>
-                    Bethesda, MD 20814
+            </div>
+            <div class="footer-map">
+                <a href="https://goo.gl/maps/GW4r8T3i78VaGh1cA"><img class="contact-icon"
+                        src="../templeinn/images/icons/pin.svg"
+                        alt="pin icon to navigate to Temple Inn and Suites headquaters"></a>
+                <p><a href="https://goo.gl/maps/GW4r8T3i78VaGh1cA">
+                        Headquarters:<br>
+                        4800 Montgomery Ln #300<br>
+                        Bethesda, MD 20814</a>
                 </p>
-                <picture><img src="images/icons/email.svg" alt="email icon"></picture>
+            </div>
+            <div class="footer-email">
+                <picture><img class="contact-icon" src="images/icons/email.svg" alt="email icon"></picture>
                 <p>contact@templeinnsuites.org</p>
             </div>
+        </div>
 
-            <div class="social-media-icons">
-                <h3>FOLLOW US:</h3>
-                <picture class="icon"><a href="https://www.facebook.com/"><img src="images/icons/facebook.svg"
-                            alt="facebook icon"></a>
-                </picture>
-                <picture class="icon"><a href="https://www.instagram.com/"><img src="images/icons/instagram.svg"
-                            alt="instagram icon"></a>
-                </picture>
-                <picture class="icon"><a href="https://twitter.com/"><img src="images/icons/twitter.svg"
-                            alt="twitter icon"></a>
-                </picture>
-                <picture class="icon"><a href="https://www.youtube.com/"><img src="images/icons/youtube.svg"
-                            alt="youtube icon"></a>
-                </picture>
-            </div>
+        <div class="social-media-icons">
+            <h3>FOLLOW US:</h3>
+            <a href="https://www.facebook.com/"><img class="icon" src="images/icons/facebook.svg"
+                    alt="facebook icon"></a>
+            <a href="https://www.instagram.com/"><img class="icon" src="images/icons/instagram.svg"
+                    alt="instagram icon"></a>
+            <a href="https://twitter.com/"><img class="icon" src="images/icons/twitter.svg" alt="twitter icon"></a>
+            <a href="https://www.youtube.com/"><img class="icon" src="images/icons/youtube.svg" alt="youtube icon"></a>
+        </div>
 
-            <div class="message-us-container">
+        <div class="message-us-container">
+            <h3>MESSAGE US:</h3>
+            <div class="message-button"><a href="../templeinn/rooms.html">SEND A MESSAGE</a></div>
+            <div class="message-form">
                 <form method="get" action="contactthanks.html">
-                    <legend class="contactheadline">MESSAGE US:</legend>
-
-                    <label class="top">Name* <input type="text" name="name" placeholder="Full Name" required></label>
-                    <label class="top">Email* <input type="email" name="email" placeholder="Email" required></label>
-                    <label class="message">Message:<textarea rows="4" cols="50" name="comment" placeholder="Message"
-                            form="usrform"></textarea></label>
+                    <label class="name">Name* <input type="text" name="name" placeholder="Full Name" required></label>
+                    <label class="email">Email* <input type="email" name="email" placeholder="Email" required></label>
+                    <label class="message">Message:<textarea rows="3" cols="22" name="comment"
+                            placeholder="Message"></textarea></label>
 
                     <input class="send-message-button" type="submit" value="Send Message">
                 </form>
             </div>
-            <div class="end">
-                <p>&copy; 2022 Temple Inn and Suites | Kira Santos | OpenWeatherMap</p>
-            </div>
-        </footer>
-
         </div>
-    </body>
+        <div class="end">
+            <p>&copy; 2022 Temple Inn and Suites | Kira Santos | OpenWeatherMap</p>
+        </div>
+    </footer>
+
+</body>
 
 </html>

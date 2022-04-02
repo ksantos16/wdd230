@@ -3,6 +3,7 @@
 let menuBtn = document.querySelector(".menuBtn")
 
 menuBtn.addEventListener("click", () => {
+    document.querySelector(".nav").classList.toggle("active");
     menuBtn.classList.toggle("active");
 });
 
@@ -17,7 +18,7 @@ fetch(apiURL)
 
         if (jsObject === "alerts") {
 
-            let weatherMessage = jsObject.alerts.description;
+            let weatherMessage = jsObject.alerts[0].description;
             document.querySelector(".weather-alert").innerHTML = weatherMessage;
             console.log(weatherMessage);
 

@@ -1,8 +1,140 @@
 @media only screen and (min-width: 850px) {
  
-    /* ------------- HOMEPAGE ---------------  */
+/* ------------- HOMEPAGE ---------------  */
 
+/* ---------------------- HEADER ----------------------------- */
+header{
+    grid-template-rows: 1fr;
 
 }
 
 
+    /* ------------- NAVIGATION -------------- */
+
+    .logo2{
+        grid-row: 1;
+        width: 15%;
+        padding: 1.5rem;
+    }    
+    .book-button{
+        width: 15%;
+        position: absolute;
+        left: 77%;
+        top: 10%;
+    }
+
+    .nav-company-name{
+        top: 7%;
+    }
+
+    .header-phone{
+        top: 15%;
+    }
+
+    .header-map{
+        top: 25%;
+
+    }
+
+    .navigation{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .menuBtn{
+        display: none;
+    }
+    ul.nav{
+        display: block;
+        grid-column: 1/4;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    ul.nav li a:hover{
+        border-bottom: 2px solid var(--accent-color1);
+    }
+
+/*------------------------ CONTENT --------------------  */
+
+        /* -------------- FREE AMENITES --------------- */
+
+        .amenites-title{
+            text-align: center;
+        }
+    
+        .home-free-amenites{
+            display: grid;
+            grid-template-rows: 1fr;
+        }
+    
+        .row1, .row2, .row3 , .row4{
+            grid-row: 1;
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            justify-content: space-evenly;
+        }
+    
+
+/* --------------- FOOTER -------------- */
+
+div.message-button{
+    display: none;
+    }
+    
+    .message-form{
+        display: block;
+    }
+    
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+    }
+    
+    .contact-title{
+        grid-column: 1;
+        text-align: left;
+        padding: .5rem;
+    }
+    
+    .contact-us-footer{
+        grid-column: 1;
+        grid-row: 1;
+        margin-top: 4rem;
+        margin-left: -5rem;
+    }
+        .footer-phone{
+            grid-column: 1;
+            margin-left: -40px;
+        }
+    
+        .footer-map{
+            grid-column: 1;
+        }
+    
+        .footer-email{
+            grid-column: 1;
+        }
+    
+    .social-media-icons{
+        grid-column: 2;
+        grid-row: 1;
+        text-align: left;
+    }
+    
+    .message-us-container{
+        grid-column: 3;
+        grid-row: 1;
+        text-align: left;
+        padding-left: .5rem;
+    }
+    
+    .end{
+        grid-column: 1/4;
+        text-align: center;
+    }
+
+
+}
