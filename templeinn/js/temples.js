@@ -53,8 +53,7 @@ function displayTemples(temple) {
     let emailIcon = document.createElement('img');
     let email = document.createElement('p');
 
-    // Like Button
-    let likeBtn = document.createElement('img');
+    // Assigning classes for CSS design ------------------------------------------------------------------
 
     // card.className = "card";
     // image.className = "temple-pic";
@@ -127,6 +126,12 @@ function displayTemples(temple) {
     // Email
     email.textContent = `${temple.email}`;
 
+    // Like Button ---------------------------------------------------------------------
+    likeBtn.innerHTML = `<div class="likeBtn">${temple.like}</div>
+                            <span><img class="like" src="https://ksantos16.github.io/wdd230/templeinn/images/icons/emptyheart.png"
+                            alt="click heart if you want to save temple"></span>`;
+
+
     // Add/append the section(card)
     card.appendChild(templeNames);
 
@@ -147,13 +152,15 @@ function displayTemples(temple) {
     card.appendChild(hisHeadings);
     card.appendChild(hisInformation);
 
-    card.appendChild(phoneIcon);
-    card.appendChild(phone);
     card.appendChild(addressIcon);
     card.appendChild(address);
+    card.appendChild(phoneIcon);
+    card.appendChild(phone);
     card.appendChild(emailIcon);
     card.appendChild(email);
 
+
+    // Like Button
     card.appendChild(likeBtn);
 
 
