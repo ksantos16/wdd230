@@ -1,4 +1,4 @@
-const weatherApi = "https://api.openweathermap.org/data/2.5/onecall?lat=38.980&lon=-77.1003&exclude=minutely&units=imperial&APPID=c0b762abe477dc3799ef6dd1a6e3151f";
+const templeApi = "https://ksantos16.github.io/wdd230/templeinn/js/temples.json";
 let forecast = document.querySelector(".weather-forcast");
 
 fetch(weatherApi)
