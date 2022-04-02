@@ -1,7 +1,7 @@
-const templeApi = "https://ksantos16.github.io/wdd230/templeinn/js/temples.json";
-let forecast = document.querySelector(".weather-forcast");
+const templeApi = "https://ksantos16.github.io/wdd230/templeinn/json/temples.json";
+let temples = document.querySelector(".temples");
 
-fetch(weatherApi)
+fetch(templeApi)
     .then((response) => response.json())
     .then((jsObject) => {
         console.log(jsObject);
@@ -14,68 +14,42 @@ fetch(weatherApi)
     });
 
 
-function weatherForcast(weather) {
-    console.log(weather);
-    weather.map((info, idx) => {
-        if (idx <= 2) {
-            let card = document.createElement('section');
-            let day = document.createElement('p');
-            let mintemp = document.createElement('p');
-            let maxtemp = document.createElement('p');
-            let weathercondition = document.createElement('p');
-            let humidity = document.createElement('p');
+function displayTemples(temple) {
 
-            let desc = info.weather[0].description;
-            let date = new Date(info.dt * 1000); //timestamp * 1000
+    // Create elements to add to the document
+    let card = document.createElement('section');
+    let image = document.createElement('img')
+    let templeName = document.createElement('h3');
+    let information = document.createElement('p');
+    let p2 = document.createElement('p');
+    let p3 = document.createElement('p');
+    let logo = document.createElement('img');
 
-            day.textContent = day;
-            mintemp.textContent = `Low: ${info.temp.min.toFixed(0)}° F`;
-            maxtemp.textContent = `High: ${info.temp.max.toFixed(0)}° F`;
-            weathercondition.textContent = desc;
-            humidity.textContent = `Humidity: ${info.humidity.toFixed(0)}`;
+    card.className = "card"
+    h2.className = "company";
+    p1.className = "para";
+    p2.className = "para";
+    p3.className = "para";
+    logo.className = "directoryLogo";
 
-            let weatherimg = info.weather[0].icon;
+    // Change the textContent property of the h2 element to contain the prophet's full name
+    h2.textContent = `${business.company}`;
+    p1.textContent = `${business.address}`;
+    p2.textContent = `${business.phone}`;
+    p3.textContent = `${business.website}`;
 
-            let iconsrc = `https://openweathermap.org/img/w/${info.weather[0].icon
-                }.png`;
+    // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
+    logo.setAttribute('src', business.imageurl);
+    logo.setAttribute('alt', `${business.company} logo`);
+    logo.setAttribute('loading', 'lazy');
 
-            icon1 = iconsrc;
-            document.querySelector('.weather-icon-img').setAttribute('src', iconsrc);
-            document.querySelector('.weather-icon-img').setAttribute('alt', desc);
+    // Add/append the section(card) with the h2 element
+    card.appendChild(logo);
+    card.appendChild(h2);
+    card.appendChild(p1);
+    card.appendChild(p2);
+    card.appendChild(p3);
 
-            const request = 'https://ksantos16.github.io/wdd230/templeinn/json/weather-icons.json';
-
-            fetch(request)
-                .then(function (response) {
-                    return response.json();
-                })
-                .then(function (object) {
-                    // console.log(jsonObject); // temporary checking for valid response and data parsing
-                    const icons = object['myweather'];
-                    console.log(icons);
-
-                    icons.forEach(image => {
-                        if (image.id === weatherimg) {
-                            let myicon = image.imageurl;
-                            document.querySelector('.weather-icon-img').setAttribute('src', myicon);
-                            console.log(myicon);
-                        }
-
-                    })
-                });
-
-
-            card.appendChild(date);
-            card.appendChild(myicon)
-            card.appendChild(mintemp);
-            card.appendChild(maxtemp);
-            card.appendChild(weathercondition);
-            card.appendChild(humidity)
-
-            forecast.append(card);
-
-        }
-    })
-
-        .join(' ');
+    // Add/append the existing HTML div with the cards class with the section(card)
+    cards.append(card);
 }
