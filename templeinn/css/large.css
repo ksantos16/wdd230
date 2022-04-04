@@ -136,5 +136,25 @@ div.message-button{
         text-align: center;
     }
 
+/* ------------------------------------ RESERVATION PAGE -------------------------------- */
+
+    .reservation-container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .templeinn{
+        grid-column: 2;
+    }
+
+    .temple-inn-img{
+        width: 95%;
+        padding: .5rem;
+    }
+
+    form{
+    grid-column: 1;
+    grid-row: 1;
+    }
+
 
 }

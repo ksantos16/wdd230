@@ -7,7 +7,7 @@ fetch(templeApi)
         console.log(jsObject);
         const directory = jsObject['directory'];
         directory.forEach(displayTemples);
-
+        listenForLikes();
     });
 
 
@@ -17,11 +17,19 @@ function displayTemples(temple) {
     // Create elements to add to the document
     let card = document.createElement('section');
 
+    // Temple Info --------------------------------------------------------------------------------
+
     // Temple Name
     let templeNames = document.createElement('h3');
 
+    templeNames.textContent = `${temple.name}`;
+
     // Temple Image
     let templeImg = document.createElement('img')
+
+    templeImg.setAttribute('src', `${temple.image}`);
+    templeImg.setAttribute('alt', `${temple.alt}`);
+    templeImg.setAttribute('loading', 'lazy');
 
     // Schedule Info
     let schHeadings = document.createElement('h4');
@@ -29,9 +37,17 @@ function displayTemples(temple) {
     let schInformation2 = document.createElement('p');
     let schInformation3 = document.createElement('p');
 
+    schHeadings.textContent = `${temple.scheduletitle}`;
+    schInformation1.textContent = `${temple.phase}`;
+    schInformation2.textContent = `${temple.ordinanceschedule}`;
+    schInformation3.textContent = `${temple.sessionschedule}`;
+
     // Service Info
     let srvHeadings = document.createElement('h4');
     let srvInformation = document.createElement('p');
+
+    srvHeadings.textContent = `${temple.servicetitle}`;
+    srvInformation.textContent = `${temple.services}`;
 
 
     // Closure Info
@@ -39,103 +55,66 @@ function displayTemples(temple) {
     let year = document.createElement('h4')
     let clsInformation = document.createElement('p');
 
-    // History Info
-    let hisHeadings = document.createElement('h4');
-    let hisInformation = document.createElement('p');
-
-    // Contact Info
-    let addressIcon = document.createElement('img');
-    let address = document.createElement('p');
-
-    let phoneIcon = document.createElement('img');
-    let phone = document.createElement('p');
-
-    let emailIcon = document.createElement('img');
-    let email = document.createElement('p');
-
-    // Like Button
-    let likeBtn = document.createElement('div');
-
-    // Assigning classes for CSS design ------------------------------------------------------------------
-
-    // card.className = "card";
-    // image.className = "temple-pic";
-    // templeNames.className = "temple-name";
-    // information.className = "para";
-    // phone.className = "icon";
-    // address.className = "icon";
-    // email.className = "";
-    // likeBtn.className = "likeBtn icon";
-
-    // Temple Name
-    templeNames.textContent = `${temple.name}`;
-
-    // Temple Image
-    templeImg.setAttribute('src', `${temple.image}`);
-    templeImg.setAttribute('alt', `${temple.alt}`);
-    templeImg.setAttribute('loading', 'lazy');
-
-    // Information about the temple and it's services --------------------------------------------------
-
-    // Schedule Info
-    schHeadings.textContent = `${temple.scheduletitle}`;
-    schInformation1.textContent = `${temple.phase}`;
-    schInformation2.textContent = `${temple.ordinanceschedule}`;
-    schInformation3.textContent = `${temple.sessionschedule}`;
-
-    // Service Info
-    srvHeadings.textContent = `${temple.servicetitle}`;
-    srvInformation.textContent = `${temple.services}`;
-
-    // Closure Info
     clsHeadings.textContent = `${temple.closuretitle}`;
     year.textContent = `${temple.year}`;
     clsInformation.textContent = `${temple.templeclosureschedule}`;
 
     // History Info
+    let hisHeadings = document.createElement('h4');
+    let hisInformation = document.createElement('p');
+
     hisHeadings.textContent = `${temple.historytitle}`;
     hisInformation.textContent = `${temple.history}`;
 
-    // Contact Info of the temple ------------------------------------------------------------------------
 
-    //Address
-
-    // Address Icon
-    addressIcon.setAttribute('src', temple.pinimg);
-    addressIcon.setAttribute('alt', 'address pin icon');
-    addressIcon.setAttribute('loading', 'lazy');
+    // Contact Info ---------------------------------------------------------------------------------
 
     // Address
-    address.textContent = `${temple.address}`;
+    let contactcontainer = document.createElement('div');
+
+    contactcontainer.innerHTML =
+        `
+            <div class="address">
+                <img class="contacticon" src= ${temple.pinimg} alt="address pin icon">
+                <p>${temple.address}</p>
+            </div>
+
+            <div class="phemcontainer">
+                <div class="phone">
+                <img class="contacticon" src= ${temple.phimg} alt="address pin icon">
+                <p>${temple.phone}</p>
+                </div>
+
+                <div class="email">
+                <img class="contacticon" src= ${temple.emimg}
+                alt="address pin icon">
+                <p>${temple.email}</p>
+            </div>
+
+        `;
+
+    // -------------------------------------------------------------------------------------------------------
+
+    // Like Button
+    let likeBtn = document.createElement('div');
+
+    // Like Button
+    likeBtn.innerHTML =
+        `
+        <img class="like-no" src= ${temple.like} alt="click the heart to save the temple of your choice">
+        <img class="like-yes" src= https://ksantos16.github.io/wdd230/templeinn/images/icons/filledheart.png alt="click the heart to save the temple of your choice">
+        <h3>LIKE</h3>
+        `;
+
+    // Assigning classes for CSS design ------------------------------------------------------------------
+
+    card.className = "card";
+    templeImg.className = "temple-pic";
+    likeBtn.className = "likeBtn";
+    contactcontainer.className = "contactcontainer";
 
 
-    // Phone
-
-    // Phone Icon
-    phoneIcon.setAttribute('src', temple.phimg);
-    phoneIcon.setAttribute('alt', 'phone icon');
-    phoneIcon.setAttribute('loading', 'lazy');
-
-    // Phone number
-    phone.textContent = `${temple.phone}`;
-
-
-    // Email
-
-    // Email Icon
-    emailIcon.setAttribute('src', temple.emimg);
-    emailIcon.setAttribute('alt', 'email icon');
-    emailIcon.setAttribute('loading', 'lazy');
-    // Email
-    email.textContent = `${temple.email}`;
-
-    // Like Button ---------------------------------------------------------------------
-    likeBtn.innerHTML = `<div class="likeBtn"><img class="contact-icon" src= ${temple.like}
-    alt="click the heart to save the temple of your choice"></div>
-                            <span></span>`;
-
-
-    // Add/append the section(card)
+    // Add/append the section(card) ---------------------------------------------------------------------
     card.appendChild(templeNames);
 
     card.appendChild(templeImg);
@@ -155,12 +134,8 @@ function displayTemples(temple) {
     card.appendChild(hisHeadings);
     card.appendChild(hisInformation);
 
-    card.appendChild(addressIcon);
-    card.appendChild(address);
-    card.appendChild(phoneIcon);
-    card.appendChild(phone);
-    card.appendChild(emailIcon);
-    card.appendChild(email);
+    card.appendChild(contactcontainer);
+
 
 
     // Like Button
@@ -169,4 +144,19 @@ function displayTemples(temple) {
 
     // Add/append the existing HTML div with the cards class with the section(card)
     temples.append(card);
+};
+
+const listenForLikes = () => {
+
+    const likes = document.querySelectorAll('.like');
+    likes.forEach(like => {
+        like.removeEventListener("click", (event) => {
+            event.target.classList.toggle("like-no");
+            event.target.classList.toggle("like-yes");
+            if (event.target.classList.contains("like-yes")) {
+                localStorage.getItem(event.target);
+            }
+        })
+    })
+
 }

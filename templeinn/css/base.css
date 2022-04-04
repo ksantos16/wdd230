@@ -65,6 +65,7 @@ img.icon{
 
 div.logo picture img{
     width: 75%;
+    padding-left: .5rem;
 }
 
 .logo2{
@@ -186,7 +187,6 @@ header{
     }
 
     ul.nav.active li a:hover{
-        border-bottom: 2px solid rgba(0,0,0,0.5);
         cursor: pointer;
     }
 
@@ -328,7 +328,7 @@ header{
         text-align: center;
         font-size: 9px;
         margin: 0 auto;
-       text-align: center;
+        text-align: center;
     }
 
     .row1{
@@ -436,3 +436,141 @@ header{
     .message-form{
         display: none;
     }
+
+/* ----------------------------------- TEMPLE PAGE ----------------------------------------- */
+
+.temples{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0,0,0,0.5);
+    background-color: var(--third-color);
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+img.temple-pic{
+    border-radius: 20px;
+    width: 90%;
+}
+
+.contactcontainer{
+    display: flex;
+    font-size: 8px;
+    border-top: 1px solid rgba(0,0,0,0.5);
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+}
+
+.address{
+    display: flex;
+    align-items: center;
+    border-right: 1px solid rgba(0,0,0,0.5);
+}
+
+.phone, .email{
+    display: flex;
+    align-items: center;
+
+}
+
+.phemcontainerl{
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+.contacticon{
+    width: 20px;
+}
+
+.likeBtn{
+    display: flex;
+    background-color: var(--secondary-color);
+    height: 60px;
+}
+
+.heart-icon{
+    width: 30px;
+    cursor: pointer;
+}
+
+.show{
+    display: block;
+}
+
+.saved-heart{
+    display: none;
+}
+
+.saved-heart{
+    width: 20px;
+}
+
+/* ------------------------------------------ RESERVATION  PAGE ---------------------------------------------- */
+
+.reservation-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+}
+
+
+
+.reservation-container form{
+    margin: 1rem;
+    border: 1.5px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: .5rem 2%;
+    max-width: 30rem;
+    background-color: var(--secondary-color);
+    color: rgba(0,0,0,0.5);
+    text-shadow: 2px 0 var(--secondary-color);
+}
+
+.reservation-container form fieldset{
+    margin: 1rem;
+    padding: .5rem 2%;
+    border-radius: 10px;
+    border: none;
+}
+
+.reservation-container form legend{
+    text-align: left;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+
+}
+
+.reservation-container  form label.top input, for label.top select{
+    -webkit-appearance: none; 
+    display: block;
+    font-size: 1rem;
+    border: solid 1px var(--secondary-color);
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 90%;
+    background-color: var(--primary-color);
+ }
+
+.reservation-container  form label input:required{
+    border-left: var(--accent-color3) solid 3px;
+}
+
+.reservation-container .button { 
+    margin-left: 1.5rem;
+    border: none;
+    padding: .5rem;
+    background-color: var(--accent-color3);
+    border-radius: 5px;
+}
+
+
