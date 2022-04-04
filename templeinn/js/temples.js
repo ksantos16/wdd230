@@ -112,6 +112,17 @@ function displayTemples(temple) {
     templeImg.className = "temple-pic";
     likeBtn.className = "likeBtn";
     contactcontainer.className = "contactcontainer";
+    schHeadings.className = "temple-h";
+    schInformation1.className = "temple-p";
+    schInformation2.className = "temple-p";
+    schInformation3.className = "temple-p";
+    srvHeadings.className = "temple-h";
+    srvInformation.className = "temple-p";
+    clsHeadings.className = "temple-h";
+    year.className = "temple-p";
+    clsInformation.className = "temple-h";
+    hisHeadings.className = "temple-p";
+    hisInformation.className = "temple-p";
 
 
     // Add/append the section(card) ---------------------------------------------------------------------

@@ -1,159 +1,203 @@
 @media only screen and (min-width: 850px) {
- 
-/* ------------- HOMEPAGE ---------------  */
 
-/* ---------------------- HEADER ----------------------------- */
-header{
-    grid-template-rows: 1fr;
+    /* ------------- HOMEPAGE ---------------  */
 
-}
+    /* ---------------------- HEADER ----------------------------- */
+    header {
+        grid-template-rows: 1fr;
+
+    }
 
 
     /* ------------- NAVIGATION -------------- */
 
-    .logo2{
+    .logo2 {
         grid-row: 1;
         width: 15%;
         padding: 1.5rem;
-    }    
-    .book-button{
+    }
+
+    .book-button {
         width: 15%;
         position: absolute;
         left: 77%;
         top: 10%;
     }
 
-    .nav-company-name{
+    .nav-company-name {
         top: 7%;
     }
 
-    .header-phone{
+    .header-phone {
         top: 15%;
     }
 
-    .header-map{
+    .header-map {
         top: 25%;
 
     }
 
-    .navigation{
+    .navigation {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .menuBtn{
+    .menuBtn {
         display: none;
     }
-    ul.nav{
+
+    ul.nav {
         display: block;
         grid-column: 1/4;
         display: flex;
         justify-content: space-evenly;
     }
 
-    ul.nav li a:hover{
+    ul.nav li a:hover {
         border-bottom: 2px solid var(--accent-color1);
     }
 
-/*------------------------ CONTENT --------------------  */
+    ul.nav li a.selected-page {
+        border-bottom: 3px solid var(--accent-color1);
 
-        /* -------------- FREE AMENITES --------------- */
-
-        .amenites-title{
-            text-align: center;
-        }
-    
-        .home-free-amenites{
-            display: grid;
-            grid-template-rows: 1fr;
-        }
-    
-        .row1, .row2, .row3 , .row4{
-            grid-row: 1;
-            display: flex;
-            justify-content: center; 
-            align-items: center;
-            justify-content: space-evenly;
-        }
-    
-
-/* --------------- FOOTER -------------- */
-
-div.message-button{
-    display: none;
     }
-    
-    .message-form{
+
+    /*------------------------ CONTENT --------------------  */
+
+    /* -------------- FREE AMENITES --------------- */
+
+    .amenites-title {
+        text-align: center;
+    }
+
+    .home-free-amenites {
+        display: grid;
+        grid-template-rows: 1fr;
+    }
+
+    .row1,
+    .row2,
+    .row3,
+    .row4 {
+        grid-row: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+
+    /* --------------- FOOTER -------------- */
+
+    div.message-button {
+        display: none;
+    }
+
+    .message-form {
         display: block;
     }
-    
-    .footer{
+
+    .footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         text-align: center;
     }
-    
-    .contact-title{
+
+    .contact-title {
         grid-column: 1;
         text-align: left;
         padding: .5rem;
     }
-    
-    .contact-us-footer{
+
+    .contact-us-footer {
         grid-column: 1;
         grid-row: 1;
         margin-top: 4rem;
         margin-left: -5rem;
     }
-        .footer-phone{
-            grid-column: 1;
-            margin-left: -40px;
-        }
-    
-        .footer-map{
-            grid-column: 1;
-        }
-    
-        .footer-email{
-            grid-column: 1;
-        }
-    
-    .social-media-icons{
+
+    .footer-phone {
+        grid-column: 1;
+        margin-left: -40px;
+    }
+
+    .footer-map {
+        grid-column: 1;
+    }
+
+    .footer-email {
+        grid-column: 1;
+    }
+
+    .social-media-icons {
         grid-column: 2;
         grid-row: 1;
         text-align: left;
     }
-    
-    .message-us-container{
+
+    .message-us-container {
         grid-column: 3;
         grid-row: 1;
         text-align: left;
         padding-left: .5rem;
     }
-    
-    .end{
+
+    .end {
         grid-column: 1/4;
         text-align: center;
     }
 
-/* ------------------------------------ RESERVATION PAGE -------------------------------- */
 
-    .reservation-container{
+    /* ----------------------------------- TEMPLE PAGE ----------------------------------------- */
+
+    .temples {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+        width: 90%;
+        height: 90%;
+        padding: 1rem;
+    }
+
+    /* .card {
+        display: flex;
+        flex-direction: row;
+    }
+
+    img.temple-pic {
+        width: 30%;
+    }
+
+    .temple-inf {
+        display: flex;
+        flex-direction: row;
+
+    } */
+
+
+
+    /* ------------------------------------ RESERVATION PAGE -------------------------------- */
+
+    .reservation-container {
         grid-template-columns: 1fr 1fr;
     }
 
-    .templeinn{
+    .templeinn {
         grid-column: 2;
     }
 
-    .temple-inn-img{
-        width: 95%;
+    .temple-inn-img {
         padding: .5rem;
+        margin-top: .5rem;
     }
 
-    form{
-    grid-column: 1;
-    grid-row: 1;
+    .reservation-container p {
+        padding: 0 2%;
+    }
+
+    form {
+        grid-column: 1;
+        grid-row: 1;
     }
 
 
