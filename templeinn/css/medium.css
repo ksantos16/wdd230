@@ -1,47 +1,48 @@
 @media only screen and (min-width: 450px) {
- 
-/* -------------------- HOMEPAGE ------------------------ */
 
-/* -------------------- IMAGE -------------------------- */
+    /* -------------------- HOMEPAGE ------------------------ */
 
-div.logo picture img{
-    display: none;
-}
+    /* -------------------- IMAGE -------------------------- */
+
+    div.logo picture img {
+        display: none;
+    }
 
 
+    .sm-view-hero-image {
+        display: none;
+    }
 
-.sm-view-hero-image{
-    display: none;
-}
+    /* ---------------------- HEADER ----------------------------- */
+    header {
+        display: grid;
+        grid-template-rows: 1fr .4fr;
 
-/* ---------------------- HEADER ----------------------------- */
-header{
-    display: grid;
-    grid-template-rows: 1fr .7fr;
-
-}
+    }
 
     /* ----------------- NAVIGATION ------------------- */
-    .logo2{
+    .logo2 {
         grid-row: 1;
         display: block;
         width: 20%;
         padding: 1rem;
     }
-    
-    .menuBtn{
+
+    .menuBtn {
         top: 5%;
-        right: 3%;
+        right: 8%;
     }
 
-    .header-address1{display: none;}
+    .header-address1 {
+        display: none;
+    }
 
-    .header-address2{
+    .header-address2 {
         display: block;
-    
+
     }
 
-    .nav-company-name{
+    .nav-company-name {
         display: block;
         position: absolute;
         text-decoration: underline;
@@ -49,13 +50,13 @@ header{
         top: 2%;
     }
 
-    .header-phone{
+    .header-phone {
         position: absolute;
         left: 25%;
         top: 10%;
     }
 
-    .header-map{
+    .header-map {
         grid-row: 2;
         position: absolute;
         left: 25%;
@@ -63,7 +64,7 @@ header{
 
     }
 
-    .book-button{
+    .book-button {
         grid-row: 2;
         height: 1.5rem;
         width: 60%;
@@ -72,45 +73,47 @@ header{
         top: 30%;
     }
 
-/* ------------------- BODY ------------------------- */
+    /* ------------------- BODY ------------------------- */
 
-.hotel-grid{
-    display: grid;
-    grid-column: 1fr;
-    position: relative;
-}
+    .hotel-grid {
+        display: grid;
+        grid-column: 1fr;
+        position: relative;
+    }
 
     /* -------------------- OVERLAY ------------------------ */
 
-    .overlay{display: none;}
+    .overlay {
+        display: none;
+    }
 
     /* -------------------- CAROUSEL ---------------------- */
 
-    .carousel{
+    .carousel {
         display: block;
     }
 
-    .carousel{
+    .carousel {
         position: relative;
         height: 600px;
         width: 90%;
         margin: 0 auto;
     }
 
-    .carousel-image{
+    .carousel-image {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
 
-    .carousel-track-container{
+    .carousel-track-container {
         background-color: lightgreen;
         height: 100%;
         position: relative;
         overflow: hidden;
     }
 
-    .carousel-track{
+    .carousel-track {
         padding: 0;
         margin: 0;
         list-style: none;
@@ -119,14 +122,14 @@ header{
         transition: transform 250ms ease-in;
     }
 
-    .carousel-silde{
+    .carousel-silde {
         position: absolute;
         top: 0;
         bottom: 0;
         width: 100%;
     }
 
-    .carousel-button{
+    .carousel-button {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -135,109 +138,74 @@ header{
         cursor: pointer;
     }
 
-    .carousel-button-left{
+    .carousel-button-left {
         left: -40px;
     }
 
-    .carousel-button-right{
+    .carousel-button-right {
         right: -40px;
     }
 
-    .carousel-button img{
+    .carousel-button img {
         width: 20px;
     }
 
-    .carousel-nav{
+    .carousel-nav {
         display: flex;
         justify-content: center;
         padding: 10px 0;
     }
 
-    .carousel-indicator{
+    .carousel-indicator {
         border: 0;
         border-radius: 50%;
         width: 13px;
         height: 13px;
-        background:rgb(0,0,0,.3);
+        background: rgb(0, 0, 0, .3);
         margin: 0 12px;
         cursor: pointer;
     }
 
-    .carousel-indicator.current-slide{
-        background-color: rgba(0,0,0,0.75);
+    .carousel-indicator.current-slide {
+        background-color: rgba(0, 0, 0, 0.75);
     }
 
-    .is-hidden {display: none;}
+    .is-hidden {
+        display: none;
+    }
 
     /* ----------------- CONTENT ---------------------- */
 
     /* ---------------- ROME ITALY ---------------- */
 
-    .my-choice-temple-img1{
-        display: none;
-    }
-
-    .info{
-        font-size: .6rem;
-    }
-
-    .my-choice-temple-container{
-        grid-template-columns: 1fr 1fr;
+    .my-choice-temple-img1 {
         margin-top: 2rem;
-        position: relative;
     }
 
-    .my-choice-temple-img2{
-        display: block;
-        width: 48%;
-        height: 100%; 
-        margin-top: .5rem;
-        padding: .5rem;
-        position: absolute;
-    }
 
-    .my-choice-temple{
-        grid-column: 2;
-        text-align: left;
-        position: relative;
-    }
-
-    .my-choice-temple-contact{
-        grid-column: 1;
-        font-size: 1rem;
-        border-top: none;
-        /* position: relative; */
-    }
-
-    .my-choice-temple-phone{
-        grid-column: 1;
-        margin-left: .3px;
-    }
-
-    .my-choice-temple-address{
-        grid-column: 1;
-    }
 
     /* -------------- FREE AMENITES --------------- */
 
-    .amenites-title{
+    .amenites-title {
         text-align: center;
     }
 
-    .home-free-amenites{
+    .home-free-amenites {
         display: grid;
         grid-template-rows: 1fr 1fr;
     }
 
-    .row1, .row2{
+    .row1,
+    .row2 {
         grid-row: 1;
         display: flex;
-        justify-content: center; 
+        justify-content: center;
         align-items: center;
         justify-content: space-evenly;
     }
 
-    .row3 , .row4{
+    .row3,
+    .row4 {
         grid-row: 2;
         display: flex;
         justify-content: center;
@@ -246,84 +214,113 @@ header{
     }
 
     /*---------------- WEATHER CARDS -------  */
-    div.weather-forcast{
+    div.weather-forcast {
         background-color: var(--third-color);
-        border-top: 1px solid rgba(0,0,0,0.5);
-        border-bottom: 1px solid rgba(0,0,0,0.5);
+        border-top: 1px solid rgba(0, 0, 0, 0.5);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-content: center;
     }
 
-    .weather-conditions{
+    .weather-conditions {
         display: flex;
         justify-content: center;
     }
 
-/* --------------- FOOTER -------------- */
+    /* --------------- FOOTER -------------- */
 
-div.message-button{
-display: none;
-}
+    div.message-button {
+        display: none;
+    }
 
-.message-form{
-    display: block;
-}
+    .message-form {
+        display: block;
+    }
 
-.footer{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: center;
-}
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
 
-.contact-title{
-    grid-column: 1;
-    text-align: left;
-    padding: .5rem;
-}
+    .contact-title {
+        grid-column: 1;
+        text-align: left;
+        padding: .5rem;
+    }
 
-.contact-us-footer{
-    grid-column: 1;
-    grid-row: 1;
-    margin-top: 4rem;
+    .contact-us-footer {
+        grid-column: 1;
+        grid-row: 1;
+        margin-top: 4rem;
 
-}
-    .footer-phone{
+    }
+
+    .footer-phone {
         grid-column: 1;
         margin-left: -40px;
     }
 
-    .footer-map{
+    .footer-map {
         grid-column: 1;
     }
 
-    .footer-email{
+    .footer-email {
         grid-column: 1;
     }
 
-.social-media-icons{
-    padding-left: .5rem;
-    grid-column: 1;
-    grid-row: 2;
-    text-align: left;
-}
+    .social-media-icons {
+        padding-left: .5rem;
+        grid-column: 1;
+        grid-row: 2;
+        text-align: left;
+    }
 
-.message-us-container{
-    grid-column: 2;
-    grid-row: 1;
-    text-align: left;
-    padding-left: .5rem;
-    max-width: 245px;
-    margin-right: 0;
-}
+    .message-us-container {
+        grid-column: 2;
+        grid-row: 1;
+        text-align: left;
+        padding-left: .5rem;
+        max-width: 245px;
+        margin-right: 0;
+    }
 
-.end{
-    grid-column: 1/3;
-    text-align: center;
-}
+    .end {
+        grid-column: 1/3;
+        text-align: center;
+    }
 
 
+    /* --------------------------------------- SERVICES PAGE ------------------------------------------- */
 
+    .services-img {
+        width: 95%;
+        padding-top: 0;
+        padding-left: 0;
+    }
+
+    .sub-page1,
+    .sub-page2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: var(--accent-color1);
+        margin-top: 1rem;
+        padding-right: 1rem;
+    }
+
+    .service-info h3 {
+        margin-top: 1rem;
+        font-size: smaller;
+    }
+
+    .service-info p {
+        font-size: smaller;
+    }
+
+    .service-info a {
+        font-size: small;
+    }
 
 
 }

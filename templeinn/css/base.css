@@ -292,8 +292,6 @@ ul.nav li a.selected-page {
     grid-template-columns: 1fr;
     background-color: var(--third-color);
     padding: 0 2rem 0 2rem;
-    border-top: 1px solid rgba(0, 0, 0, 0.5);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     margin-top: -3.1px;
     grid-column-gap: .5rem;
 }
@@ -601,4 +599,42 @@ for label.top select {
     padding: .5rem;
     background-color: var(--accent-color3);
     border-radius: 5px;
+}
+
+/* --------------------------------------- SERVICES PAGE ------------------------------------------- */
+
+.services-img {
+    width: 85%;
+    padding-top: .5rem;
+    padding-left: .5rem;
+}
+
+.sub-page1,
+.sub-page2 {
+    display: grid;
+    grid-template-columns: .7fr .7fr;
+    background-color: var(--accent-color1);
+    margin-top: 1rem;
+}
+
+.service-info h3 {
+    text-decoration: underline;
+    font-size: smaller;
+    margin: 0;
+    padding-left: 6px;
+}
+
+.service-info p {
+    margin: 0;
+    font-size: smaller;
+    padding-left: 6px;
+}
+
+.service-info a {
+    font-style: italic;
+    color: var(--accent-color3);
+    text-decoration: underline;
+    font-size: small;
+    margin: 0;
+    padding-left: 6px;
 }

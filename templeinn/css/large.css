@@ -64,6 +64,53 @@
 
     /*------------------------ CONTENT --------------------  */
 
+    /* ---------------- ROME ITALY ---------------- */
+
+    .my-choice-temple-img1 {
+        display: none;
+    }
+
+    .info {
+        font-size: .6rem;
+    }
+
+    .my-choice-temple-container {
+        grid-template-columns: 1fr 1fr;
+        margin-top: 2rem;
+        position: relative;
+    }
+
+    .my-choice-temple-img2 {
+        display: block;
+        width: 48%;
+        height: 100%;
+        margin-top: .5rem;
+        padding: .5rem;
+        position: absolute;
+    }
+
+    .my-choice-temple {
+        grid-column: 2;
+        text-align: left;
+        position: relative;
+    }
+
+    .my-choice-temple-contact {
+        grid-column: 1;
+        font-size: 1rem;
+        border-top: none;
+        /* position: relative; */
+    }
+
+    .my-choice-temple-phone {
+        grid-column: 1;
+        margin-left: .3px;
+    }
+
+    .my-choice-temple-address {
+        grid-column: 1;
+    }
+
     /* -------------- FREE AMENITES --------------- */
 
     .amenites-title {
@@ -199,6 +246,23 @@
         grid-column: 1;
         grid-row: 1;
     }
+
+    /* --------------------------------------- SERVICES PAGE ------------------------------------------- */
+
+    .service-info h3 {
+        margin-top: 1rem;
+        margin-bottom: .5rem;
+        font-size: 1.2rem;
+    }
+
+    .service-info p {
+        font-size: 1rem;
+    }
+
+    .service-info a {
+        font-size: 1rem;
+    }
+
 
 
 }
