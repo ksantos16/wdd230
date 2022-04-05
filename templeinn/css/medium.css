@@ -214,14 +214,6 @@
     }
 
     /*---------------- WEATHER CARDS -------  */
-    div.weather-forcast {
-        background-color: var(--third-color);
-        border-top: 1px solid rgba(0, 0, 0, 0.5);
-        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-content: center;
-    }
 
     .weather-conditions {
         display: flex;
@@ -302,10 +294,7 @@
 
     .sub-page1,
     .sub-page2 {
-        display: grid;
         grid-template-columns: 1fr 1fr;
-        background-color: var(--accent-color1);
-        margin-top: 1rem;
         padding-right: 1rem;
     }
 
@@ -320,6 +309,26 @@
 
     .service-info a {
         font-size: small;
+    }
+
+    /* ----------------------------------- ROOMS PAGE --------------------------------------- */
+
+    .rooms-container {
+        grid-gap: 2rem;
+    }
+
+
+    img.feature-picture {
+        width: 95%;
+        height: 40%;
+    }
+
+    img.supporting-pic {
+        display: inline;
+        width: 22%;
+        height: 70px;
+        object-fit: cover;
+        margin-bottom: 1.5rem;
     }
 
 

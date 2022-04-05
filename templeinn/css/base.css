@@ -91,6 +91,9 @@ img.weather-icon-img {
 header {
     display: grid;
     grid-template-columns: 1fr;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    padding-bottom: .5rem;
+    margin-bottom: .5rem;
 }
 
 /* ---------------- MENU BUTTON ------------------ */
@@ -290,7 +293,7 @@ ul.nav li a.selected-page {
 .my-choice-temple-container {
     display: grid;
     grid-template-columns: 1fr;
-    background-color: var(--third-color);
+    background-color: var(--secondary-color);
     padding: 0 2rem 0 2rem;
     margin-top: -3.1px;
     grid-column-gap: .5rem;
@@ -369,8 +372,6 @@ ul.nav li a.selected-page {
 /*---------------- WEATHER CARDS -------  */
 div.weather-forcast {
     background-color: var(--third-color);
-    border-top: 1px solid rgba(0, 0, 0, 0.5);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
@@ -388,6 +389,8 @@ div.weather-forcast {
     display: grid;
     /* grid-template-rows: .2fr 1fr 1fr 1fr; */
     text-align: center;
+    border-top: 2px solid rgba(0, 0, 0, 0.5);
+    margin-top: 1rem;
 }
 
 .contact-title {
@@ -604,29 +607,31 @@ for label.top select {
 /* --------------------------------------- SERVICES PAGE ------------------------------------------- */
 
 .services-img {
-    width: 85%;
-    padding-top: .5rem;
-    padding-left: .5rem;
+    width: 100%;
+    height: 100;
+    object-fit: contain;
+
 }
 
 .sub-page1,
 .sub-page2 {
     display: grid;
     grid-template-columns: .7fr .7fr;
-    background-color: var(--accent-color1);
+    background-color: var(--secondary-color);
     margin-top: 1rem;
+    padding-right: 1rem;
 }
 
 .service-info h3 {
     text-decoration: underline;
-    font-size: smaller;
+    font-size: 10px;
     margin: 0;
     padding-left: 6px;
 }
 
 .service-info p {
     margin: 0;
-    font-size: smaller;
+    font-size: 10px;
     padding-left: 6px;
 }
 
@@ -634,7 +639,45 @@ for label.top select {
     font-style: italic;
     color: var(--accent-color3);
     text-decoration: underline;
-    font-size: small;
+    font-size: 10px;
     margin: 0;
     padding-left: 6px;
 }
+
+/* ----------------------------------- ROOMS PAGE --------------------------------------- */
+
+.rooms-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: .5rem;
+    margin: 0;
+    padding: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+img.feature-picture {
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img.supporting-pic {
+    display: none;
+}
+
+
+.room-amenties {
+    margin-left: 1.3rem;
+}
+
+.king,
+.queen {
+    margin-top: 2rem;
+}
+
+/* ---------------------------------- RECEPTION PAGE --------------------------------- */
