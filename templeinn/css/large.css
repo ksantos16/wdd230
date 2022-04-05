@@ -307,6 +307,31 @@
         margin-top: 2rem;
     }
 
+    /* ---------------------------------- RECEPTION PAGE --------------------------------- */
+
+    .reception-container {
+        max-width: 97%;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    .reception-container img {
+        height: 780px;
+    }
+
+    .rec-p {
+        font-size: smaller;
+    }
+
+    .setup-imgs,
+    .food-imgs {
+        display: flex;
+    }
+
+    .r-img {
+        width: 95%;
+        height: 580px;
+    }
 
 
 }

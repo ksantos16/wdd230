@@ -332,5 +332,27 @@
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
+    /* ---------------------------------- RECEPTION PAGE --------------------------------- */
+
+    .reception-hero-img,
+    .r-img {
+        width: 100%;
+        height: 565px;
+        object-fit: cover;
+        padding: 0;
+        margin-bottom: .5rem;
+    }
+
+    .wedding-info,
+    .setup,
+    .food {
+        text-align: center;
+    }
+
+    .setup,
+    .food {
+        font-size: larger;
+    }
+
 
 }

@@ -681,3 +681,21 @@ img.supporting-pic {
 }
 
 /* ---------------------------------- RECEPTION PAGE --------------------------------- */
+
+.reception-container {
+    display: grid;
+    grid-column: 1fr;
+}
+
+.reception-hero-img,
+.r-img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: .5rem;
+    width: 95%;
+}
+
+.wedding-info,
+.setup,
+.food {
+    padding: 1.5rem;
+}
