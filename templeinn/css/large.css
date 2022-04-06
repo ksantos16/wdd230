@@ -198,27 +198,19 @@
     .temples {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 1rem;
-        width: 90%;
-        height: 90%;
         padding: 1rem;
+        margin-left: .5rem;
+
     }
 
     .card {
-        display: flex;
-        flex-direction: row;
+        padding: 1rem;
+        width: 90%;
     }
 
     img.temple-pic {
-        width: 30%;
+        width: 90%;
     }
-
-    .temple-inn {
-        display: flex;
-        flex-direction: row;
-
-    }
-
 
 
     /* ------------------------------------ RESERVATION PAGE -------------------------------- */

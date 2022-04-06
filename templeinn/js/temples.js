@@ -18,7 +18,6 @@ function displayTemples(temple) {
     let card = document.createElement('section');
 
     // Temple Info --------------------------------------------------------------------------------
-
     // Temple Name
     let templeNames = document.createElement('h3');
 
@@ -65,7 +64,6 @@ function displayTemples(temple) {
 
     hisHeadings.textContent = `${temple.historytitle}`;
     hisInformation.textContent = `${temple.history}`;
-
 
     // Contact Info ---------------------------------------------------------------------------------
 
@@ -126,6 +124,8 @@ function displayTemples(temple) {
 
 
     // Add/append the section(card) ---------------------------------------------------------------------
+
+
     card.appendChild(templeNames);
 
     card.appendChild(templeImg);
