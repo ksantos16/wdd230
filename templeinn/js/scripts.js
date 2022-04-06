@@ -32,3 +32,8 @@ fetch(apiURL)
         });
 
     });
+
+
+// LAST DATE MODIFIED
+const lastmod = document.querySelector('.lastmod');
+lastmod.innerHTML = `Last Modification: ${document.lastModified}`;

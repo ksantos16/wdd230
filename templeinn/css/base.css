@@ -394,6 +394,7 @@ div.weather-forcast {
     border-top: 2px solid rgba(0, 0, 0, 0.5);
     margin-top: 1rem;
     width: 100%;
+    background-color: var(--third-color);
 }
 
 .contact-title {
@@ -451,6 +452,10 @@ div.weather-forcast {
 
 .message-form {
     display: none;
+}
+
+.end {
+    background-color: var(--accent-color3);
 }
 
 /* ----------------------------------- TEMPLE PAGE ----------------------------------------- */
@@ -705,4 +710,9 @@ img.supporting-pic {
 .setup,
 .food {
     padding: 1.5rem;
+}
+
+/* ----------------------------- THANK YOU ------------------------------- */
+.thanks-grid {
+    text-align: center;
 }
