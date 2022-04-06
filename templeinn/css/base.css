@@ -408,25 +408,28 @@ div.weather-forcast {
     font-size: 9px;
 }
 
-.footer-phone {
-    margin-left: -38px;
+.footer-phone,
+.footer-map,
+.footer-email {
+    /* margin-left: -38px; */
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
+    justify-content: center;
 }
 
 .footer-map {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
-    text-align: left;
+    /* text-align: left; */
 }
 
 .footer-email {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
-    margin-left: 15px;
+    /* margin-left: 15px; */
 }
 
 .social-media-icons {
@@ -447,6 +450,7 @@ div.weather-forcast {
     border-radius: 5px;
     margin-left: 30%;
     margin-right: 30%;
+    margin-bottom: 1rem;
 
 }
 
@@ -456,6 +460,7 @@ div.weather-forcast {
 
 .end {
     background-color: var(--accent-color3);
+    grid-row: 5;
 }
 
 /* ----------------------------------- TEMPLE PAGE ----------------------------------------- */

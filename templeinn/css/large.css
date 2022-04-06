@@ -134,6 +134,24 @@
 
     /* --------------- FOOTER -------------- */
 
+    .contact-us-container {
+        display: grid;
+    }
+
+    .footer-phone,
+    .footer-map,
+    .footer-email {
+        display: flex;
+        align-items: left;
+        text-align: left;
+        margin-left: 1rem;
+        justify-content: left;
+    }
+
+    .contact-us-footer {
+        margin-top: -3rem;
+    }
+
     div.message-button {
         display: none;
     }
@@ -154,25 +172,6 @@
         padding: .5rem;
     }
 
-    .contact-us-footer {
-        grid-column: 1;
-        grid-row: 1;
-        margin-top: 4rem;
-        margin-left: -5rem;
-    }
-
-    .footer-phone {
-        grid-column: 1;
-        margin-left: -40px;
-    }
-
-    .footer-map {
-        grid-column: 1;
-    }
-
-    .footer-email {
-        grid-column: 1;
-    }
 
     .social-media-icons {
         grid-column: 2;
@@ -185,6 +184,7 @@
         grid-row: 1;
         text-align: left;
         padding-left: .5rem;
+        margin-bottom: 1rem;
     }
 
     .end {
