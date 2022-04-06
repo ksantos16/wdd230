@@ -12,34 +12,28 @@
     /* ------------- NAVIGATION -------------- */
 
     .logo2 {
-        grid-row: 1;
-        width: 15%;
+        width: 70%;
         padding: 1.5rem;
     }
 
     .book-button {
-        width: 15%;
-        position: absolute;
-        left: 77%;
-        top: 10%;
+        grid-column: 3;
+        grid-row: 1;
+        margin-top: 20%;
     }
 
     .nav-company-name {
         top: 7%;
+        font-size: 2rem;
     }
 
-    .header-phone {
-        top: 15%;
-    }
-
-    .header-map {
-        top: 25%;
-
-    }
-
-    .navigation {
+    .nav-contact-icons {
+        grid-column: 2/3;
+        grid-row: 1;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: .1fr .1fr;
+        font-size: 1.2rem;
+        margin-top: 15%;
     }
 
     .menuBtn {
@@ -49,8 +43,10 @@
     ul.nav {
         display: block;
         grid-column: 1/4;
+        grid-row: 2;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        font-size: 1.2rem;
     }
 
     ul.nav li a:hover {
@@ -208,7 +204,7 @@
         padding: 1rem;
     }
 
-    /* .card {
+    .card {
         display: flex;
         flex-direction: row;
     }
@@ -217,11 +213,11 @@
         width: 30%;
     }
 
-    .temple-inf {
+    .temple-inn {
         display: flex;
         flex-direction: row;
 
-    } */
+    }
 
 
 
@@ -332,6 +328,7 @@
         width: 95%;
         height: 580px;
     }
+
 
 
 }
