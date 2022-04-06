@@ -102,7 +102,7 @@ function displayTemples(temple) {
     likeBtn.innerHTML =
         `
         <img class="like-no" src= ${temple.like} alt="click the heart to save the temple of your choice">
-        <img class="like-yes" src= https://ksantos16.github.io/wdd230/templeinn/images/icons/filledheart.png alt="click the heart to save the temple of your choice">
+        <img class="like-yes" src= https://ksantos16.github.io/wdd230/templeinn/images/icons/filledheart.png alt="filled heart and saved temple of your choice">
         <h3>LIKE</h3>
         `;
 
@@ -157,17 +157,13 @@ function displayTemples(temple) {
     temples.append(card);
 };
 
-const listenForLikes = () => {
+function listenForLikes() {
 
-    const likes = document.querySelectorAll('.like');
-    likes.forEach(like => {
-        like.removeEventListener("click", (event) => {
-            event.target.classList.toggle("like-no");
-            event.target.classList.toggle("like-yes");
-            if (event.target.classList.contains("like-yes")) {
-                localStorage.getItem(event.target);
-            }
-        })
-    })
+    let likes = document.querySelectorAll('.like');
 
-}
+    if (!localStorage.getItem('like')) {
+        likes.forEach(like => {
+            like.addEventListener("click", (event) => {
+                event.target.classList.toggle("show");
+                event.target.classList.toggle("show");
+                localStorage.setItem("like-yes", event.target)
