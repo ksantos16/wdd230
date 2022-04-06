@@ -81,8 +81,8 @@ div.sm-view-hero-image {
     justify-content: center;
 }
 
-img.weather-icon-img {
-    width: 50%;
+img.weatherimg {
+    width: 15%;
     grid-column: 1;
     margin-left: 3rem;
 }

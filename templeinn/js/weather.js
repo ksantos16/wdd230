@@ -42,12 +42,9 @@ function weatherForcast(weather) {
 
     let weatherimg2 = weather.weather[0].icon;
 
-    let img = document.querySelector('.weatherimg');
-    console.log(img);
+    let src = weather.weather[0].icon
 
-    img.src = `https://openweathermap.org/img/w/${weather.weather[0].icon
-        }.png`;
-
+    document.querySelector('.weatherimg').setAttribute('src', src);
     document.querySelector('.weatherimg').setAttribute('alt', desc);
 
 
