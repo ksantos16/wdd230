@@ -250,13 +250,14 @@
         padding: .5rem;
     }
 
-    .contact-us-footer {
+    .contact-us-container {
         grid-column: 1;
         grid-row: 1;
         margin-top: 4rem;
 
     }
 
+    /* 
     .footer-phone {
         grid-column: 1;
         margin-left: -40px;
@@ -268,7 +269,7 @@
 
     .footer-email {
         grid-column: 1;
-    }
+    } */
 
     .social-media-icons {
         padding-left: .5rem;
