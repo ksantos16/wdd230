@@ -257,20 +257,6 @@
 
     }
 
-    /* 
-    .footer-phone {
-        grid-column: 1;
-        margin-left: -40px;
-    }
-
-    .footer-map {
-        grid-column: 1;
-    }
-
-    .footer-email {
-        grid-column: 1;
-    } */
-
     .social-media-icons {
         padding-left: .5rem;
         grid-column: 1;
@@ -290,6 +276,23 @@
     .end {
         grid-column: 1/3;
         text-align: center;
+    }
+
+    /* --------------------------------------- TEMPLE PAGE -------------------------------------------- */
+
+
+    .temples {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+        margin-left: 0%;
+        margin-right: 0%;
+        padding: 0%;
+
+    }
+
+    .card {
+        width: 100%;
     }
 
 

@@ -94,6 +94,7 @@ header {
     border-bottom: 2px solid rgba(0, 0, 0, 0.5);
     padding-bottom: .5rem;
     margin-bottom: .5rem;
+    width: 100%;
 }
 
 /* ---------------- MENU BUTTON ------------------ */
@@ -238,6 +239,8 @@ ul.nav li a.selected-page {
     padding: .3rem;
     border-radius: 5px;
     text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 /* ------------------- BODY ------------------------- */
@@ -387,10 +390,10 @@ div.weather-forcast {
 /* --------------- FOOTER -------------- */
 .footer {
     display: grid;
-    /* grid-template-rows: .2fr 1fr 1fr 1fr; */
     text-align: center;
     border-top: 2px solid rgba(0, 0, 0, 0.5);
     margin-top: 1rem;
+    width: 100%;
 }
 
 .contact-title {
@@ -455,29 +458,25 @@ div.weather-forcast {
 .temples {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 1rem;
+
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    background-color: var(--third-color);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    ;
     justify-content: center;
     align-items: center;
     text-align: left;
     padding: 1rem;
+    width: 100%;
 }
 
 img.temple-pic {
-    border-radius: 10px;
+    border-radius: 7px;
     width: 90%;
-}
-
-.contactcontainer {
-    display: flex;
-    font-size: 8px;
-    border-top: 1px solid rgba(0, 0, 0, 0.5);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 h4.temple-h {
@@ -485,7 +484,15 @@ h4.temple-h {
 }
 
 .temple-p {
-    margin-left: 1rem;
+    padding: .5rem;
+}
+
+.contactcontainer {
+    display: flex;
+    width: 100%;
+    font-size: 12px;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .address {
@@ -501,14 +508,6 @@ h4.temple-h {
 
 }
 
-.phemcontainerl {
-    display: flex;
-    align-items: center;
-
-}
-
-
-
 .contacticon {
     width: 20px;
 }
@@ -517,6 +516,8 @@ h4.temple-h {
     display: flex;
     background-color: var(--secondary-color);
     height: 60px;
+    width: 100%;
+    justify-content: center;
 }
 
 .like-no {
