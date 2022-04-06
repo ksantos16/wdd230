@@ -517,22 +517,20 @@ h4.temple-h {
     height: 60px;
 }
 
-.heart-icon {
+.like-no {
     width: 30px;
     cursor: pointer;
 }
 
 .show {
-    display: block;
-}
-
-.saved-heart {
     display: none;
 }
 
-.saved-heart {
+.like-yes {
+    display: block;
     width: 20px;
 }
+
 
 /* ------------------------------------------ RESERVATION  PAGE ---------------------------------------------- */
 
