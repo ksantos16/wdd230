@@ -17,7 +17,6 @@ fetch(weatherApi)
 
         forecast.innerHTML = "";
         weatherCard.forEach(weatherForcast);
-        console.log(newWeatherList);
 
     })
 
@@ -64,20 +63,23 @@ function weatherForcast(weather) {
                     let myicon = image.imageurl;
                     document.querySelector('.weatherimg').setAttribute('src', myicon);
                     console.log(myicon);
+
+                    card.appendChild(day);
+                    card.appendChild(myicon)
+                    card.appendChild(mintemp);
+                    card.appendChild(maxtemp);
+                    card.appendChild(weathercondition);
+                    card.appendChild(humidity)
+
+                    forecast.append(card);
                 }
+
 
             })
         });
 
 
-    card.appendChild(date);
-    card.appendChild(myicon)
-    card.appendChild(mintemp);
-    card.appendChild(maxtemp);
-    card.appendChild(weathercondition);
-    card.appendChild(humidity)
 
-    forecast.append(card);
 
 
 }
