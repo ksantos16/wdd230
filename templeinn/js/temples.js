@@ -157,13 +157,43 @@ function displayTemples(temple) {
     temples.append(card);
 };
 
-function listenForLikes() {
+// const listenForLikes = () => {
+//     const likes = document.querySelectorAll(".likeBtn");
+//     likes.forEach(like => {
+//         like.addEventListener("click", (event) => {
+//             event.target.classList.toggle("show");
+//             event.target.classList.toggle("show");
+//             if (event.target.classList.contains("like-yes")) {
+//                 console.log("✅💾 Saving Favorite...");
+//                 getFaveData(event.target);
+//             } else {
+//                 console.log("❌ Removing Favorite...");
+//                 getFaveData(event.target);
+//             }
+//         })
+//     })
+// }
 
-    let likes = document.querySelectorAll('.like');
+// function getFaveData() {
 
-    if (!localStorage.getItem('like')) {
-        likes.forEach(like => {
-            like.addEventListener("click", (event) => {
-                event.target.classList.toggle("show");
-                event.target.classList.toggle("show");
-                localStorage.setItem("like-yes", event.target)
+//     let today = new Date();
+//     let millisecondsToDays = 86400000;
+//     let prior = localStorage.getItem('lastvisit');
+//     let obj = new Date(prior);
+//     console.log(obj);
+
+//     if (!prior) {
+//         localStorage.setItem('lastvisit', today);
+//         let visit = " This is your first visit. Welcome to Aberdeen Chamber of Commerce!"
+//         document.querySelector(".lastv").innerHTML = visit;
+//         console.log(visit);
+
+//     } else {
+//         let visit = ((today - obj) / millisecondsToDays).toFixed(0) + " days ago. Welcome Back!";
+//         document.querySelector(".lastv").innerHTML = visit;
+//         console.log(visit);
+//     }
+
+
+//     localStorage.setItem('lastvisit', today);
+// }
