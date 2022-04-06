@@ -522,13 +522,18 @@ h4.temple-h {
     cursor: pointer;
 }
 
-.show {
+.like-no.show img {
     display: none;
 }
 
-.like-yes {
+.like-yes.show img {
     display: block;
     width: 20px;
+}
+
+
+.like-yes {
+    display: none;
 }
 
 
