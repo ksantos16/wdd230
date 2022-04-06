@@ -435,12 +435,14 @@ div.weather-forcast {
     grid-template-columns: 1fr;
 }
 
-div.message-button {
+.message-button {
     grid-column: 1/2;
     background-color: var(--accent-color3);
     width: 40%;
     padding: .3rem;
     border-radius: 5px;
+    margin-left: 30%;
+    margin-right: 30%;
 
 }
 
