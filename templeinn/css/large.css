@@ -136,6 +136,7 @@
 
     .contact-us-container {
         display: grid;
+        margin-top: 5rem;
     }
 
     .footer-phone,
@@ -148,9 +149,7 @@
         justify-content: left;
     }
 
-    .contact-us-footer {
-        margin-top: -3rem;
-    }
+
 
     div.message-button {
         display: none;

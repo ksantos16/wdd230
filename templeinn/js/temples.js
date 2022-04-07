@@ -162,30 +162,30 @@ const listenForLikes = () => {
 
     if (!localStorage.getItem("likeBtnStatus")) {
         localStorage.setItem("likeBtnStatus", "False");
-        const empty = document.querySelector(".like-no");
+        const empty = document.querySelectorAll(".like-no");
         empty.classList.add("show");
         console.log(empty);
 
-        const full = document.querySelector(".like-yes");
+        const full = document.querySelectorAll(".like-yes");
         full.classList.add("hide");
 
     } else if (localStorage.getItem("likeBtnStatus")) {
         let btnStatus = localStorage.getItem("likeBtnStatus");
         console.log(btnStatus);
         if (btnStatus === "True") {
-            const favorite = document.querySelector(".like-yes");
+            const favorite = document.querySelectorAll(".like-yes");
             console.log(favorite.classList);
             favorite.classList.remove("hide");
 
-            const unfav = document.querySelector(".like-no");
+            const unfav = document.querySelectorAll(".like-no");
             console.log(unfav.classList);
             unfav.classList.add("hide");
 
         } else if (btnStatus === "False") {
-            const favorite = document.querySelector(".like-yes");
+            const favorite = document.querySelectorAll(".like-yes");
             favorite.classList.add("hide");
 
-            const unfav = document.querySelector(".like-no");
+            const unfav = document.querySelectorAll(".like-no");
             unfav.classList.add("show");
         };
     };

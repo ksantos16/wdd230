@@ -31,9 +31,7 @@ function weatherForcast(weather) {
     let humidity = document.createElement('p');
 
     let desc = weather.weather[0].description;
-    let date = new Date();
 
-    day.textContent = date;
     mintemp.textContent = `Low: ${weather.temp.min.toFixed(0)}° F`;
     maxtemp.textContent = `High: ${weather.temp.max.toFixed(0)}° F`;
     weathercondition.textContent = desc;
@@ -65,7 +63,7 @@ function weatherForcast(weather) {
                     console.log(myicon)
                     myicon.className = "weatherimg";
 
-                    card.appendChild(day);
+
                     card.appendChild(myicon)
                     card.appendChild(mintemp);
                     card.appendChild(maxtemp);

@@ -222,10 +222,9 @@
     }
 
     /*---------------- WEATHER CARDS -------  */
-
-    .weather-conditions {
+    .weather-forcast {
         display: flex;
-        justify-content: center;
+        flex-direction: row
     }
 
     /* --------------- FOOTER -------------- */
