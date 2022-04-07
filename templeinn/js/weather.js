@@ -60,9 +60,10 @@ function weatherForcast(weather) {
 
             icons.forEach(image => {
                 if (image.id === weatherimg2) {
-                    let myicon = image.imageurl;
-                    document.querySelector('.weatherimg').setAttribute('src', myicon);
-                    console.log(myicon);
+                    let myicon = document.createElement('img');
+                    myicon.src = image.imageurl;
+                    console.log(myicon)
+                    myicon.className = "weatherimg";
 
                     card.appendChild(day);
                     card.appendChild(myicon)

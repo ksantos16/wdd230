@@ -157,22 +157,85 @@ function displayTemples(temple) {
     temples.append(card);
 };
 
-// const listenForLikes = () => {
-//     const likes = document.querySelectorAll(".likeBtn");
-//     likes.forEach(like => {
-//         like.addEventListener("click", (event) => {
-//             event.target.classList.toggle("show");
-//             event.target.classList.toggle("show");
-//             if (event.target.classList.contains("like-yes")) {
-//                 console.log("✅💾 Saving Favorite...");
-//                 getFaveData(event.target);
-//             } else {
-//                 console.log("❌ Removing Favorite...");
-//                 getFaveData(event.target);
-//             }
-//         })
-//     })
-// }
+const listenForLikes = () => {
+    const likes = document.querySelectorAll(".like-no");
+
+    if (!localStorage.getItem("likeBtnStatus")) {
+        localStorage.setItem("likeBtnStatus", "False");
+        const empty = document.querySelector(".like-no");
+        empty.classList.add("show");
+        console.log(empty);
+
+        const full = document.querySelector(".like-yes");
+        full.classList.add("hide");
+
+    } else if (localStorage.getItem("likeBtnStatus")) {
+        let btnStatus = localStorage.getItem("likeBtnStatus");
+        console.log(btnStatus);
+        if (btnStatus === "True") {
+            const favorite = document.querySelector(".like-yes");
+            console.log(favorite.classList);
+            favorite.classList.remove("hide");
+
+            const unfav = document.querySelector(".like-no");
+            console.log(unfav.classList);
+            unfav.classList.add("hide");
+
+        } else if (btnStatus === "False") {
+            const favorite = document.querySelector(".like-yes");
+            favorite.classList.add("hide");
+
+            const unfav = document.querySelector(".like-no");
+            unfav.classList.add("show");
+        };
+    };
+
+
+    console.log(likes);
+    const array = Array.from(likes);
+    array.forEach((like, index) => {
+        like.addEventListener("click", (event) => {
+            console.log(index);
+            event.target.classList.toggle("hide");
+
+
+            const likeYes = document.querySelectorAll(".like-yes");
+            const array1 = Array.from(likeYes);
+            array1.forEach((like, index2) => {
+                console.log(like);
+
+                if (index === index2) {
+                    console.log("yes this work");
+                    console.log(index, index2);
+                    like.classList.toggle("show");
+
+                    localStorage.setItem("likeBtnStatus", "True");
+
+
+                    like.addEventListener("click", (event) => {
+                        event.target.classList.remove("show");
+                        array[index].classList.remove("hide");
+
+                        localStorage.setItem("likeBtnStatus", "False");
+                    })
+                }
+
+                // like.addEventListener("click", (event) => {
+
+
+                // })
+            })
+
+            // if (event.target.classList.contains("like-yes")) {
+            //     console.log("✅💾 Saving Favorite...");
+            //     getFaveData(event.target);
+            // } else {
+            //     console.log("❌ Removing Favorite...");
+            //     getFaveData(event.target);
+            // }
+        })
+    })
+}
 
 // function getFaveData() {
 

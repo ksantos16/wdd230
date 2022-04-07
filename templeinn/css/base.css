@@ -536,20 +536,18 @@ h4.temple-h {
     cursor: pointer;
 }
 
-.like-no.show img {
+.hide {
     display: none;
 }
-
-.like-yes.show img {
-    display: block;
-    width: 20px;
-}
-
 
 .like-yes {
-    display: none;
+    width: 25px;
+    cursor: pointer;
 }
 
+.show {
+    display: block;
+}
 
 /* ------------------------------------------ RESERVATION  PAGE ---------------------------------------------- */
 
