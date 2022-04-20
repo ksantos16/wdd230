@@ -162,30 +162,30 @@ const listenForLikes = () => {
 
     if (!localStorage.getItem("likeBtnStatus")) {
         localStorage.setItem("likeBtnStatus", "False");
-        const empty = document.querySelectorAll(".like-no");
+        const empty = document.querySelector(".like-no");
         empty.classList.add("show");
         console.log(empty);
 
-        const full = document.querySelectorAll(".like-yes");
+        const full = document.querySelector(".like-yes");
         full.classList.add("hide");
 
     } else if (localStorage.getItem("likeBtnStatus")) {
         let btnStatus = localStorage.getItem("likeBtnStatus");
         console.log(btnStatus);
         if (btnStatus === "True") {
-            const favorite = document.querySelectorAll(".like-yes");
+            const favorite = document.querySelector(".like-yes");
             console.log(favorite.classList);
             favorite.classList.remove("hide");
 
-            const unfav = document.querySelectorAll(".like-no");
+            const unfav = document.querySelector(".like-no");
             console.log(unfav.classList);
             unfav.classList.add("hide");
 
         } else if (btnStatus === "False") {
-            const favorite = document.querySelectorAll(".like-yes");
+            const favorite = document.querySelector(".like-yes");
             favorite.classList.add("hide");
 
-            const unfav = document.querySelectorAll(".like-no");
+            const unfav = document.querySelector(".like-no");
             unfav.classList.add("show");
         };
     };
@@ -220,43 +220,11 @@ const listenForLikes = () => {
                     })
                 }
 
-                // like.addEventListener("click", (event) => {
 
-
-                // })
             })
 
-            // if (event.target.classList.contains("like-yes")) {
-            //     console.log("✅💾 Saving Favorite...");
-            //     getFaveData(event.target);
-            // } else {
-            //     console.log("❌ Removing Favorite...");
-            //     getFaveData(event.target);
-            // }
+
         })
     })
 }
 
-// function getFaveData() {
-
-//     let today = new Date();
-//     let millisecondsToDays = 86400000;
-//     let prior = localStorage.getItem('lastvisit');
-//     let obj = new Date(prior);
-//     console.log(obj);
-
-//     if (!prior) {
-//         localStorage.setItem('lastvisit', today);
-//         let visit = " This is your first visit. Welcome to Aberdeen Chamber of Commerce!"
-//         document.querySelector(".lastv").innerHTML = visit;
-//         console.log(visit);
-
-//     } else {
-//         let visit = ((today - obj) / millisecondsToDays).toFixed(0) + " days ago. Welcome Back!";
-//         document.querySelector(".lastv").innerHTML = visit;
-//         console.log(visit);
-//     }
-
-
-//     localStorage.setItem('lastvisit', today);
-// }
